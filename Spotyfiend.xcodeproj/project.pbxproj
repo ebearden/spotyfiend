@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4AEC4B05223844B3004BC04C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEC4B04223844B3004BC04C /* AppDelegate.swift */; };
+		4AEC4B07223844B3004BC04C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEC4B06223844B3004BC04C /* ViewController.swift */; };
+		4AEC4B0A223844B3004BC04C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AEC4B08223844B3004BC04C /* Main.storyboard */; };
+		4AEC4B0C223844B3004BC04C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AEC4B0B223844B3004BC04C /* Assets.xcassets */; };
+		4AEC4B0F223844B3004BC04C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AEC4B0D223844B3004BC04C /* LaunchScreen.storyboard */; };
+		4AEC4B1A223844B4004BC04C /* SpotyfiendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEC4B19223844B4004BC04C /* SpotyfiendTests.swift */; };
+		4AEC4B25223844B4004BC04C /* SpotyfiendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEC4B24223844B4004BC04C /* SpotyfiendUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4AEC4B16223844B4004BC04C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AEC4AF9223844B3004BC04C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AEC4B00223844B3004BC04C;
+			remoteInfo = Spotyfiend;
+		};
+		4AEC4B21223844B4004BC04C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AEC4AF9223844B3004BC04C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AEC4B00223844B3004BC04C;
+			remoteInfo = Spotyfiend;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4AEC4B01223844B3004BC04C /* Spotyfiend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotyfiend.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AEC4B04223844B3004BC04C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4AEC4B06223844B3004BC04C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4AEC4B09223844B3004BC04C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4AEC4B0B223844B3004BC04C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4AEC4B0E223844B3004BC04C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4AEC4B10223844B3004BC04C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AEC4B15223844B4004BC04C /* SpotyfiendTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotyfiendTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AEC4B19223844B4004BC04C /* SpotyfiendTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotyfiendTests.swift; sourceTree = "<group>"; };
+		4AEC4B1B223844B4004BC04C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AEC4B20223844B4004BC04C /* SpotyfiendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotyfiendUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AEC4B24223844B4004BC04C /* SpotyfiendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotyfiendUITests.swift; sourceTree = "<group>"; };
+		4AEC4B26223844B4004BC04C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4AEC4AFE223844B3004BC04C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AEC4B12223844B4004BC04C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AEC4B1D223844B4004BC04C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4AEC4AF8223844B3004BC04C = {
+			isa = PBXGroup;
+			children = (
+				4AEC4B03223844B3004BC04C /* Spotyfiend */,
+				4AEC4B18223844B4004BC04C /* SpotyfiendTests */,
+				4AEC4B23223844B4004BC04C /* SpotyfiendUITests */,
+				4AEC4B02223844B3004BC04C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4AEC4B02223844B3004BC04C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4AEC4B01223844B3004BC04C /* Spotyfiend.app */,
+				4AEC4B15223844B4004BC04C /* SpotyfiendTests.xctest */,
+				4AEC4B20223844B4004BC04C /* SpotyfiendUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4AEC4B03223844B3004BC04C /* Spotyfiend */ = {
+			isa = PBXGroup;
+			children = (
+				4AEC4B04223844B3004BC04C /* AppDelegate.swift */,
+				4AEC4B06223844B3004BC04C /* ViewController.swift */,
+				4AEC4B08223844B3004BC04C /* Main.storyboard */,
+				4AEC4B0B223844B3004BC04C /* Assets.xcassets */,
+				4AEC4B0D223844B3004BC04C /* LaunchScreen.storyboard */,
+				4AEC4B10223844B3004BC04C /* Info.plist */,
+			);
+			path = Spotyfiend;
+			sourceTree = "<group>";
+		};
+		4AEC4B18223844B4004BC04C /* SpotyfiendTests */ = {
+			isa = PBXGroup;
+			children = (
+				4AEC4B19223844B4004BC04C /* SpotyfiendTests.swift */,
+				4AEC4B1B223844B4004BC04C /* Info.plist */,
+			);
+			path = SpotyfiendTests;
+			sourceTree = "<group>";
+		};
+		4AEC4B23223844B4004BC04C /* SpotyfiendUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4AEC4B24223844B4004BC04C /* SpotyfiendUITests.swift */,
+				4AEC4B26223844B4004BC04C /* Info.plist */,
+			);
+			path = SpotyfiendUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4AEC4B00223844B3004BC04C /* Spotyfiend */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AEC4B29223844B4004BC04C /* Build configuration list for PBXNativeTarget "Spotyfiend" */;
+			buildPhases = (
+				4AEC4AFD223844B3004BC04C /* Sources */,
+				4AEC4AFE223844B3004BC04C /* Frameworks */,
+				4AEC4AFF223844B3004BC04C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spotyfiend;
+			productName = Spotyfiend;
+			productReference = 4AEC4B01223844B3004BC04C /* Spotyfiend.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4AEC4B14223844B4004BC04C /* SpotyfiendTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AEC4B2C223844B4004BC04C /* Build configuration list for PBXNativeTarget "SpotyfiendTests" */;
+			buildPhases = (
+				4AEC4B11223844B4004BC04C /* Sources */,
+				4AEC4B12223844B4004BC04C /* Frameworks */,
+				4AEC4B13223844B4004BC04C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AEC4B17223844B4004BC04C /* PBXTargetDependency */,
+			);
+			name = SpotyfiendTests;
+			productName = SpotyfiendTests;
+			productReference = 4AEC4B15223844B4004BC04C /* SpotyfiendTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4AEC4B1F223844B4004BC04C /* SpotyfiendUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AEC4B2F223844B4004BC04C /* Build configuration list for PBXNativeTarget "SpotyfiendUITests" */;
+			buildPhases = (
+				4AEC4B1C223844B4004BC04C /* Sources */,
+				4AEC4B1D223844B4004BC04C /* Frameworks */,
+				4AEC4B1E223844B4004BC04C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AEC4B22223844B4004BC04C /* PBXTargetDependency */,
+			);
+			name = SpotyfiendUITests;
+			productName = SpotyfiendUITests;
+			productReference = 4AEC4B20223844B4004BC04C /* SpotyfiendUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4AEC4AF9223844B3004BC04C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Setec Astronomy";
+				TargetAttributes = {
+					4AEC4B00223844B3004BC04C = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					4AEC4B14223844B4004BC04C = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 4AEC4B00223844B3004BC04C;
+					};
+					4AEC4B1F223844B4004BC04C = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 4AEC4B00223844B3004BC04C;
+					};
+				};
+			};
+			buildConfigurationList = 4AEC4AFC223844B3004BC04C /* Build configuration list for PBXProject "Spotyfiend" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4AEC4AF8223844B3004BC04C;
+			productRefGroup = 4AEC4B02223844B3004BC04C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4AEC4B00223844B3004BC04C /* Spotyfiend */,
+				4AEC4B14223844B4004BC04C /* SpotyfiendTests */,
+				4AEC4B1F223844B4004BC04C /* SpotyfiendUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4AEC4AFF223844B3004BC04C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AEC4B0F223844B3004BC04C /* LaunchScreen.storyboard in Resources */,
+				4AEC4B0C223844B3004BC04C /* Assets.xcassets in Resources */,
+				4AEC4B0A223844B3004BC04C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AEC4B13223844B4004BC04C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AEC4B1E223844B4004BC04C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4AEC4AFD223844B3004BC04C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AEC4B07223844B3004BC04C /* ViewController.swift in Sources */,
+				4AEC4B05223844B3004BC04C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AEC4B11223844B4004BC04C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AEC4B1A223844B4004BC04C /* SpotyfiendTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AEC4B1C223844B4004BC04C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AEC4B25223844B4004BC04C /* SpotyfiendUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4AEC4B17223844B4004BC04C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AEC4B00223844B3004BC04C /* Spotyfiend */;
+			targetProxy = 4AEC4B16223844B4004BC04C /* PBXContainerItemProxy */;
+		};
+		4AEC4B22223844B4004BC04C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AEC4B00223844B3004BC04C /* Spotyfiend */;
+			targetProxy = 4AEC4B21223844B4004BC04C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4AEC4B08223844B3004BC04C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AEC4B09223844B3004BC04C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4AEC4B0D223844B3004BC04C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AEC4B0E223844B3004BC04C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4AEC4B27223844B4004BC04C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4AEC4B28223844B4004BC04C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4AEC4B2A223844B4004BC04C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UBBFM4Q7C8;
+				INFOPLIST_FILE = Spotyfiend/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.setec.astronony.Spotyfiend;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4AEC4B2B223844B4004BC04C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UBBFM4Q7C8;
+				INFOPLIST_FILE = Spotyfiend/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.setec.astronony.Spotyfiend;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4AEC4B2D223844B4004BC04C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UBBFM4Q7C8;
+				INFOPLIST_FILE = SpotyfiendTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.setec.astronony.SpotyfiendTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spotyfiend.app/Spotyfiend";
+			};
+			name = Debug;
+		};
+		4AEC4B2E223844B4004BC04C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UBBFM4Q7C8;
+				INFOPLIST_FILE = SpotyfiendTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.setec.astronony.SpotyfiendTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spotyfiend.app/Spotyfiend";
+			};
+			name = Release;
+		};
+		4AEC4B30223844B4004BC04C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UBBFM4Q7C8;
+				INFOPLIST_FILE = SpotyfiendUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.setec.astronony.SpotyfiendUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Spotyfiend;
+			};
+			name = Debug;
+		};
+		4AEC4B31223844B4004BC04C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UBBFM4Q7C8;
+				INFOPLIST_FILE = SpotyfiendUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.setec.astronony.SpotyfiendUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Spotyfiend;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4AEC4AFC223844B3004BC04C /* Build configuration list for PBXProject "Spotyfiend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AEC4B27223844B4004BC04C /* Debug */,
+				4AEC4B28223844B4004BC04C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AEC4B29223844B4004BC04C /* Build configuration list for PBXNativeTarget "Spotyfiend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AEC4B2A223844B4004BC04C /* Debug */,
+				4AEC4B2B223844B4004BC04C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AEC4B2C223844B4004BC04C /* Build configuration list for PBXNativeTarget "SpotyfiendTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AEC4B2D223844B4004BC04C /* Debug */,
+				4AEC4B2E223844B4004BC04C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AEC4B2F223844B4004BC04C /* Build configuration list for PBXNativeTarget "SpotyfiendUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AEC4B30223844B4004BC04C /* Debug */,
+				4AEC4B31223844B4004BC04C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4AEC4AF9223844B3004BC04C /* Project object */;
+}

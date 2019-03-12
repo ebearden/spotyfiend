@@ -7,11 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4AEC4B05223844B3004BC04C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEC4B04223844B3004BC04C /* AppDelegate.swift */; };
-		4AEC4B07223844B3004BC04C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEC4B06223844B3004BC04C /* ViewController.swift */; };
-		4AEC4B0A223844B3004BC04C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AEC4B08223844B3004BC04C /* Main.storyboard */; };
-		4AEC4B0C223844B3004BC04C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AEC4B0B223844B3004BC04C /* Assets.xcassets */; };
-		4AEC4B0F223844B3004BC04C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AEC4B0D223844B3004BC04C /* LaunchScreen.storyboard */; };
+		4AE585CF2238472C0082DF0E /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585B52238472C0082DF0E /* FlowCoordinator.swift */; };
+		4AE585D02238472C0082DF0E /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585B62238472C0082DF0E /* Dependencies.swift */; };
+		4AE585D12238472C0082DF0E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585B72238472C0082DF0E /* ViewModel.swift */; };
+		4AE585D22238472C0082DF0E /* FlowCoordinatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585B82238472C0082DF0E /* FlowCoordinatorViewController.swift */; };
+		4AE585D32238472C0082DF0E /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585BA2238472C0082DF0E /* SettingsViewModel.swift */; };
+		4AE585D42238472C0082DF0E /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585BB2238472C0082DF0E /* SettingsCoordinator.swift */; };
+		4AE585D52238472C0082DF0E /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE585BC2238472C0082DF0E /* SettingsViewController.xib */; };
+		4AE585D62238472C0082DF0E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585BD2238472C0082DF0E /* SettingsViewController.swift */; };
+		4AE585D72238472C0082DF0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AE585BF2238472C0082DF0E /* Assets.xcassets */; };
+		4AE585D92238472C0082DF0E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585C12238472C0082DF0E /* HomeViewController.swift */; };
+		4AE585DA2238472C0082DF0E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585C32238472C0082DF0E /* HomeViewModel.swift */; };
+		4AE585DB2238472C0082DF0E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE585C42238472C0082DF0E /* HomeViewController.xib */; };
+		4AE585DC2238472C0082DF0E /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585C52238472C0082DF0E /* HomeCoordinator.swift */; };
+		4AE585DD2238472C0082DF0E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585C72238472C0082DF0E /* AppCoordinator.swift */; };
+		4AE585DF2238472C0082DF0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585CA2238472C0082DF0E /* AppDelegate.swift */; };
+		4AE585E02238472C0082DF0E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585CC2238472C0082DF0E /* SearchViewController.swift */; };
+		4AE585E12238472C0082DF0E /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585CD2238472C0082DF0E /* SearchCoordinator.swift */; };
+		4AE585E22238472C0082DF0E /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE585CE2238472C0082DF0E /* SearchViewController.xib */; };
+		4AE585E32238484E0082DF0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AE585C82238472C0082DF0E /* LaunchScreen.storyboard */; };
 		4AEC4B1A223844B4004BC04C /* SpotyfiendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEC4B19223844B4004BC04C /* SpotyfiendTests.swift */; };
 		4AEC4B25223844B4004BC04C /* SpotyfiendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEC4B24223844B4004BC04C /* SpotyfiendUITests.swift */; };
 /* End PBXBuildFile section */
@@ -34,13 +48,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4AE585B52238472C0082DF0E /* FlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
+		4AE585B62238472C0082DF0E /* Dependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		4AE585B72238472C0082DF0E /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		4AE585B82238472C0082DF0E /* FlowCoordinatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowCoordinatorViewController.swift; sourceTree = "<group>"; };
+		4AE585BA2238472C0082DF0E /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		4AE585BB2238472C0082DF0E /* SettingsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
+		4AE585BC2238472C0082DF0E /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		4AE585BD2238472C0082DF0E /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		4AE585BF2238472C0082DF0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4AE585C02238472C0082DF0E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AE585C12238472C0082DF0E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4AE585C32238472C0082DF0E /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		4AE585C42238472C0082DF0E /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		4AE585C52238472C0082DF0E /* HomeCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		4AE585C72238472C0082DF0E /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		4AE585C92238472C0082DF0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4AE585CA2238472C0082DF0E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4AE585CC2238472C0082DF0E /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		4AE585CD2238472C0082DF0E /* SearchCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
+		4AE585CE2238472C0082DF0E /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		4AEC4B01223844B3004BC04C /* Spotyfiend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotyfiend.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AEC4B04223844B3004BC04C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4AEC4B06223844B3004BC04C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4AEC4B09223844B3004BC04C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4AEC4B0B223844B3004BC04C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4AEC4B0E223844B3004BC04C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4AEC4B10223844B3004BC04C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AEC4B15223844B4004BC04C /* SpotyfiendTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotyfiendTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AEC4B19223844B4004BC04C /* SpotyfiendTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotyfiendTests.swift; sourceTree = "<group>"; };
 		4AEC4B1B223844B4004BC04C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,6 +102,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4AE585B42238472C0082DF0E /* SharedProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				4AE585B52238472C0082DF0E /* FlowCoordinator.swift */,
+				4AE585B62238472C0082DF0E /* Dependencies.swift */,
+				4AE585B72238472C0082DF0E /* ViewModel.swift */,
+				4AE585B82238472C0082DF0E /* FlowCoordinatorViewController.swift */,
+			);
+			path = SharedProtocols;
+			sourceTree = "<group>";
+		};
+		4AE585B92238472C0082DF0E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				4AE585BA2238472C0082DF0E /* SettingsViewModel.swift */,
+				4AE585BB2238472C0082DF0E /* SettingsCoordinator.swift */,
+				4AE585BC2238472C0082DF0E /* SettingsViewController.xib */,
+				4AE585BD2238472C0082DF0E /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		4AE585BE2238472C0082DF0E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4AE585BF2238472C0082DF0E /* Assets.xcassets */,
+				4AE585C02238472C0082DF0E /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4AE585C22238472C0082DF0E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4AE585C32238472C0082DF0E /* HomeViewModel.swift */,
+				4AE585C42238472C0082DF0E /* HomeViewController.xib */,
+				4AE585C52238472C0082DF0E /* HomeCoordinator.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4AE585C62238472C0082DF0E /* AppSetup */ = {
+			isa = PBXGroup;
+			children = (
+				4AE585C72238472C0082DF0E /* AppCoordinator.swift */,
+				4AE585C82238472C0082DF0E /* LaunchScreen.storyboard */,
+				4AE585CA2238472C0082DF0E /* AppDelegate.swift */,
+			);
+			path = AppSetup;
+			sourceTree = "<group>";
+		};
+		4AE585CB2238472C0082DF0E /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				4AE585CC2238472C0082DF0E /* SearchViewController.swift */,
+				4AE585CD2238472C0082DF0E /* SearchCoordinator.swift */,
+				4AE585CE2238472C0082DF0E /* SearchViewController.xib */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		4AEC4AF8223844B3004BC04C = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +186,13 @@
 		4AEC4B03223844B3004BC04C /* Spotyfiend */ = {
 			isa = PBXGroup;
 			children = (
-				4AEC4B04223844B3004BC04C /* AppDelegate.swift */,
-				4AEC4B06223844B3004BC04C /* ViewController.swift */,
-				4AEC4B08223844B3004BC04C /* Main.storyboard */,
-				4AEC4B0B223844B3004BC04C /* Assets.xcassets */,
-				4AEC4B0D223844B3004BC04C /* LaunchScreen.storyboard */,
-				4AEC4B10223844B3004BC04C /* Info.plist */,
+				4AE585C62238472C0082DF0E /* AppSetup */,
+				4AE585C22238472C0082DF0E /* Home */,
+				4AE585C12238472C0082DF0E /* HomeViewController.swift */,
+				4AE585BE2238472C0082DF0E /* Resources */,
+				4AE585CB2238472C0082DF0E /* Search */,
+				4AE585B92238472C0082DF0E /* Settings */,
+				4AE585B42238472C0082DF0E /* SharedProtocols */,
 			);
 			path = Spotyfiend;
 			sourceTree = "<group>";
@@ -193,6 +283,7 @@
 				TargetAttributes = {
 					4AEC4B00223844B3004BC04C = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					4AEC4B14223844B4004BC04C = {
 						CreatedOnToolsVersion = 10.1;
@@ -229,9 +320,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AEC4B0F223844B3004BC04C /* LaunchScreen.storyboard in Resources */,
-				4AEC4B0C223844B3004BC04C /* Assets.xcassets in Resources */,
-				4AEC4B0A223844B3004BC04C /* Main.storyboard in Resources */,
+				4AE585D72238472C0082DF0E /* Assets.xcassets in Resources */,
+				4AE585D52238472C0082DF0E /* SettingsViewController.xib in Resources */,
+				4AE585E22238472C0082DF0E /* SearchViewController.xib in Resources */,
+				4AE585E32238484E0082DF0E /* LaunchScreen.storyboard in Resources */,
+				4AE585DB2238472C0082DF0E /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +349,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AEC4B07223844B3004BC04C /* ViewController.swift in Sources */,
-				4AEC4B05223844B3004BC04C /* AppDelegate.swift in Sources */,
+				4AE585DF2238472C0082DF0E /* AppDelegate.swift in Sources */,
+				4AE585DD2238472C0082DF0E /* AppCoordinator.swift in Sources */,
+				4AE585D32238472C0082DF0E /* SettingsViewModel.swift in Sources */,
+				4AE585DA2238472C0082DF0E /* HomeViewModel.swift in Sources */,
+				4AE585D42238472C0082DF0E /* SettingsCoordinator.swift in Sources */,
+				4AE585D62238472C0082DF0E /* SettingsViewController.swift in Sources */,
+				4AE585E12238472C0082DF0E /* SearchCoordinator.swift in Sources */,
+				4AE585D92238472C0082DF0E /* HomeViewController.swift in Sources */,
+				4AE585D02238472C0082DF0E /* Dependencies.swift in Sources */,
+				4AE585E02238472C0082DF0E /* SearchViewController.swift in Sources */,
+				4AE585D22238472C0082DF0E /* FlowCoordinatorViewController.swift in Sources */,
+				4AE585DC2238472C0082DF0E /* HomeCoordinator.swift in Sources */,
+				4AE585D12238472C0082DF0E /* ViewModel.swift in Sources */,
+				4AE585CF2238472C0082DF0E /* FlowCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,18 +398,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4AEC4B08223844B3004BC04C /* Main.storyboard */ = {
+		4AE585C82238472C0082DF0E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4AEC4B09223844B3004BC04C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4AEC4B0D223844B3004BC04C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4AEC4B0E223844B3004BC04C /* Base */,
+				4AE585C92238472C0082DF0E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -432,15 +529,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UBBFM4Q7C8;
-				INFOPLIST_FILE = Spotyfiend/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Spotyfiend/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.setec.astronony.Spotyfiend;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -450,9 +549,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UBBFM4Q7C8;
-				INFOPLIST_FILE = Spotyfiend/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Spotyfiend/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41402AF51987EFF70DBB5194 /* Pods_Spotyfiend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B932606EB85E6B9444EBBF2 /* Pods_Spotyfiend.framework */; };
 		4AE585CF2238472C0082DF0E /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585B52238472C0082DF0E /* FlowCoordinator.swift */; };
 		4AE585D02238472C0082DF0E /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585B62238472C0082DF0E /* Dependencies.swift */; };
 		4AE585D12238472C0082DF0E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585B72238472C0082DF0E /* ViewModel.swift */; };
@@ -26,8 +27,11 @@
 		4AE585E12238472C0082DF0E /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585CD2238472C0082DF0E /* SearchCoordinator.swift */; };
 		4AE585E22238472C0082DF0E /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE585CE2238472C0082DF0E /* SearchViewController.xib */; };
 		4AE585E32238484E0082DF0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AE585C82238472C0082DF0E /* LaunchScreen.storyboard */; };
+		4AE585E622384BFC0082DF0E /* SpotifyKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585E522384BFC0082DF0E /* SpotifyKeys.swift */; };
 		4AEC4B1A223844B4004BC04C /* SpotyfiendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEC4B19223844B4004BC04C /* SpotyfiendTests.swift */; };
 		4AEC4B25223844B4004BC04C /* SpotyfiendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEC4B24223844B4004BC04C /* SpotyfiendUITests.swift */; };
+		4B36C2AE316ECC314FB77761 /* Pods_SpotyfiendUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A3CEB1FFFC6318751C2DF44 /* Pods_SpotyfiendUITests.framework */; };
+		C617BB62701AD0F9CEAC6C37 /* Pods_SpotyfiendTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ADF79BB2FB81868A481C04B /* Pods_SpotyfiendTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		028225EE922D2E8FD66FB95E /* Pods-SpotyfiendUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotyfiendUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpotyfiendUITests/Pods-SpotyfiendUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4829528C845F0028534F855A /* Pods-Spotyfiend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spotyfiend.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spotyfiend/Pods-Spotyfiend.release.xcconfig"; sourceTree = "<group>"; };
+		4A3CEB1FFFC6318751C2DF44 /* Pods_SpotyfiendUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotyfiendUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE585B52238472C0082DF0E /* FlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
 		4AE585B62238472C0082DF0E /* Dependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
 		4AE585B72238472C0082DF0E /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
@@ -68,6 +75,7 @@
 		4AE585CC2238472C0082DF0E /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		4AE585CD2238472C0082DF0E /* SearchCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
 		4AE585CE2238472C0082DF0E /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		4AE585E522384BFC0082DF0E /* SpotifyKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyKeys.swift; sourceTree = "<group>"; };
 		4AEC4B01223844B3004BC04C /* Spotyfiend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotyfiend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AEC4B15223844B4004BC04C /* SpotyfiendTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotyfiendTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AEC4B19223844B4004BC04C /* SpotyfiendTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotyfiendTests.swift; sourceTree = "<group>"; };
@@ -75,6 +83,12 @@
 		4AEC4B20223844B4004BC04C /* SpotyfiendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotyfiendUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AEC4B24223844B4004BC04C /* SpotyfiendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotyfiendUITests.swift; sourceTree = "<group>"; };
 		4AEC4B26223844B4004BC04C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70D4FB2922BFC6FF315764EA /* Pods-Spotyfiend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spotyfiend.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Spotyfiend/Pods-Spotyfiend.debug.xcconfig"; sourceTree = "<group>"; };
+		7B932606EB85E6B9444EBBF2 /* Pods_Spotyfiend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spotyfiend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ADF79BB2FB81868A481C04B /* Pods_SpotyfiendTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotyfiendTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB322055539593EB46A1CD0B /* Pods-SpotyfiendTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotyfiendTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpotyfiendTests/Pods-SpotyfiendTests.release.xcconfig"; sourceTree = "<group>"; };
+		FBC4BB5A0D9DAE64E07CA941 /* Pods-SpotyfiendTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotyfiendTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpotyfiendTests/Pods-SpotyfiendTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FE692E0F61B89F20A45816C5 /* Pods-SpotyfiendUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotyfiendUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpotyfiendUITests/Pods-SpotyfiendUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41402AF51987EFF70DBB5194 /* Pods_Spotyfiend.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C617BB62701AD0F9CEAC6C37 /* Pods_SpotyfiendTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B36C2AE316ECC314FB77761 /* Pods_SpotyfiendUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +180,14 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
+		4AE585E422384BE50082DF0E /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				4AE585E522384BFC0082DF0E /* SpotifyKeys.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		4AEC4AF8223844B3004BC04C = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +195,8 @@
 				4AEC4B18223844B4004BC04C /* SpotyfiendTests */,
 				4AEC4B23223844B4004BC04C /* SpotyfiendUITests */,
 				4AEC4B02223844B3004BC04C /* Products */,
+				CA97BCFA84C1FBB96DE66181 /* Pods */,
+				AFAB1490C1493DF837872A04 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -186,6 +213,7 @@
 		4AEC4B03223844B3004BC04C /* Spotyfiend */ = {
 			isa = PBXGroup;
 			children = (
+				4AE585E422384BE50082DF0E /* Config */,
 				4AE585C62238472C0082DF0E /* AppSetup */,
 				4AE585C22238472C0082DF0E /* Home */,
 				4AE585C12238472C0082DF0E /* HomeViewController.swift */,
@@ -215,6 +243,29 @@
 			path = SpotyfiendUITests;
 			sourceTree = "<group>";
 		};
+		AFAB1490C1493DF837872A04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B932606EB85E6B9444EBBF2 /* Pods_Spotyfiend.framework */,
+				9ADF79BB2FB81868A481C04B /* Pods_SpotyfiendTests.framework */,
+				4A3CEB1FFFC6318751C2DF44 /* Pods_SpotyfiendUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA97BCFA84C1FBB96DE66181 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70D4FB2922BFC6FF315764EA /* Pods-Spotyfiend.debug.xcconfig */,
+				4829528C845F0028534F855A /* Pods-Spotyfiend.release.xcconfig */,
+				FBC4BB5A0D9DAE64E07CA941 /* Pods-SpotyfiendTests.debug.xcconfig */,
+				DB322055539593EB46A1CD0B /* Pods-SpotyfiendTests.release.xcconfig */,
+				028225EE922D2E8FD66FB95E /* Pods-SpotyfiendUITests.debug.xcconfig */,
+				FE692E0F61B89F20A45816C5 /* Pods-SpotyfiendUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -222,9 +273,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AEC4B29223844B4004BC04C /* Build configuration list for PBXNativeTarget "Spotyfiend" */;
 			buildPhases = (
+				9BB90D1BC4AC9362F9734DB3 /* [CP] Check Pods Manifest.lock */,
 				4AEC4AFD223844B3004BC04C /* Sources */,
 				4AEC4AFE223844B3004BC04C /* Frameworks */,
 				4AEC4AFF223844B3004BC04C /* Resources */,
+				54275745526A8406E802C99E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -239,6 +292,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AEC4B2C223844B4004BC04C /* Build configuration list for PBXNativeTarget "SpotyfiendTests" */;
 			buildPhases = (
+				03D3F88396C179A0AF16C725 /* [CP] Check Pods Manifest.lock */,
 				4AEC4B11223844B4004BC04C /* Sources */,
 				4AEC4B12223844B4004BC04C /* Frameworks */,
 				4AEC4B13223844B4004BC04C /* Resources */,
@@ -257,6 +311,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AEC4B2F223844B4004BC04C /* Build configuration list for PBXNativeTarget "SpotyfiendUITests" */;
 			buildPhases = (
+				D1135B507DCC335D89CEED8E /* [CP] Check Pods Manifest.lock */,
 				4AEC4B1C223844B4004BC04C /* Sources */,
 				4AEC4B1D223844B4004BC04C /* Frameworks */,
 				4AEC4B1E223844B4004BC04C /* Resources */,
@@ -344,6 +399,97 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03D3F88396C179A0AF16C725 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpotyfiendTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54275745526A8406E802C99E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Spotyfiend/Pods-Spotyfiend-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Spotify-iOS-SDK/Spotify.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spotify.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spotyfiend/Pods-Spotyfiend-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BB90D1BC4AC9362F9734DB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Spotyfiend-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1135B507DCC335D89CEED8E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpotyfiendUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4AEC4AFD223844B3004BC04C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -353,6 +499,7 @@
 				4AE585DD2238472C0082DF0E /* AppCoordinator.swift in Sources */,
 				4AE585D32238472C0082DF0E /* SettingsViewModel.swift in Sources */,
 				4AE585DA2238472C0082DF0E /* HomeViewModel.swift in Sources */,
+				4AE585E622384BFC0082DF0E /* SpotifyKeys.swift in Sources */,
 				4AE585D42238472C0082DF0E /* SettingsCoordinator.swift in Sources */,
 				4AE585D62238472C0082DF0E /* SettingsViewController.swift in Sources */,
 				4AE585E12238472C0082DF0E /* SearchCoordinator.swift in Sources */,
@@ -527,6 +674,7 @@
 		};
 		4AEC4B2A223844B4004BC04C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70D4FB2922BFC6FF315764EA /* Pods-Spotyfiend.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -547,6 +695,7 @@
 		};
 		4AEC4B2B223844B4004BC04C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4829528C845F0028534F855A /* Pods-Spotyfiend.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -566,6 +715,7 @@
 		};
 		4AEC4B2D223844B4004BC04C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBC4BB5A0D9DAE64E07CA941 /* Pods-SpotyfiendTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -587,6 +737,7 @@
 		};
 		4AEC4B2E223844B4004BC04C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB322055539593EB46A1CD0B /* Pods-SpotyfiendTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -608,6 +759,7 @@
 		};
 		4AEC4B30223844B4004BC04C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 028225EE922D2E8FD66FB95E /* Pods-SpotyfiendUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -628,6 +780,7 @@
 		};
 		4AEC4B31223844B4004BC04C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE692E0F61B89F20A45816C5 /* Pods-SpotyfiendUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

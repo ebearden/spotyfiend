@@ -1,0 +1,22 @@
+PODS:
+  - Spotify-iOS-SDK (0.27.0):
+    - Spotify-iOS-SDK/Authentication (= 0.27.0)
+    - Spotify-iOS-SDK/Metadata (= 0.27.0)
+    - Spotify-iOS-SDK/Playback (= 0.27.0)
+  - Spotify-iOS-SDK/Authentication (0.27.0)
+  - Spotify-iOS-SDK/Metadata (0.27.0)
+  - Spotify-iOS-SDK/Playback (0.27.0)
+
+DEPENDENCIES:
+  - Spotify-iOS-SDK
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Spotify-iOS-SDK
+
+SPEC CHECKSUMS:
+  Spotify-iOS-SDK: f195e9a40a339cf374cab2ece5804aca3cdf7e14
+
+PODFILE CHECKSUM: 4bf25c02ddad614bb1c6a550f28a289daacfe67a
+
+COCOAPODS: 1.5.3

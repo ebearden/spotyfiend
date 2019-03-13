@@ -12,14 +12,25 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let applicationCoordinator = AppCoordinator()
+    var applicationCoordinator: AppCoordinator?
+    let spotifyService = SpotifyService()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        let dependencies = AppCoordinatorDependencies(spotifyService: spotifyService)
+        applicationCoordinator = AppCoordinator(dependencies: dependencies)
+        
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = applicationCoordinator!.navigationController
         window?.makeKeyAndVisible()
+        
         applicationCoordinator?.start()
+        return true
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        spotifyService.sessionManager.application(app, open: url, options: options)
         return true
     }
 }
 
+    

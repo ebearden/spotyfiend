@@ -17,23 +17,27 @@ class SearchCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDelegate {
     var navigationController: UINavigationController
     var childCoordinators: [FlowCoordinator] = []
     private let spotifyService: SpotifyService
+    private let searchViewModel: SearchViewModel
     
     required init?(dependencies: Dependencies?) {
         guard let dependencies = dependencies as? SearchCoordinatorDependencies else { return nil }
         self.navigationController = dependencies.navigationController
         self.spotifyService = dependencies.spotifyService
+        self.searchViewModel = SearchViewModel(searchResults: [])
     }
     
     func start() {
-        let controller = SearchViewController(parentCoordinator: self, dependencies: nil)
+        let dependencies = SearchViewControllerDependencies(viewModel: searchViewModel)
+        let controller = SearchViewController(parentCoordinator: self, dependencies: dependencies)
         navigationController.tabBarItem = UITabBarItem(title: "Search", image: nil, selectedImage: nil)
         navigationController.show(controller, sender: nil)
-        search("Arcade fire")
+        
     }
     
-    func search(_ searchString: String) {
-        spotifyService.search("Arcade fire") { results in
-            print(results)
+    func search(_ searchTerm: String) {
+        spotifyService.search(searchTerm) { [weak self] results in
+            guard let self = self else { return }
+            self.searchViewModel.update(searchResults: results)
         }
     }
 }

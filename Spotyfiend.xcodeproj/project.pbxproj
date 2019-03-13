@@ -32,6 +32,7 @@
 		4AE585F2223851B50082DF0E /* SpotifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585F1223851B50082DF0E /* SpotifyService.swift */; };
 		4AE585F422397D690082DF0E /* AsynchronousOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585F322397D690082DF0E /* AsynchronousOperation.swift */; };
 		4AE585F722397DB60082DF0E /* SearchArtistOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585F622397DB60082DF0E /* SearchArtistOperation.swift */; };
+		4AE585FB223982E40082DF0E /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585FA223982E40082DF0E /* SearchViewModel.swift */; };
 		4AEC4B1A223844B4004BC04C /* SpotyfiendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEC4B19223844B4004BC04C /* SpotyfiendTests.swift */; };
 		4AEC4B25223844B4004BC04C /* SpotyfiendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEC4B24223844B4004BC04C /* SpotyfiendUITests.swift */; };
 		E471607ECCB947E1538B0815 /* Pods_Spotyfiend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0052CC1050B2B0758EDB5C /* Pods_Spotyfiend.framework */; };
@@ -82,6 +83,7 @@
 		4AE585F1223851B50082DF0E /* SpotifyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyService.swift; sourceTree = "<group>"; };
 		4AE585F322397D690082DF0E /* AsynchronousOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsynchronousOperation.swift; sourceTree = "<group>"; };
 		4AE585F622397DB60082DF0E /* SearchArtistOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchArtistOperation.swift; sourceTree = "<group>"; };
+		4AE585FA223982E40082DF0E /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		4AEC4B01223844B3004BC04C /* Spotyfiend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotyfiend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AEC4B15223844B4004BC04C /* SpotyfiendTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotyfiendTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AEC4B19223844B4004BC04C /* SpotyfiendTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotyfiendTests.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				4AE585CC2238472C0082DF0E /* SearchViewController.swift */,
 				4AE585CD2238472C0082DF0E /* SearchCoordinator.swift */,
 				4AE585CE2238472C0082DF0E /* SearchViewController.xib */,
+				4AE585FA223982E40082DF0E /* SearchViewModel.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -524,6 +527,7 @@
 				4AE585DD2238472C0082DF0E /* AppCoordinator.swift in Sources */,
 				4AE585D32238472C0082DF0E /* SettingsViewModel.swift in Sources */,
 				4AE585DA2238472C0082DF0E /* HomeViewModel.swift in Sources */,
+				4AE585FB223982E40082DF0E /* SearchViewModel.swift in Sources */,
 				4AE585E622384BFC0082DF0E /* SpotifyConstants.swift in Sources */,
 				4AE585D42238472C0082DF0E /* SettingsCoordinator.swift in Sources */,
 				4AE585D62238472C0082DF0E /* SettingsViewController.swift in Sources */,

@@ -40,6 +40,7 @@ class HomeViewController: UITabBarController, FlowCoordinatorViewController {
 extension HomeViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.setNavigationBarHidden(true, animated: false)
         setupTabBar()
     }
 }

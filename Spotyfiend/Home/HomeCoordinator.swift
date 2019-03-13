@@ -27,15 +27,15 @@ class HomeCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDelegate {
     }
     
     func start() {
+        let recommendationsDependencies = RecommendationsCoordinatorDependencies(navigationController: UINavigationController())
+        let recommendationsCoordinator = RecommendationsCoordinator(dependencies: recommendationsDependencies)
+        recommendationsCoordinator?.start()
+        
         let searchDependencies = SearchCoordinatorDependencies(navigationController: UINavigationController(), spotifyService: spotifyService)
         let searchCoordinator = SearchCoordinator(dependencies: searchDependencies)
         searchCoordinator?.start()
-        
-        let settingsDependencies = SettingsCoordinatorDependencies(navigationController: UINavigationController())
-        let settingsCoordinator = SettingsCoordinator(dependencies: settingsDependencies)
-        settingsCoordinator?.start()
     
-        let viewModel = HomeViewModel(tabs: [settingsCoordinator!, searchCoordinator!])
+        let viewModel = HomeViewModel(tabs: [recommendationsCoordinator!, searchCoordinator!])
         let dependencies = HomeViewControllerDependencies(viewModel: viewModel)
         viewController = HomeViewController(parentCoordinator: self, dependencies: dependencies)
         navigationController.show(viewController, sender: nil)
@@ -43,15 +43,6 @@ class HomeCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDelegate {
 }
 
 extension HomeCoordinator: TabBarCoordinator {
-    func navigateTo(coordinator: FlowCoordinator.Type) {
-//        if coordinator == HomeCoordinator.self {
-//            let c = coordinator.init(dependencies: HomeCoordinatorDependencies(navigationController: navigationController))
-//            c?.start()
-//        }
-//        else if coordinator == SettingsCoordinator.self {
-//            let c = coordinator.init(dependencies: SettingsCoordinatorDependencies(navigationController: navigationController))
-//            c?.start()
-//        }
-    }
+    func navigateTo(coordinator: FlowCoordinator.Type) {}
 }
 

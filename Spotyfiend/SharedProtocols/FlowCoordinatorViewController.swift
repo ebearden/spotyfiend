@@ -19,7 +19,6 @@ protocol FlowCoordinatorLifeCycleDelegate: class {
 
 extension FlowCoordinatorLifeCycleDelegate where Self: FlowCoordinator {
     func didDeinit() {
-        print("removing all children")
         removeAllChildCoordinators()
     }
 }

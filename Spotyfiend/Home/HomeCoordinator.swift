@@ -10,6 +10,7 @@ import UIKit
 
 struct HomeCoordinatorDependencies: Dependencies, NavigationControllerDependency {
     var navigationController: UINavigationController
+    var spotifyService: SpotifyService
 }
 
 class HomeCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDelegate {
@@ -17,20 +18,22 @@ class HomeCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDelegate {
     internal var childCoordinators: [FlowCoordinator] = []
     
     private var viewController: UIViewController!
+    private let spotifyService: SpotifyService
     
     required init?(dependencies: Dependencies?) {
         guard let dependencies = dependencies as? HomeCoordinatorDependencies else { return nil }
         self.navigationController = dependencies.navigationController
+        self.spotifyService = dependencies.spotifyService
     }
     
     func start() {
+        let searchDependencies = SearchCoordinatorDependencies(navigationController: UINavigationController(), spotifyService: spotifyService)
+        let searchCoordinator = SearchCoordinator(dependencies: searchDependencies)
+        searchCoordinator?.start()
+        
         let settingsDependencies = SettingsCoordinatorDependencies(navigationController: UINavigationController())
         let settingsCoordinator = SettingsCoordinator(dependencies: settingsDependencies)
         settingsCoordinator?.start()
-        
-        let searchDependencies = SearchCoordinatorDependencies(navigationController: UINavigationController())
-        let searchCoordinator = SearchCoordinator(dependencies: searchDependencies)
-        searchCoordinator?.start()
     
         let viewModel = HomeViewModel(tabs: [settingsCoordinator!, searchCoordinator!])
         let dependencies = HomeViewControllerDependencies(viewModel: viewModel)

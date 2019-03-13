@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: 33603b5cf69c85834cd8c87d609c1e681a818acb
+PODS:
+  - SpotifyKit (0.0.6)
+
+DEPENDENCIES:
+  - SpotifyKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SpotifyKit
+
+SPEC CHECKSUMS:
+  SpotifyKit: 20abf7e1e170e35683ecbe6d93598e91d4e7b6ab
+
+PODFILE CHECKSUM: 1754cbee4ee4a8c1b08d351cb125d42731b3fd71
 
 COCOAPODS: 1.5.3

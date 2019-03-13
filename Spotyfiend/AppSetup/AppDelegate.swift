@@ -28,7 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        spotifyService.sessionManager.application(app, open: url, options: options)
+        spotifyService.saveToken(from: url)
+        applicationCoordinator?.start()
         return true
     }
 }

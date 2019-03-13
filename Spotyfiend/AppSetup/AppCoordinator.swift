@@ -23,20 +23,16 @@ class AppCoordinator: FlowCoordinator {
     }
     
     func start() {
-        if spotifyService.accessToken != nil {
+        if spotifyService.isAuthenticated {
             showHomeViewController()
         }
         else {
-            spotifyService.authenticate { success in
-                if success {
-                    self.showHomeViewController()
-                }
-            }
+            spotifyService.authenticate()
         }
     }
     
     private func showHomeViewController() {
-        let dependencies = HomeCoordinatorDependencies(navigationController: navigationController)
+        let dependencies = HomeCoordinatorDependencies(navigationController: navigationController, spotifyService: spotifyService)
         guard let coordinator = HomeCoordinator(dependencies: dependencies) else { return }
         
         coordinator.start()

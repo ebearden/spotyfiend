@@ -7,58 +7,74 @@
 //
 
 import Foundation
+import SpotifyKit
 
-final class SpotifyService: NSObject {
-    var accessToken: String? {
-        get {
-            return UserDefaults.standard.string(forKey: "SpotifyService_AccessToken")
-        }
-        
-        set {
-            UserDefaults.standard.set(newValue, forKey: "SpotifyService_AccessToken")
-            UserDefaults.standard.synchronize()
-        }
+final class SpotifyService {
+    var isAuthenticated: Bool {
+        return manager.hasToken
     }
     
-    var completion: ((_ success: Bool) -> Void)?
+    private let manager: SpotifyManager
+    private let searchQueue: OperationQueue
     
-    lazy var configuration = SPTConfiguration(clientID: SpotifyConstants.clientId, redirectURL: SpotifyConstants.redirectUrl)
-    
-    lazy var sessionManager: SPTSessionManager = {
-        configuration.tokenSwapURL = SpotifyConstants.tokenSwapUrl
-        configuration.tokenRefreshURL = SpotifyConstants.tokenRefreshUrl
+    init() {
+        self.manager = SpotifyManager(with: SpotifyManager.SpotifyDeveloperApplication(
+            clientId: SpotifyConstants.clientId,
+            clientSecret: SpotifyConstants.clientSecret,
+            redirectUri: SpotifyConstants.redirectUrl
+        ))
         
-        return SPTSessionManager(configuration: configuration, delegate: self)
-    }()
-    
-    func authenticate(completion: @escaping (_ success: Bool) -> Void) {
-        self.completion = completion
-        let requestedScopes: SPTScope = [.playlistReadPrivate]
-        sessionManager.initiateSession(with: requestedScopes, options: .default)
+        self.searchQueue = OperationQueue()
     }
 }
 
-extension SpotifyService: SPTSessionManagerDelegate {
-    func sessionManager(manager: SPTSessionManager, didInitiate session: SPTSession) {
-        print("Success", session)
-        accessToken = session.accessToken
-        DispatchQueue.main.async {
-            self.completion?(true)
-        }
+// MARK: - Public Setup
+extension SpotifyService {
+    func authenticate() {
+        manager.authorize()
     }
     
-    func sessionManager(manager: SPTSessionManager, didFailWith error: Error) {
-        print("Failure", error)
-        DispatchQueue.main.async {
-            self.completion?(false)
-        }
+    func saveToken(from url: URL) {
+        manager.saveToken(from: url)
     }
-    
-    func sessionManager(manager: SPTSessionManager, didRenew session: SPTSession) {
-        print("Renew", session)
-        accessToken = session.accessToken
-        DispatchQueue.main.async {
-            self.completion?(true)
+}
+
+// MARK: - Search
+extension SpotifyService {
+    func search(_ searchString: String, completion: @escaping ([SpotifySearchItem]) -> Void) {
+        searchQueue.cancelAllOperations()
+        
+        var searchResults = [SpotifySearchItem]()
+        let searchArtistOperation = SearchOperation<SpotifyArtist>(searchTerm: searchString, spotifyManager: manager)
+        
+        searchArtistOperation.completionBlock = {
+            searchResults.append(contentsOf: searchArtistOperation.searchResults)
         }
+        
+        let searchAlbumOperation = SearchOperation<SpotifyAlbum>(searchTerm: searchString, spotifyManager: manager)
+        
+        searchAlbumOperation.completionBlock = {
+            searchResults.append(contentsOf: searchAlbumOperation.searchResults)
+        }
+        
+        let searchTrackOperation = SearchOperation<SpotifyTrack>(searchTerm: searchString, spotifyManager: manager)
+        
+        searchTrackOperation.completionBlock = {
+            searchResults.append(contentsOf: searchTrackOperation.searchResults)
+        }
+        
+        let completionOperation = BlockOperation {
+            DispatchQueue.main.async {
+                completion(searchResults)
+            }
+        }
+        
+        completionOperation.addDependency(searchArtistOperation)
+        completionOperation.addDependency(searchAlbumOperation)
+        completionOperation.addDependency(searchTrackOperation)
+        searchQueue.addOperation(searchArtistOperation)
+        searchQueue.addOperation(searchAlbumOperation)
+        searchQueue.addOperation(searchTrackOperation)
+        searchQueue.addOperation(completionOperation)
     }
 }

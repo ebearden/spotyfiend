@@ -37,6 +37,8 @@
 		4AE586002239945B0082DF0E /* RecommendationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585FF2239945B0082DF0E /* RecommendationsViewModel.swift */; };
 		4AE58603223994810082DF0E /* RecommendationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE58601223994810082DF0E /* RecommendationsViewController.swift */; };
 		4AE58604223994810082DF0E /* RecommendationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE58602223994810082DF0E /* RecommendationsViewController.xib */; };
+		4AE586072239A4170082DF0E /* RecommendationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE586062239A4170082DF0E /* RecommendationService.swift */; };
+		4AE586092239A6F10082DF0E /* Recommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE586082239A6F10082DF0E /* Recommendation.swift */; };
 		4AEC4B1A223844B4004BC04C /* SpotyfiendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEC4B19223844B4004BC04C /* SpotyfiendTests.swift */; };
 		4AEC4B25223844B4004BC04C /* SpotyfiendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEC4B24223844B4004BC04C /* SpotyfiendUITests.swift */; };
 		E471607ECCB947E1538B0815 /* Pods_Spotyfiend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0052CC1050B2B0758EDB5C /* Pods_Spotyfiend.framework */; };
@@ -92,6 +94,8 @@
 		4AE585FF2239945B0082DF0E /* RecommendationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsViewModel.swift; sourceTree = "<group>"; };
 		4AE58601223994810082DF0E /* RecommendationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsViewController.swift; sourceTree = "<group>"; };
 		4AE58602223994810082DF0E /* RecommendationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendationsViewController.xib; sourceTree = "<group>"; };
+		4AE586062239A4170082DF0E /* RecommendationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationService.swift; sourceTree = "<group>"; };
+		4AE586082239A6F10082DF0E /* Recommendation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recommendation.swift; sourceTree = "<group>"; };
 		4AEC4B01223844B3004BC04C /* Spotyfiend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotyfiend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AEC4B15223844B4004BC04C /* SpotyfiendTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotyfiendTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AEC4B19223844B4004BC04C /* SpotyfiendTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotyfiendTests.swift; sourceTree = "<group>"; };
@@ -231,8 +235,18 @@
 				4AE585FF2239945B0082DF0E /* RecommendationsViewModel.swift */,
 				4AE58601223994810082DF0E /* RecommendationsViewController.swift */,
 				4AE58602223994810082DF0E /* RecommendationsViewController.xib */,
+				4AE586082239A6F10082DF0E /* Recommendation.swift */,
 			);
 			path = Recommendations;
+			sourceTree = "<group>";
+		};
+		4AE5860522399FC80082DF0E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4AE585F0223851B50082DF0E /* Spotify */,
+				4AE586062239A4170082DF0E /* RecommendationService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		4AEC4AF8223844B3004BC04C = {
@@ -260,7 +274,7 @@
 		4AEC4B03223844B3004BC04C /* Spotyfiend */ = {
 			isa = PBXGroup;
 			children = (
-				4AE585F0223851B50082DF0E /* Spotify */,
+				4AE5860522399FC80082DF0E /* Services */,
 				4AE585E422384BE50082DF0E /* Config */,
 				4AE585C62238472C0082DF0E /* AppSetup */,
 				4AE585C22238472C0082DF0E /* Home */,
@@ -556,6 +570,7 @@
 				4AE585D62238472C0082DF0E /* SettingsViewController.swift in Sources */,
 				4AE585E12238472C0082DF0E /* SearchCoordinator.swift in Sources */,
 				4AE585D92238472C0082DF0E /* HomeViewController.swift in Sources */,
+				4AE586092239A6F10082DF0E /* Recommendation.swift in Sources */,
 				4AE585D02238472C0082DF0E /* Dependencies.swift in Sources */,
 				4AE585E02238472C0082DF0E /* SearchViewController.swift in Sources */,
 				4AE585D22238472C0082DF0E /* FlowCoordinatorViewController.swift in Sources */,
@@ -565,6 +580,7 @@
 				4AE585F422397D690082DF0E /* AsynchronousOperation.swift in Sources */,
 				4AE585F2223851B50082DF0E /* SpotifyService.swift in Sources */,
 				4AE585F722397DB60082DF0E /* SearchArtistOperation.swift in Sources */,
+				4AE586072239A4170082DF0E /* RecommendationService.swift in Sources */,
 				4AE585CF2238472C0082DF0E /* FlowCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -22,8 +22,15 @@ class RecommendationsCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDeleg
     }
     
     func start() {
-        let controller = RecommendationsViewController(parentCoordinator: self, dependencies: nil)
+        let viewModel = RecommendationsViewModel(recommendations: [])
+        let dependencies = RecommendationsViewControllerDependencies(viewModel: viewModel)
+        let controller = RecommendationsViewController(parentCoordinator: self, dependencies: dependencies)
         navigationController.tabBarItem = UITabBarItem(title: "Recommendations", image: nil, selectedImage: nil)
         navigationController.show(controller, sender: nil)
+        
+        let recommendationService = RecommendationService()
+        recommendationService.getRecommendations { (results) in
+            viewModel.update(recommendations: results)
+        }
     }
 }

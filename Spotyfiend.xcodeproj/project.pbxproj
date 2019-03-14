@@ -7,339 +7,342 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F7AA015F92C95236EF93DC9 /* Pods_SpotyfiendUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89775CDB06649B30B0F12D5C /* Pods_SpotyfiendUITests.framework */; };
-		23C75CCDBBEC60D694673440 /* Pods_SpotyfiendTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74110C06D0DF4BE6C920B28 /* Pods_SpotyfiendTests.framework */; };
-		4AE585CF2238472C0082DF0E /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585B52238472C0082DF0E /* FlowCoordinator.swift */; };
-		4AE585D02238472C0082DF0E /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585B62238472C0082DF0E /* Dependencies.swift */; };
-		4AE585D12238472C0082DF0E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585B72238472C0082DF0E /* ViewModel.swift */; };
-		4AE585D22238472C0082DF0E /* FlowCoordinatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585B82238472C0082DF0E /* FlowCoordinatorViewController.swift */; };
-		4AE585D32238472C0082DF0E /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585BA2238472C0082DF0E /* SettingsViewModel.swift */; };
-		4AE585D42238472C0082DF0E /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585BB2238472C0082DF0E /* SettingsCoordinator.swift */; };
-		4AE585D52238472C0082DF0E /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE585BC2238472C0082DF0E /* SettingsViewController.xib */; };
-		4AE585D62238472C0082DF0E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585BD2238472C0082DF0E /* SettingsViewController.swift */; };
-		4AE585D72238472C0082DF0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AE585BF2238472C0082DF0E /* Assets.xcassets */; };
-		4AE585D92238472C0082DF0E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585C12238472C0082DF0E /* HomeViewController.swift */; };
-		4AE585DA2238472C0082DF0E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585C32238472C0082DF0E /* HomeViewModel.swift */; };
-		4AE585DB2238472C0082DF0E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE585C42238472C0082DF0E /* HomeViewController.xib */; };
-		4AE585DC2238472C0082DF0E /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585C52238472C0082DF0E /* HomeCoordinator.swift */; };
-		4AE585DD2238472C0082DF0E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585C72238472C0082DF0E /* AppCoordinator.swift */; };
-		4AE585DF2238472C0082DF0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585CA2238472C0082DF0E /* AppDelegate.swift */; };
-		4AE585E02238472C0082DF0E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585CC2238472C0082DF0E /* SearchViewController.swift */; };
-		4AE585E12238472C0082DF0E /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585CD2238472C0082DF0E /* SearchCoordinator.swift */; };
-		4AE585E22238472C0082DF0E /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE585CE2238472C0082DF0E /* SearchViewController.xib */; };
-		4AE585E32238484E0082DF0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AE585C82238472C0082DF0E /* LaunchScreen.storyboard */; };
-		4AE585E622384BFC0082DF0E /* SpotifyConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585E522384BFC0082DF0E /* SpotifyConstants.swift */; };
-		4AE585F2223851B50082DF0E /* SpotifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585F1223851B50082DF0E /* SpotifyService.swift */; };
-		4AE585F422397D690082DF0E /* AsynchronousOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585F322397D690082DF0E /* AsynchronousOperation.swift */; };
-		4AE585F722397DB60082DF0E /* SearchArtistOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585F622397DB60082DF0E /* SearchArtistOperation.swift */; };
-		4AE585FB223982E40082DF0E /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585FA223982E40082DF0E /* SearchViewModel.swift */; };
-		4AE585FE223994060082DF0E /* RecommendationsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585FD223994060082DF0E /* RecommendationsCoordinator.swift */; };
-		4AE586002239945B0082DF0E /* RecommendationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE585FF2239945B0082DF0E /* RecommendationsViewModel.swift */; };
-		4AE58603223994810082DF0E /* RecommendationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE58601223994810082DF0E /* RecommendationsViewController.swift */; };
-		4AE58604223994810082DF0E /* RecommendationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE58602223994810082DF0E /* RecommendationsViewController.xib */; };
-		4AE586072239A4170082DF0E /* RecommendationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE586062239A4170082DF0E /* RecommendationService.swift */; };
-		4AE586092239A6F10082DF0E /* Recommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE586082239A6F10082DF0E /* Recommendation.swift */; };
-		4AEC4B1A223844B4004BC04C /* SpotyfiendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEC4B19223844B4004BC04C /* SpotyfiendTests.swift */; };
-		4AEC4B25223844B4004BC04C /* SpotyfiendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEC4B24223844B4004BC04C /* SpotyfiendUITests.swift */; };
-		E471607ECCB947E1538B0815 /* Pods_Spotyfiend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0052CC1050B2B0758EDB5C /* Pods_Spotyfiend.framework */; };
+		14F05DEAA5A327FB1E9E5B72 /* Pods_SpotyfiendUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AFBD7FBDFF7681691CD27DF /* Pods_SpotyfiendUITests.framework */; };
+		4A6483E5223AA0BA0093158E /* SpotyfiendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6483E4223AA0BA0093158E /* SpotyfiendTests.swift */; };
+		4A6483F0223AA0BA0093158E /* SpotyfiendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6483EF223AA0BA0093158E /* SpotyfiendUITests.swift */; };
+		4A648429223AA1C40093158E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A6483FE223AA1C30093158E /* Assets.xcassets */; };
+		4A64842A223AA1C40093158E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A6483FF223AA1C30093158E /* GoogleService-Info.plist */; };
+		4A64842C223AA1C40093158E /* SpotifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648403223AA1C30093158E /* SpotifyService.swift */; };
+		4A64842D223AA1C40093158E /* SearchArtistOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648405223AA1C30093158E /* SearchArtistOperation.swift */; };
+		4A64842E223AA1C40093158E /* AsynchronousOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648406223AA1C30093158E /* AsynchronousOperation.swift */; };
+		4A64842F223AA1C40093158E /* RecommendationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648407223AA1C30093158E /* RecommendationService.swift */; };
+		4A648430223AA1C40093158E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648409223AA1C30093158E /* AppCoordinator.swift */; };
+		4A648431223AA1C40093158E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A64840A223AA1C30093158E /* LaunchScreen.storyboard */; };
+		4A648432223AA1C40093158E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A64840C223AA1C30093158E /* AppDelegate.swift */; };
+		4A648433223AA1C40093158E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A64840E223AA1C30093158E /* HomeViewModel.swift */; };
+		4A648434223AA1C40093158E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A64840F223AA1C30093158E /* HomeViewController.xib */; };
+		4A648435223AA1C40093158E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648410223AA1C30093158E /* HomeViewController.swift */; };
+		4A648436223AA1C40093158E /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648411223AA1C30093158E /* HomeCoordinator.swift */; };
+		4A648437223AA1C40093158E /* RecommendationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648413223AA1C30093158E /* RecommendationsViewController.swift */; };
+		4A648438223AA1C40093158E /* RecommendationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A648414223AA1C30093158E /* RecommendationsViewController.xib */; };
+		4A648439223AA1C40093158E /* Recommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648415223AA1C30093158E /* Recommendation.swift */; };
+		4A64843A223AA1C40093158E /* RecommendationsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648416223AA1C30093158E /* RecommendationsCoordinator.swift */; };
+		4A64843B223AA1C40093158E /* RecommendationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648417223AA1C30093158E /* RecommendationsViewModel.swift */; };
+		4A64843C223AA1C40093158E /* SpotifyConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648419223AA1C40093158E /* SpotifyConstants.swift */; };
+		4A64843D223AA1C40093158E /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A64841B223AA1C40093158E /* SettingsViewModel.swift */; };
+		4A64843E223AA1C40093158E /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A64841C223AA1C40093158E /* SettingsCoordinator.swift */; };
+		4A64843F223AA1C40093158E /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A64841D223AA1C40093158E /* SettingsViewController.xib */; };
+		4A648440223AA1C40093158E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A64841E223AA1C40093158E /* SettingsViewController.swift */; };
+		4A648441223AA1C40093158E /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648420223AA1C40093158E /* FlowCoordinator.swift */; };
+		4A648442223AA1C40093158E /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648421223AA1C40093158E /* Dependencies.swift */; };
+		4A648443223AA1C40093158E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648422223AA1C40093158E /* ViewModel.swift */; };
+		4A648444223AA1C40093158E /* FlowCoordinatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648423223AA1C40093158E /* FlowCoordinatorViewController.swift */; };
+		4A648445223AA1C40093158E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648425223AA1C40093158E /* SearchViewController.swift */; };
+		4A648446223AA1C40093158E /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648426223AA1C40093158E /* SearchCoordinator.swift */; };
+		4A648447223AA1C40093158E /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648427223AA1C40093158E /* SearchViewModel.swift */; };
+		4A648448223AA1C40093158E /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A648428223AA1C40093158E /* SearchViewController.xib */; };
+		E5E76EF9F5540D267AFA0A64 /* Pods_SpotyfiendTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D56B685C114C37FEF2D0D9 /* Pods_SpotyfiendTests.framework */; };
+		EFDFC6167A9DC991785FB5B0 /* Pods_Spotyfiend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AF47BA70873F33B86D46E7 /* Pods_Spotyfiend.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4AEC4B16223844B4004BC04C /* PBXContainerItemProxy */ = {
+		4A6483E1223AA0BA0093158E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4AEC4AF9223844B3004BC04C /* Project object */;
+			containerPortal = 4A6483C4223AA0B90093158E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4AEC4B00223844B3004BC04C;
+			remoteGlobalIDString = 4A6483CB223AA0B90093158E;
 			remoteInfo = Spotyfiend;
 		};
-		4AEC4B21223844B4004BC04C /* PBXContainerItemProxy */ = {
+		4A6483EC223AA0BA0093158E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4AEC4AF9223844B3004BC04C /* Project object */;
+			containerPortal = 4A6483C4223AA0B90093158E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4AEC4B00223844B3004BC04C;
+			remoteGlobalIDString = 4A6483CB223AA0B90093158E;
 			remoteInfo = Spotyfiend;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		13058BC549B13858A2DDBABC /* Pods-SpotyfiendTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotyfiendTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpotyfiendTests/Pods-SpotyfiendTests.debug.xcconfig"; sourceTree = "<group>"; };
-		1B0052CC1050B2B0758EDB5C /* Pods_Spotyfiend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spotyfiend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D57BBDA9D6E5B0E97D37156 /* Pods-SpotyfiendTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotyfiendTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpotyfiendTests/Pods-SpotyfiendTests.release.xcconfig"; sourceTree = "<group>"; };
-		4AE585B52238472C0082DF0E /* FlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
-		4AE585B62238472C0082DF0E /* Dependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
-		4AE585B72238472C0082DF0E /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		4AE585B82238472C0082DF0E /* FlowCoordinatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowCoordinatorViewController.swift; sourceTree = "<group>"; };
-		4AE585BA2238472C0082DF0E /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
-		4AE585BB2238472C0082DF0E /* SettingsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
-		4AE585BC2238472C0082DF0E /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
-		4AE585BD2238472C0082DF0E /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		4AE585BF2238472C0082DF0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4AE585C02238472C0082DF0E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4AE585C12238472C0082DF0E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		4AE585C32238472C0082DF0E /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		4AE585C42238472C0082DF0E /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		4AE585C52238472C0082DF0E /* HomeCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
-		4AE585C72238472C0082DF0E /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		4AE585C92238472C0082DF0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4AE585CA2238472C0082DF0E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4AE585CC2238472C0082DF0E /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		4AE585CD2238472C0082DF0E /* SearchCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
-		4AE585CE2238472C0082DF0E /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
-		4AE585E522384BFC0082DF0E /* SpotifyConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyConstants.swift; sourceTree = "<group>"; };
-		4AE585F1223851B50082DF0E /* SpotifyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyService.swift; sourceTree = "<group>"; };
-		4AE585F322397D690082DF0E /* AsynchronousOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsynchronousOperation.swift; sourceTree = "<group>"; };
-		4AE585F622397DB60082DF0E /* SearchArtistOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchArtistOperation.swift; sourceTree = "<group>"; };
-		4AE585FA223982E40082DF0E /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
-		4AE585FD223994060082DF0E /* RecommendationsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsCoordinator.swift; sourceTree = "<group>"; };
-		4AE585FF2239945B0082DF0E /* RecommendationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsViewModel.swift; sourceTree = "<group>"; };
-		4AE58601223994810082DF0E /* RecommendationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsViewController.swift; sourceTree = "<group>"; };
-		4AE58602223994810082DF0E /* RecommendationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendationsViewController.xib; sourceTree = "<group>"; };
-		4AE586062239A4170082DF0E /* RecommendationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationService.swift; sourceTree = "<group>"; };
-		4AE586082239A6F10082DF0E /* Recommendation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recommendation.swift; sourceTree = "<group>"; };
-		4AEC4B01223844B3004BC04C /* Spotyfiend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotyfiend.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AEC4B15223844B4004BC04C /* SpotyfiendTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotyfiendTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AEC4B19223844B4004BC04C /* SpotyfiendTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotyfiendTests.swift; sourceTree = "<group>"; };
-		4AEC4B1B223844B4004BC04C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4AEC4B20223844B4004BC04C /* SpotyfiendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotyfiendUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AEC4B24223844B4004BC04C /* SpotyfiendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotyfiendUITests.swift; sourceTree = "<group>"; };
-		4AEC4B26223844B4004BC04C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		89775CDB06649B30B0F12D5C /* Pods_SpotyfiendUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotyfiendUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2A9B5607DC73A9415336C5E /* Pods-Spotyfiend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spotyfiend.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Spotyfiend/Pods-Spotyfiend.debug.xcconfig"; sourceTree = "<group>"; };
-		A818C44032E5DE3414B6BD69 /* Pods-SpotyfiendUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotyfiendUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpotyfiendUITests/Pods-SpotyfiendUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		C1B6EA12312DA30F55C6C622 /* Pods-SpotyfiendUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotyfiendUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpotyfiendUITests/Pods-SpotyfiendUITests.release.xcconfig"; sourceTree = "<group>"; };
-		D74110C06D0DF4BE6C920B28 /* Pods_SpotyfiendTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotyfiendTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFFFB988C7F6EE242BCDF355 /* Pods-Spotyfiend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spotyfiend.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spotyfiend/Pods-Spotyfiend.release.xcconfig"; sourceTree = "<group>"; };
+		136DE68E5C59A564FEB2790A /* Pods-Spotyfiend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spotyfiend.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spotyfiend/Pods-Spotyfiend.release.xcconfig"; sourceTree = "<group>"; };
+		3C2D262A7ACC0C5DF01388E8 /* Pods-SpotyfiendUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotyfiendUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpotyfiendUITests/Pods-SpotyfiendUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4A6483CC223AA0B90093158E /* Spotyfiend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotyfiend.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A6483E0223AA0BA0093158E /* SpotyfiendTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotyfiendTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A6483E4223AA0BA0093158E /* SpotyfiendTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotyfiendTests.swift; sourceTree = "<group>"; };
+		4A6483E6223AA0BA0093158E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A6483EB223AA0BA0093158E /* SpotyfiendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotyfiendUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A6483EF223AA0BA0093158E /* SpotyfiendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotyfiendUITests.swift; sourceTree = "<group>"; };
+		4A6483F1223AA0BA0093158E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A6483FE223AA1C30093158E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A6483FF223AA1C30093158E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4A648400223AA1C30093158E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A648403223AA1C30093158E /* SpotifyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyService.swift; sourceTree = "<group>"; };
+		4A648405223AA1C30093158E /* SearchArtistOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchArtistOperation.swift; sourceTree = "<group>"; };
+		4A648406223AA1C30093158E /* AsynchronousOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsynchronousOperation.swift; sourceTree = "<group>"; };
+		4A648407223AA1C30093158E /* RecommendationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendationService.swift; sourceTree = "<group>"; };
+		4A648409223AA1C30093158E /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		4A64840B223AA1C30093158E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4A64840C223AA1C30093158E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4A64840E223AA1C30093158E /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		4A64840F223AA1C30093158E /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		4A648410223AA1C30093158E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4A648411223AA1C30093158E /* HomeCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		4A648413223AA1C30093158E /* RecommendationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendationsViewController.swift; sourceTree = "<group>"; };
+		4A648414223AA1C30093158E /* RecommendationsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendationsViewController.xib; sourceTree = "<group>"; };
+		4A648415223AA1C30093158E /* Recommendation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recommendation.swift; sourceTree = "<group>"; };
+		4A648416223AA1C30093158E /* RecommendationsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendationsCoordinator.swift; sourceTree = "<group>"; };
+		4A648417223AA1C30093158E /* RecommendationsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendationsViewModel.swift; sourceTree = "<group>"; };
+		4A648419223AA1C40093158E /* SpotifyConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyConstants.swift; sourceTree = "<group>"; };
+		4A64841B223AA1C40093158E /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		4A64841C223AA1C40093158E /* SettingsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
+		4A64841D223AA1C40093158E /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		4A64841E223AA1C40093158E /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		4A648420223AA1C40093158E /* FlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
+		4A648421223AA1C40093158E /* Dependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		4A648422223AA1C40093158E /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		4A648423223AA1C40093158E /* FlowCoordinatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowCoordinatorViewController.swift; sourceTree = "<group>"; };
+		4A648425223AA1C40093158E /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		4A648426223AA1C40093158E /* SearchCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
+		4A648427223AA1C40093158E /* SearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		4A648428223AA1C40093158E /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		8AFBD7FBDFF7681691CD27DF /* Pods_SpotyfiendUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotyfiendUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96665281E9B941CC5D5831E0 /* Pods-SpotyfiendUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotyfiendUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpotyfiendUITests/Pods-SpotyfiendUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A28316800C80D1C06FB506DA /* Pods-SpotyfiendTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotyfiendTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpotyfiendTests/Pods-SpotyfiendTests.release.xcconfig"; sourceTree = "<group>"; };
+		B7045E8D25C011980D846A0B /* Pods-Spotyfiend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spotyfiend.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Spotyfiend/Pods-Spotyfiend.debug.xcconfig"; sourceTree = "<group>"; };
+		B8D56B685C114C37FEF2D0D9 /* Pods_SpotyfiendTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotyfiendTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9AF47BA70873F33B86D46E7 /* Pods_Spotyfiend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spotyfiend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6DDA39F657356CA585A8237 /* Pods-SpotyfiendTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotyfiendTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpotyfiendTests/Pods-SpotyfiendTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4AEC4AFE223844B3004BC04C /* Frameworks */ = {
+		4A6483C9223AA0B90093158E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E471607ECCB947E1538B0815 /* Pods_Spotyfiend.framework in Frameworks */,
+				EFDFC6167A9DC991785FB5B0 /* Pods_Spotyfiend.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4AEC4B12223844B4004BC04C /* Frameworks */ = {
+		4A6483DD223AA0BA0093158E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23C75CCDBBEC60D694673440 /* Pods_SpotyfiendTests.framework in Frameworks */,
+				E5E76EF9F5540D267AFA0A64 /* Pods_SpotyfiendTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4AEC4B1D223844B4004BC04C /* Frameworks */ = {
+		4A6483E8223AA0BA0093158E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F7AA015F92C95236EF93DC9 /* Pods_SpotyfiendUITests.framework in Frameworks */,
+				14F05DEAA5A327FB1E9E5B72 /* Pods_SpotyfiendUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4AE585B42238472C0082DF0E /* SharedProtocols */ = {
+		05B1CCFF7672E67690993B79 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4AE585B52238472C0082DF0E /* FlowCoordinator.swift */,
-				4AE585B62238472C0082DF0E /* Dependencies.swift */,
-				4AE585B72238472C0082DF0E /* ViewModel.swift */,
-				4AE585B82238472C0082DF0E /* FlowCoordinatorViewController.swift */,
+				C9AF47BA70873F33B86D46E7 /* Pods_Spotyfiend.framework */,
+				B8D56B685C114C37FEF2D0D9 /* Pods_SpotyfiendTests.framework */,
+				8AFBD7FBDFF7681691CD27DF /* Pods_SpotyfiendUITests.framework */,
 			);
-			path = SharedProtocols;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4AE585B92238472C0082DF0E /* Settings */ = {
+		4A6483C3223AA0B90093158E = {
 			isa = PBXGroup;
 			children = (
-				4AE585BA2238472C0082DF0E /* SettingsViewModel.swift */,
-				4AE585BB2238472C0082DF0E /* SettingsCoordinator.swift */,
-				4AE585BC2238472C0082DF0E /* SettingsViewController.xib */,
-				4AE585BD2238472C0082DF0E /* SettingsViewController.swift */,
-			);
-			path = Settings;
-			sourceTree = "<group>";
-		};
-		4AE585BE2238472C0082DF0E /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				4AE585BF2238472C0082DF0E /* Assets.xcassets */,
-				4AE585C02238472C0082DF0E /* Info.plist */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		4AE585C22238472C0082DF0E /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				4AE585C12238472C0082DF0E /* HomeViewController.swift */,
-				4AE585C32238472C0082DF0E /* HomeViewModel.swift */,
-				4AE585C42238472C0082DF0E /* HomeViewController.xib */,
-				4AE585C52238472C0082DF0E /* HomeCoordinator.swift */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		4AE585C62238472C0082DF0E /* AppSetup */ = {
-			isa = PBXGroup;
-			children = (
-				4AE585C72238472C0082DF0E /* AppCoordinator.swift */,
-				4AE585C82238472C0082DF0E /* LaunchScreen.storyboard */,
-				4AE585CA2238472C0082DF0E /* AppDelegate.swift */,
-			);
-			path = AppSetup;
-			sourceTree = "<group>";
-		};
-		4AE585CB2238472C0082DF0E /* Search */ = {
-			isa = PBXGroup;
-			children = (
-				4AE585CC2238472C0082DF0E /* SearchViewController.swift */,
-				4AE585CD2238472C0082DF0E /* SearchCoordinator.swift */,
-				4AE585CE2238472C0082DF0E /* SearchViewController.xib */,
-				4AE585FA223982E40082DF0E /* SearchViewModel.swift */,
-			);
-			path = Search;
-			sourceTree = "<group>";
-		};
-		4AE585E422384BE50082DF0E /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				4AE585E522384BFC0082DF0E /* SpotifyConstants.swift */,
-			);
-			path = Config;
-			sourceTree = "<group>";
-		};
-		4AE585F0223851B50082DF0E /* Spotify */ = {
-			isa = PBXGroup;
-			children = (
-				4AE585F1223851B50082DF0E /* SpotifyService.swift */,
-				4AE585F522397D8C0082DF0E /* Operations */,
-			);
-			path = Spotify;
-			sourceTree = "<group>";
-		};
-		4AE585F522397D8C0082DF0E /* Operations */ = {
-			isa = PBXGroup;
-			children = (
-				4AE585F322397D690082DF0E /* AsynchronousOperation.swift */,
-				4AE585F622397DB60082DF0E /* SearchArtistOperation.swift */,
-			);
-			path = Operations;
-			sourceTree = "<group>";
-		};
-		4AE585FC223993EF0082DF0E /* Recommendations */ = {
-			isa = PBXGroup;
-			children = (
-				4AE585FD223994060082DF0E /* RecommendationsCoordinator.swift */,
-				4AE585FF2239945B0082DF0E /* RecommendationsViewModel.swift */,
-				4AE58601223994810082DF0E /* RecommendationsViewController.swift */,
-				4AE58602223994810082DF0E /* RecommendationsViewController.xib */,
-				4AE586082239A6F10082DF0E /* Recommendation.swift */,
-			);
-			path = Recommendations;
-			sourceTree = "<group>";
-		};
-		4AE5860522399FC80082DF0E /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				4AE585F0223851B50082DF0E /* Spotify */,
-				4AE586062239A4170082DF0E /* RecommendationService.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		4AEC4AF8223844B3004BC04C = {
-			isa = PBXGroup;
-			children = (
-				4AEC4B03223844B3004BC04C /* Spotyfiend */,
-				4AEC4B18223844B4004BC04C /* SpotyfiendTests */,
-				4AEC4B23223844B4004BC04C /* SpotyfiendUITests */,
-				4AEC4B02223844B3004BC04C /* Products */,
-				AFAB1490C1493DF837872A04 /* Frameworks */,
-				4EF87C2164157FE90F526C91 /* Pods */,
+				4A6483CE223AA0B90093158E /* Spotyfiend */,
+				4A6483E3223AA0BA0093158E /* SpotyfiendTests */,
+				4A6483EE223AA0BA0093158E /* SpotyfiendUITests */,
+				4A6483CD223AA0B90093158E /* Products */,
+				678C63051C827650941D9383 /* Pods */,
+				05B1CCFF7672E67690993B79 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		4AEC4B02223844B3004BC04C /* Products */ = {
+		4A6483CD223AA0B90093158E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4AEC4B01223844B3004BC04C /* Spotyfiend.app */,
-				4AEC4B15223844B4004BC04C /* SpotyfiendTests.xctest */,
-				4AEC4B20223844B4004BC04C /* SpotyfiendUITests.xctest */,
+				4A6483CC223AA0B90093158E /* Spotyfiend.app */,
+				4A6483E0223AA0BA0093158E /* SpotyfiendTests.xctest */,
+				4A6483EB223AA0BA0093158E /* SpotyfiendUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4AEC4B03223844B3004BC04C /* Spotyfiend */ = {
+		4A6483CE223AA0B90093158E /* Spotyfiend */ = {
 			isa = PBXGroup;
 			children = (
-				4AE5860522399FC80082DF0E /* Services */,
-				4AE585E422384BE50082DF0E /* Config */,
-				4AE585C62238472C0082DF0E /* AppSetup */,
-				4AE585C22238472C0082DF0E /* Home */,
-				4AE585BE2238472C0082DF0E /* Resources */,
-				4AE585CB2238472C0082DF0E /* Search */,
-				4AE585B92238472C0082DF0E /* Settings */,
-				4AE585FC223993EF0082DF0E /* Recommendations */,
-				4AE585B42238472C0082DF0E /* SharedProtocols */,
+				4A648408223AA1C30093158E /* AppSetup */,
+				4A648418223AA1C40093158E /* Config */,
+				4A64840D223AA1C30093158E /* Home */,
+				4A648412223AA1C30093158E /* Recommendations */,
+				4A6483FD223AA1C30093158E /* Resources */,
+				4A648424223AA1C40093158E /* Search */,
+				4A648401223AA1C30093158E /* Services */,
+				4A64841A223AA1C40093158E /* Settings */,
+				4A64841F223AA1C40093158E /* SharedProtocols */,
 			);
 			path = Spotyfiend;
 			sourceTree = "<group>";
 		};
-		4AEC4B18223844B4004BC04C /* SpotyfiendTests */ = {
+		4A6483E3223AA0BA0093158E /* SpotyfiendTests */ = {
 			isa = PBXGroup;
 			children = (
-				4AEC4B19223844B4004BC04C /* SpotyfiendTests.swift */,
-				4AEC4B1B223844B4004BC04C /* Info.plist */,
+				4A6483E4223AA0BA0093158E /* SpotyfiendTests.swift */,
+				4A6483E6223AA0BA0093158E /* Info.plist */,
 			);
 			path = SpotyfiendTests;
 			sourceTree = "<group>";
 		};
-		4AEC4B23223844B4004BC04C /* SpotyfiendUITests */ = {
+		4A6483EE223AA0BA0093158E /* SpotyfiendUITests */ = {
 			isa = PBXGroup;
 			children = (
-				4AEC4B24223844B4004BC04C /* SpotyfiendUITests.swift */,
-				4AEC4B26223844B4004BC04C /* Info.plist */,
+				4A6483EF223AA0BA0093158E /* SpotyfiendUITests.swift */,
+				4A6483F1223AA0BA0093158E /* Info.plist */,
 			);
 			path = SpotyfiendUITests;
 			sourceTree = "<group>";
 		};
-		4EF87C2164157FE90F526C91 /* Pods */ = {
+		4A6483FD223AA1C30093158E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A2A9B5607DC73A9415336C5E /* Pods-Spotyfiend.debug.xcconfig */,
-				EFFFB988C7F6EE242BCDF355 /* Pods-Spotyfiend.release.xcconfig */,
-				13058BC549B13858A2DDBABC /* Pods-SpotyfiendTests.debug.xcconfig */,
-				2D57BBDA9D6E5B0E97D37156 /* Pods-SpotyfiendTests.release.xcconfig */,
-				A818C44032E5DE3414B6BD69 /* Pods-SpotyfiendUITests.debug.xcconfig */,
-				C1B6EA12312DA30F55C6C622 /* Pods-SpotyfiendUITests.release.xcconfig */,
+				4A6483FE223AA1C30093158E /* Assets.xcassets */,
+				4A6483FF223AA1C30093158E /* GoogleService-Info.plist */,
+				4A648400223AA1C30093158E /* Info.plist */,
 			);
-			name = Pods;
+			path = Resources;
 			sourceTree = "<group>";
 		};
-		AFAB1490C1493DF837872A04 /* Frameworks */ = {
+		4A648401223AA1C30093158E /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				1B0052CC1050B2B0758EDB5C /* Pods_Spotyfiend.framework */,
-				D74110C06D0DF4BE6C920B28 /* Pods_SpotyfiendTests.framework */,
-				89775CDB06649B30B0F12D5C /* Pods_SpotyfiendUITests.framework */,
+				4A648402223AA1C30093158E /* Spotify */,
+				4A648407223AA1C30093158E /* RecommendationService.swift */,
 			);
-			name = Frameworks;
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4A648402223AA1C30093158E /* Spotify */ = {
+			isa = PBXGroup;
+			children = (
+				4A648403223AA1C30093158E /* SpotifyService.swift */,
+				4A648404223AA1C30093158E /* Operations */,
+			);
+			path = Spotify;
+			sourceTree = "<group>";
+		};
+		4A648404223AA1C30093158E /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				4A648405223AA1C30093158E /* SearchArtistOperation.swift */,
+				4A648406223AA1C30093158E /* AsynchronousOperation.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		4A648408223AA1C30093158E /* AppSetup */ = {
+			isa = PBXGroup;
+			children = (
+				4A648409223AA1C30093158E /* AppCoordinator.swift */,
+				4A64840A223AA1C30093158E /* LaunchScreen.storyboard */,
+				4A64840C223AA1C30093158E /* AppDelegate.swift */,
+			);
+			path = AppSetup;
+			sourceTree = "<group>";
+		};
+		4A64840D223AA1C30093158E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4A64840E223AA1C30093158E /* HomeViewModel.swift */,
+				4A64840F223AA1C30093158E /* HomeViewController.xib */,
+				4A648410223AA1C30093158E /* HomeViewController.swift */,
+				4A648411223AA1C30093158E /* HomeCoordinator.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4A648412223AA1C30093158E /* Recommendations */ = {
+			isa = PBXGroup;
+			children = (
+				4A648413223AA1C30093158E /* RecommendationsViewController.swift */,
+				4A648414223AA1C30093158E /* RecommendationsViewController.xib */,
+				4A648415223AA1C30093158E /* Recommendation.swift */,
+				4A648416223AA1C30093158E /* RecommendationsCoordinator.swift */,
+				4A648417223AA1C30093158E /* RecommendationsViewModel.swift */,
+			);
+			path = Recommendations;
+			sourceTree = "<group>";
+		};
+		4A648418223AA1C40093158E /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				4A648419223AA1C40093158E /* SpotifyConstants.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		4A64841A223AA1C40093158E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				4A64841B223AA1C40093158E /* SettingsViewModel.swift */,
+				4A64841C223AA1C40093158E /* SettingsCoordinator.swift */,
+				4A64841D223AA1C40093158E /* SettingsViewController.xib */,
+				4A64841E223AA1C40093158E /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		4A64841F223AA1C40093158E /* SharedProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				4A648420223AA1C40093158E /* FlowCoordinator.swift */,
+				4A648421223AA1C40093158E /* Dependencies.swift */,
+				4A648422223AA1C40093158E /* ViewModel.swift */,
+				4A648423223AA1C40093158E /* FlowCoordinatorViewController.swift */,
+			);
+			path = SharedProtocols;
+			sourceTree = "<group>";
+		};
+		4A648424223AA1C40093158E /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				4A648425223AA1C40093158E /* SearchViewController.swift */,
+				4A648426223AA1C40093158E /* SearchCoordinator.swift */,
+				4A648427223AA1C40093158E /* SearchViewModel.swift */,
+				4A648428223AA1C40093158E /* SearchViewController.xib */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		678C63051C827650941D9383 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7045E8D25C011980D846A0B /* Pods-Spotyfiend.debug.xcconfig */,
+				136DE68E5C59A564FEB2790A /* Pods-Spotyfiend.release.xcconfig */,
+				F6DDA39F657356CA585A8237 /* Pods-SpotyfiendTests.debug.xcconfig */,
+				A28316800C80D1C06FB506DA /* Pods-SpotyfiendTests.release.xcconfig */,
+				96665281E9B941CC5D5831E0 /* Pods-SpotyfiendUITests.debug.xcconfig */,
+				3C2D262A7ACC0C5DF01388E8 /* Pods-SpotyfiendUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4AEC4B00223844B3004BC04C /* Spotyfiend */ = {
+		4A6483CB223AA0B90093158E /* Spotyfiend */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4AEC4B29223844B4004BC04C /* Build configuration list for PBXNativeTarget "Spotyfiend" */;
+			buildConfigurationList = 4A6483F4223AA0BA0093158E /* Build configuration list for PBXNativeTarget "Spotyfiend" */;
 			buildPhases = (
-				9BB90D1BC4AC9362F9734DB3 /* [CP] Check Pods Manifest.lock */,
-				4AEC4AFD223844B3004BC04C /* Sources */,
-				4AEC4AFE223844B3004BC04C /* Frameworks */,
-				4AEC4AFF223844B3004BC04C /* Resources */,
-				07C21EFA15E036A89E7A351C /* [CP] Embed Pods Frameworks */,
+				924D9D526BA322B6000BACBF /* [CP] Check Pods Manifest.lock */,
+				4A6483C8223AA0B90093158E /* Sources */,
+				4A6483C9223AA0B90093158E /* Frameworks */,
+				4A6483CA223AA0B90093158E /* Resources */,
+				49A7552A02523B9DA113162C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -347,72 +350,71 @@
 			);
 			name = Spotyfiend;
 			productName = Spotyfiend;
-			productReference = 4AEC4B01223844B3004BC04C /* Spotyfiend.app */;
+			productReference = 4A6483CC223AA0B90093158E /* Spotyfiend.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4AEC4B14223844B4004BC04C /* SpotyfiendTests */ = {
+		4A6483DF223AA0BA0093158E /* SpotyfiendTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4AEC4B2C223844B4004BC04C /* Build configuration list for PBXNativeTarget "SpotyfiendTests" */;
+			buildConfigurationList = 4A6483F7223AA0BA0093158E /* Build configuration list for PBXNativeTarget "SpotyfiendTests" */;
 			buildPhases = (
-				03D3F88396C179A0AF16C725 /* [CP] Check Pods Manifest.lock */,
-				4AEC4B11223844B4004BC04C /* Sources */,
-				4AEC4B12223844B4004BC04C /* Frameworks */,
-				4AEC4B13223844B4004BC04C /* Resources */,
+				4A6E7C1D554ABCAB8FF2647C /* [CP] Check Pods Manifest.lock */,
+				4A6483DC223AA0BA0093158E /* Sources */,
+				4A6483DD223AA0BA0093158E /* Frameworks */,
+				4A6483DE223AA0BA0093158E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4AEC4B17223844B4004BC04C /* PBXTargetDependency */,
+				4A6483E2223AA0BA0093158E /* PBXTargetDependency */,
 			);
 			name = SpotyfiendTests;
 			productName = SpotyfiendTests;
-			productReference = 4AEC4B15223844B4004BC04C /* SpotyfiendTests.xctest */;
+			productReference = 4A6483E0223AA0BA0093158E /* SpotyfiendTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4AEC4B1F223844B4004BC04C /* SpotyfiendUITests */ = {
+		4A6483EA223AA0BA0093158E /* SpotyfiendUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4AEC4B2F223844B4004BC04C /* Build configuration list for PBXNativeTarget "SpotyfiendUITests" */;
+			buildConfigurationList = 4A6483FA223AA0BA0093158E /* Build configuration list for PBXNativeTarget "SpotyfiendUITests" */;
 			buildPhases = (
-				D1135B507DCC335D89CEED8E /* [CP] Check Pods Manifest.lock */,
-				4AEC4B1C223844B4004BC04C /* Sources */,
-				4AEC4B1D223844B4004BC04C /* Frameworks */,
-				4AEC4B1E223844B4004BC04C /* Resources */,
+				E487BA3A82EB5B862F62CCCB /* [CP] Check Pods Manifest.lock */,
+				4A6483E7223AA0BA0093158E /* Sources */,
+				4A6483E8223AA0BA0093158E /* Frameworks */,
+				4A6483E9223AA0BA0093158E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4AEC4B22223844B4004BC04C /* PBXTargetDependency */,
+				4A6483ED223AA0BA0093158E /* PBXTargetDependency */,
 			);
 			name = SpotyfiendUITests;
 			productName = SpotyfiendUITests;
-			productReference = 4AEC4B20223844B4004BC04C /* SpotyfiendUITests.xctest */;
+			productReference = 4A6483EB223AA0BA0093158E /* SpotyfiendUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4AEC4AF9223844B3004BC04C /* Project object */ = {
+		4A6483C4223AA0B90093158E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Setec Astronomy";
 				TargetAttributes = {
-					4AEC4B00223844B3004BC04C = {
+					4A6483CB223AA0B90093158E = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
 					};
-					4AEC4B14223844B4004BC04C = {
+					4A6483DF223AA0BA0093158E = {
 						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 4AEC4B00223844B3004BC04C;
+						TestTargetID = 4A6483CB223AA0B90093158E;
 					};
-					4AEC4B1F223844B4004BC04C = {
+					4A6483EA223AA0BA0093158E = {
 						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 4AEC4B00223844B3004BC04C;
+						TestTargetID = 4A6483CB223AA0B90093158E;
 					};
 				};
 			};
-			buildConfigurationList = 4AEC4AFC223844B3004BC04C /* Build configuration list for PBXProject "Spotyfiend" */;
+			buildConfigurationList = 4A6483C7223AA0B90093158E /* Build configuration list for PBXProject "Spotyfiend" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -420,40 +422,41 @@
 				en,
 				Base,
 			);
-			mainGroup = 4AEC4AF8223844B3004BC04C;
-			productRefGroup = 4AEC4B02223844B3004BC04C /* Products */;
+			mainGroup = 4A6483C3223AA0B90093158E;
+			productRefGroup = 4A6483CD223AA0B90093158E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4AEC4B00223844B3004BC04C /* Spotyfiend */,
-				4AEC4B14223844B4004BC04C /* SpotyfiendTests */,
-				4AEC4B1F223844B4004BC04C /* SpotyfiendUITests */,
+				4A6483CB223AA0B90093158E /* Spotyfiend */,
+				4A6483DF223AA0BA0093158E /* SpotyfiendTests */,
+				4A6483EA223AA0BA0093158E /* SpotyfiendUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4AEC4AFF223844B3004BC04C /* Resources */ = {
+		4A6483CA223AA0B90093158E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AE585D72238472C0082DF0E /* Assets.xcassets in Resources */,
-				4AE585D52238472C0082DF0E /* SettingsViewController.xib in Resources */,
-				4AE585E22238472C0082DF0E /* SearchViewController.xib in Resources */,
-				4AE585E32238484E0082DF0E /* LaunchScreen.storyboard in Resources */,
-				4AE585DB2238472C0082DF0E /* HomeViewController.xib in Resources */,
-				4AE58604223994810082DF0E /* RecommendationsViewController.xib in Resources */,
+				4A648429223AA1C40093158E /* Assets.xcassets in Resources */,
+				4A648431223AA1C40093158E /* LaunchScreen.storyboard in Resources */,
+				4A648434223AA1C40093158E /* HomeViewController.xib in Resources */,
+				4A64842A223AA1C40093158E /* GoogleService-Info.plist in Resources */,
+				4A64843F223AA1C40093158E /* SettingsViewController.xib in Resources */,
+				4A648448223AA1C40093158E /* SearchViewController.xib in Resources */,
+				4A648438223AA1C40093158E /* RecommendationsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4AEC4B13223844B4004BC04C /* Resources */ = {
+		4A6483DE223AA0BA0093158E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4AEC4B1E223844B4004BC04C /* Resources */ = {
+		4A6483E9223AA0BA0093158E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -463,7 +466,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		03D3F88396C179A0AF16C725 /* [CP] Check Pods Manifest.lock */ = {
+		49A7552A02523B9DA113162C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Spotyfiend/Pods-Spotyfiend-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SpotifyKit/SpotifyKit.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SpotifyKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spotyfiend/Pods-Spotyfiend-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A6E7C1D554ABCAB8FF2647C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -485,29 +514,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		07C21EFA15E036A89E7A351C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Spotyfiend/Pods-Spotyfiend-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SpotifyKit/SpotifyKit.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SpotifyKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spotyfiend/Pods-Spotyfiend-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9BB90D1BC4AC9362F9734DB3 /* [CP] Check Pods Manifest.lock */ = {
+		924D9D526BA322B6000BACBF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -529,7 +536,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D1135B507DCC335D89CEED8E /* [CP] Check Pods Manifest.lock */ = {
+		E487BA3A82EB5B862F62CCCB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -554,73 +561,73 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4AEC4AFD223844B3004BC04C /* Sources */ = {
+		4A6483C8223AA0B90093158E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AE585DF2238472C0082DF0E /* AppDelegate.swift in Sources */,
-				4AE58603223994810082DF0E /* RecommendationsViewController.swift in Sources */,
-				4AE585DD2238472C0082DF0E /* AppCoordinator.swift in Sources */,
-				4AE585FE223994060082DF0E /* RecommendationsCoordinator.swift in Sources */,
-				4AE585D32238472C0082DF0E /* SettingsViewModel.swift in Sources */,
-				4AE585DA2238472C0082DF0E /* HomeViewModel.swift in Sources */,
-				4AE585FB223982E40082DF0E /* SearchViewModel.swift in Sources */,
-				4AE585E622384BFC0082DF0E /* SpotifyConstants.swift in Sources */,
-				4AE585D42238472C0082DF0E /* SettingsCoordinator.swift in Sources */,
-				4AE585D62238472C0082DF0E /* SettingsViewController.swift in Sources */,
-				4AE585E12238472C0082DF0E /* SearchCoordinator.swift in Sources */,
-				4AE585D92238472C0082DF0E /* HomeViewController.swift in Sources */,
-				4AE586092239A6F10082DF0E /* Recommendation.swift in Sources */,
-				4AE585D02238472C0082DF0E /* Dependencies.swift in Sources */,
-				4AE585E02238472C0082DF0E /* SearchViewController.swift in Sources */,
-				4AE585D22238472C0082DF0E /* FlowCoordinatorViewController.swift in Sources */,
-				4AE586002239945B0082DF0E /* RecommendationsViewModel.swift in Sources */,
-				4AE585DC2238472C0082DF0E /* HomeCoordinator.swift in Sources */,
-				4AE585D12238472C0082DF0E /* ViewModel.swift in Sources */,
-				4AE585F422397D690082DF0E /* AsynchronousOperation.swift in Sources */,
-				4AE585F2223851B50082DF0E /* SpotifyService.swift in Sources */,
-				4AE585F722397DB60082DF0E /* SearchArtistOperation.swift in Sources */,
-				4AE586072239A4170082DF0E /* RecommendationService.swift in Sources */,
-				4AE585CF2238472C0082DF0E /* FlowCoordinator.swift in Sources */,
+				4A648444223AA1C40093158E /* FlowCoordinatorViewController.swift in Sources */,
+				4A648442223AA1C40093158E /* Dependencies.swift in Sources */,
+				4A648432223AA1C40093158E /* AppDelegate.swift in Sources */,
+				4A648437223AA1C40093158E /* RecommendationsViewController.swift in Sources */,
+				4A64842F223AA1C40093158E /* RecommendationService.swift in Sources */,
+				4A648436223AA1C40093158E /* HomeCoordinator.swift in Sources */,
+				4A648433223AA1C40093158E /* HomeViewModel.swift in Sources */,
+				4A64843D223AA1C40093158E /* SettingsViewModel.swift in Sources */,
+				4A648446223AA1C40093158E /* SearchCoordinator.swift in Sources */,
+				4A648435223AA1C40093158E /* HomeViewController.swift in Sources */,
+				4A64843C223AA1C40093158E /* SpotifyConstants.swift in Sources */,
+				4A648441223AA1C40093158E /* FlowCoordinator.swift in Sources */,
+				4A648443223AA1C40093158E /* ViewModel.swift in Sources */,
+				4A648445223AA1C40093158E /* SearchViewController.swift in Sources */,
+				4A648439223AA1C40093158E /* Recommendation.swift in Sources */,
+				4A64843E223AA1C40093158E /* SettingsCoordinator.swift in Sources */,
+				4A64842D223AA1C40093158E /* SearchArtistOperation.swift in Sources */,
+				4A648430223AA1C40093158E /* AppCoordinator.swift in Sources */,
+				4A648447223AA1C40093158E /* SearchViewModel.swift in Sources */,
+				4A648440223AA1C40093158E /* SettingsViewController.swift in Sources */,
+				4A64842C223AA1C40093158E /* SpotifyService.swift in Sources */,
+				4A64843A223AA1C40093158E /* RecommendationsCoordinator.swift in Sources */,
+				4A64843B223AA1C40093158E /* RecommendationsViewModel.swift in Sources */,
+				4A64842E223AA1C40093158E /* AsynchronousOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4AEC4B11223844B4004BC04C /* Sources */ = {
+		4A6483DC223AA0BA0093158E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AEC4B1A223844B4004BC04C /* SpotyfiendTests.swift in Sources */,
+				4A6483E5223AA0BA0093158E /* SpotyfiendTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4AEC4B1C223844B4004BC04C /* Sources */ = {
+		4A6483E7223AA0BA0093158E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AEC4B25223844B4004BC04C /* SpotyfiendUITests.swift in Sources */,
+				4A6483F0223AA0BA0093158E /* SpotyfiendUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4AEC4B17223844B4004BC04C /* PBXTargetDependency */ = {
+		4A6483E2223AA0BA0093158E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4AEC4B00223844B3004BC04C /* Spotyfiend */;
-			targetProxy = 4AEC4B16223844B4004BC04C /* PBXContainerItemProxy */;
+			target = 4A6483CB223AA0B90093158E /* Spotyfiend */;
+			targetProxy = 4A6483E1223AA0BA0093158E /* PBXContainerItemProxy */;
 		};
-		4AEC4B22223844B4004BC04C /* PBXTargetDependency */ = {
+		4A6483ED223AA0BA0093158E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4AEC4B00223844B3004BC04C /* Spotyfiend */;
-			targetProxy = 4AEC4B21223844B4004BC04C /* PBXContainerItemProxy */;
+			target = 4A6483CB223AA0B90093158E /* Spotyfiend */;
+			targetProxy = 4A6483EC223AA0BA0093158E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4AE585C82238472C0082DF0E /* LaunchScreen.storyboard */ = {
+		4A64840A223AA1C30093158E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4AE585C92238472C0082DF0E /* Base */,
+				4A64840B223AA1C30093158E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -628,7 +635,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		4AEC4B27223844B4004BC04C /* Debug */ = {
+		4A6483F2223AA0BA0093158E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -689,7 +696,7 @@
 			};
 			name = Debug;
 		};
-		4AEC4B28223844B4004BC04C /* Release */ = {
+		4A6483F3223AA0BA0093158E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -744,62 +751,47 @@
 			};
 			name = Release;
 		};
-		4AEC4B2A223844B4004BC04C /* Debug */ = {
+		4A6483F5223AA0BA0093158E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2A9B5607DC73A9415336C5E /* Pods-Spotyfiend.debug.xcconfig */;
+			baseConfigurationReference = B7045E8D25C011980D846A0B /* Pods-Spotyfiend.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UBBFM4Q7C8;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
 				INFOPLIST_FILE = "$(SRCROOT)/Spotyfiend/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.setec.astronony.Spotyfiend;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		4AEC4B2B223844B4004BC04C /* Release */ = {
+		4A6483F6223AA0BA0093158E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFFFB988C7F6EE242BCDF355 /* Pods-Spotyfiend.release.xcconfig */;
+			baseConfigurationReference = 136DE68E5C59A564FEB2790A /* Pods-Spotyfiend.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UBBFM4Q7C8;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
 				INFOPLIST_FILE = "$(SRCROOT)/Spotyfiend/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.setec.astronony.Spotyfiend;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		4AEC4B2D223844B4004BC04C /* Debug */ = {
+		4A6483F8223AA0BA0093158E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13058BC549B13858A2DDBABC /* Pods-SpotyfiendTests.debug.xcconfig */;
+			baseConfigurationReference = F6DDA39F657356CA585A8237 /* Pods-SpotyfiendTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -819,9 +811,9 @@
 			};
 			name = Debug;
 		};
-		4AEC4B2E223844B4004BC04C /* Release */ = {
+		4A6483F9223AA0BA0093158E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D57BBDA9D6E5B0E97D37156 /* Pods-SpotyfiendTests.release.xcconfig */;
+			baseConfigurationReference = A28316800C80D1C06FB506DA /* Pods-SpotyfiendTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -841,9 +833,9 @@
 			};
 			name = Release;
 		};
-		4AEC4B30223844B4004BC04C /* Debug */ = {
+		4A6483FB223AA0BA0093158E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A818C44032E5DE3414B6BD69 /* Pods-SpotyfiendUITests.debug.xcconfig */;
+			baseConfigurationReference = 96665281E9B941CC5D5831E0 /* Pods-SpotyfiendUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -862,9 +854,9 @@
 			};
 			name = Debug;
 		};
-		4AEC4B31223844B4004BC04C /* Release */ = {
+		4A6483FC223AA0BA0093158E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1B6EA12312DA30F55C6C622 /* Pods-SpotyfiendUITests.release.xcconfig */;
+			baseConfigurationReference = 3C2D262A7ACC0C5DF01388E8 /* Pods-SpotyfiendUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -886,43 +878,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4AEC4AFC223844B3004BC04C /* Build configuration list for PBXProject "Spotyfiend" */ = {
+		4A6483C7223AA0B90093158E /* Build configuration list for PBXProject "Spotyfiend" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4AEC4B27223844B4004BC04C /* Debug */,
-				4AEC4B28223844B4004BC04C /* Release */,
+				4A6483F2223AA0BA0093158E /* Debug */,
+				4A6483F3223AA0BA0093158E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4AEC4B29223844B4004BC04C /* Build configuration list for PBXNativeTarget "Spotyfiend" */ = {
+		4A6483F4223AA0BA0093158E /* Build configuration list for PBXNativeTarget "Spotyfiend" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4AEC4B2A223844B4004BC04C /* Debug */,
-				4AEC4B2B223844B4004BC04C /* Release */,
+				4A6483F5223AA0BA0093158E /* Debug */,
+				4A6483F6223AA0BA0093158E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4AEC4B2C223844B4004BC04C /* Build configuration list for PBXNativeTarget "SpotyfiendTests" */ = {
+		4A6483F7223AA0BA0093158E /* Build configuration list for PBXNativeTarget "SpotyfiendTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4AEC4B2D223844B4004BC04C /* Debug */,
-				4AEC4B2E223844B4004BC04C /* Release */,
+				4A6483F8223AA0BA0093158E /* Debug */,
+				4A6483F9223AA0BA0093158E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4AEC4B2F223844B4004BC04C /* Build configuration list for PBXNativeTarget "SpotyfiendUITests" */ = {
+		4A6483FA223AA0BA0093158E /* Build configuration list for PBXNativeTarget "SpotyfiendUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4AEC4B30223844B4004BC04C /* Debug */,
-				4AEC4B31223844B4004BC04C /* Release */,
+				4A6483FB223AA0BA0093158E /* Debug */,
+				4A6483FC223AA0BA0093158E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4AEC4AF9223844B3004BC04C /* Project object */;
+	rootObject = 4A6483C4223AA0B90093158E /* Project object */;
 }

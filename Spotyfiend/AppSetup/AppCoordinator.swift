@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 struct AppCoordinatorDependencies: Dependencies {
     let spotifyService: SpotifyService
@@ -23,6 +24,7 @@ class AppCoordinator: FlowCoordinator {
     }
     
     func start() {
+        FirebaseApp.configure()
         if spotifyService.isAuthenticated {
             showHomeViewController()
         }

@@ -2,7 +2,7 @@
 //  SpotyfiendUITests.swift
 //  SpotyfiendUITests
 //
-//  Created by Elvin Bearden on 3/12/19.
+//  Created by Elvin Bearden on 3/14/19.
 //  Copyright © 2019 Setec Astronomy. All rights reserved.
 //
 

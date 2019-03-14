@@ -5,7 +5,9 @@ target 'Spotyfiend' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-  pod "SpotifyKit"
+  # Pods for Spotyfiend
+  pod 'SpotifyKit'
+  pod 'Firebase/Core'
 
   target 'SpotyfiendTests' do
     inherit! :search_paths

@@ -9,16 +9,20 @@
 import UIKit
 
 struct RecommendationsCoordinatorDependencies: Dependencies, NavigationControllerDependency {
-    var navigationController: UINavigationController
+    let navigationController: UINavigationController
+    let spotifyService: SpotifyService
 }
 
 class RecommendationsCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDelegate {
     var navigationController: UINavigationController
     var childCoordinators: [FlowCoordinator] = []
     
+    private let spotifyService: SpotifyService
+    
     required init?(dependencies: Dependencies?) {
         guard let dependencies = dependencies as? RecommendationsCoordinatorDependencies else { return nil }
         self.navigationController = dependencies.navigationController
+        self.spotifyService = dependencies.spotifyService
     }
     
     func start() {
@@ -30,6 +34,11 @@ class RecommendationsCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDeleg
         
         let recommendationService = RecommendationService()
         recommendationService.getRecommendations { (results) in
+            for rec in results {
+                self.spotifyService.getDetail(recommendation: rec, completion: { (item) in
+                    print(item)
+                })
+            }
             viewModel.update(recommendations: results)
         }
     }

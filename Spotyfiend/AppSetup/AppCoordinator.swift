@@ -8,15 +8,18 @@
 
 import UIKit
 import Firebase
+import GoogleSignIn
 
 struct AppCoordinatorDependencies: Dependencies {
     let spotifyService: SpotifyService
 }
 
-class AppCoordinator: FlowCoordinator {
+class AppCoordinator: NSObject, FlowCoordinator {
     let navigationController: UINavigationController = UINavigationController()
-    private let spotifyService: SpotifyService
     internal var childCoordinators: [FlowCoordinator] = []
+
+    private let spotifyService: SpotifyService
+    private var signInViewController: SignInViewController?
     
     required init?(dependencies: Dependencies? = nil) {
         guard let dependencies = dependencies as? AppCoordinatorDependencies else { return nil }
@@ -25,12 +28,8 @@ class AppCoordinator: FlowCoordinator {
     
     func start() {
         FirebaseApp.configure()
-        if spotifyService.isAuthenticated {
-            showHomeViewController()
-        }
-        else {
-            spotifyService.authenticate()
-        }
+        showSignInViewController()
+        navigationController.setNavigationBarHidden(true, animated: false)
     }
     
     private func showHomeViewController() {
@@ -39,5 +38,23 @@ class AppCoordinator: FlowCoordinator {
         
         coordinator.start()
         addChildCoordinator(coordinator)
+    }
+    
+    private func showSignInViewController() {
+        signInViewController = SignInViewController()
+        signInViewController?.delegate = self
+        navigationController.present(signInViewController!, animated: false, completion: nil)
+    }
+}
+
+extension AppCoordinator: SignInDelegate {
+    func signInSuccessful() {
+        signInViewController?.dismiss(animated: false, completion: nil)
+        if spotifyService.isAuthenticated {
+            showHomeViewController()
+        }
+        else {
+            spotifyService.authenticate()
+        }
     }
 }

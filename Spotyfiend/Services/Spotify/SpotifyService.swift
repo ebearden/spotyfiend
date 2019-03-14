@@ -77,4 +77,36 @@ extension SpotifyService {
         searchQueue.addOperation(searchTrackOperation)
         searchQueue.addOperation(completionOperation)
     }
+    
+    func getArtistDetail(artistId: String, completion: @escaping (SpotifySearchItem) -> Void) {
+        manager.get(SpotifyArtist.self, id: artistId) { (result) in
+            DispatchQueue.main.async {
+                completion(result)
+            }
+        }
+    }
+    
+    func getDetail(recommendation: Recommendation, completion: @escaping (SpotifySearchItem) -> Void) {
+        if recommendation.type == "artist" {
+            manager.get(SpotifyArtist.self, id: recommendation.spotifyId) { (item) in
+                DispatchQueue.main.async {
+                    completion(item)
+                }
+            }
+        }
+        else if recommendation.type == "album" {
+            manager.get(SpotifyAlbum.self, id: recommendation.spotifyId) { (item) in
+                DispatchQueue.main.async {
+                    completion(item)
+                }
+            }
+        }
+        else if recommendation.type == "track" {
+            manager.get(SpotifyTrack.self, id: recommendation.spotifyId) { (item) in
+                DispatchQueue.main.async {
+                    completion(item)
+                }
+            }
+        }
+    }
 }

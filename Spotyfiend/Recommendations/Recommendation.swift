@@ -7,19 +7,18 @@
 //
 
 import Foundation
+import SpotifyKit
 
 struct Recommendation: Codable {
-    let identifier: String
+    let type: String
+    let userId: String
+    let spotifyId: String
     let uri: String
-    let href: String
-    let shareUrl: String
-    let createdAt: String
     
     enum CodingKeys: String, CodingKey {
-        case identifier = "_id"
+        case type
+        case userId = "user_id"
+        case spotifyId = "spotify_id"
         case uri
-        case href
-        case shareUrl = "share_url"
-        case createdAt
-    }
+    }    
 }

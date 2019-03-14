@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SpotifyKit
 
 struct SearchViewControllerDependencies: Dependencies {
     let viewModel: SearchViewModel
@@ -47,6 +48,15 @@ extension SearchViewController {
             guard let self = self else { return }
             self.tableView.reloadData()
         }
+        
+        registerCells()
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        
+    }
+    
+    func registerCells() {
+        tableView.register(UINib(nibName: SearchResultsTableViewCell.reuseIdentifier, bundle: nil), forCellReuseIdentifier: SearchResultsTableViewCell.reuseIdentifier)
     }
 }
 
@@ -60,14 +70,24 @@ extension SearchViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = viewModel.item(at: indexPath)?.name ?? ""
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: SearchResultsTableViewCell.reuseIdentifier, for: indexPath) as? SearchResultsTableViewCell else { fatalError() }
+        guard let item = viewModel.item(at: indexPath) else { return cell }
+        cell.configure(item: item)
+        cell.delegate = self
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return viewModel.titleForHeader(in: section)
+    }
+}
+
+extension SearchViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        if let uri = viewModel.item(at: indexPath)?.uri {
+//            UIApplication.shared.open(URL(string: uri)!, options: [:], completionHandler: nil)
+//        }
     }
 }
 
@@ -79,5 +99,12 @@ extension SearchViewController: UISearchBarDelegate {
         else {
             viewModel.update(searchResults: [])
         }
+    }
+}
+
+extension SearchViewController: SearchResultsCellDelegate {
+    func recommendButtonPressed(item: SpotifySearchItem, type: SpotifyItemType) {
+        guard let parentCoordinator = parentCoordinator as? SearchCoordinator else { return }
+        parentCoordinator.recommend(item: item, type: type)
     }
 }

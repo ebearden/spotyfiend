@@ -41,6 +41,11 @@
 		4A648446223AA1C40093158E /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648426223AA1C40093158E /* SearchCoordinator.swift */; };
 		4A648447223AA1C40093158E /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648427223AA1C40093158E /* SearchViewModel.swift */; };
 		4A648448223AA1C40093158E /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A648428223AA1C40093158E /* SearchViewController.xib */; };
+		4A64844B223AB3840093158E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648449223AB3840093158E /* SignInViewController.swift */; };
+		4A64844C223AB3840093158E /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A64844A223AB3840093158E /* SignInViewController.xib */; };
+		4A648451223AE5AF0093158E /* SearchResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A64844F223AE5AF0093158E /* SearchResultsTableViewCell.swift */; };
+		4A648452223AE5AF0093158E /* SearchResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A648450223AE5AF0093158E /* SearchResultsTableViewCell.xib */; };
+		4A648454223AEAB30093158E /* ImageDownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648453223AEAB30093158E /* ImageDownloadService.swift */; };
 		E5E76EF9F5540D267AFA0A64 /* Pods_SpotyfiendTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D56B685C114C37FEF2D0D9 /* Pods_SpotyfiendTests.framework */; };
 		EFDFC6167A9DC991785FB5B0 /* Pods_Spotyfiend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AF47BA70873F33B86D46E7 /* Pods_Spotyfiend.framework */; };
 /* End PBXBuildFile section */
@@ -104,6 +109,11 @@
 		4A648426223AA1C40093158E /* SearchCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
 		4A648427223AA1C40093158E /* SearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		4A648428223AA1C40093158E /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		4A648449223AB3840093158E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		4A64844A223AB3840093158E /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		4A64844F223AE5AF0093158E /* SearchResultsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewCell.swift; sourceTree = "<group>"; };
+		4A648450223AE5AF0093158E /* SearchResultsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultsTableViewCell.xib; sourceTree = "<group>"; };
+		4A648453223AEAB30093158E /* ImageDownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadService.swift; sourceTree = "<group>"; };
 		8AFBD7FBDFF7681691CD27DF /* Pods_SpotyfiendUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotyfiendUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96665281E9B941CC5D5831E0 /* Pods-SpotyfiendUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotyfiendUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpotyfiendUITests/Pods-SpotyfiendUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A28316800C80D1C06FB506DA /* Pods-SpotyfiendTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotyfiendTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpotyfiendTests/Pods-SpotyfiendTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -222,6 +232,7 @@
 			children = (
 				4A648402223AA1C30093158E /* Spotify */,
 				4A648407223AA1C30093158E /* RecommendationService.swift */,
+				4A648453223AEAB30093158E /* ImageDownloadService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -250,6 +261,8 @@
 				4A648409223AA1C30093158E /* AppCoordinator.swift */,
 				4A64840A223AA1C30093158E /* LaunchScreen.storyboard */,
 				4A64840C223AA1C30093158E /* AppDelegate.swift */,
+				4A648449223AB3840093158E /* SignInViewController.swift */,
+				4A64844A223AB3840093158E /* SignInViewController.xib */,
 			);
 			path = AppSetup;
 			sourceTree = "<group>";
@@ -314,6 +327,8 @@
 				4A648426223AA1C40093158E /* SearchCoordinator.swift */,
 				4A648427223AA1C40093158E /* SearchViewModel.swift */,
 				4A648428223AA1C40093158E /* SearchViewController.xib */,
+				4A64844F223AE5AF0093158E /* SearchResultsTableViewCell.swift */,
+				4A648450223AE5AF0093158E /* SearchResultsTableViewCell.xib */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -343,6 +358,7 @@
 				4A6483C9223AA0B90093158E /* Frameworks */,
 				4A6483CA223AA0B90093158E /* Resources */,
 				49A7552A02523B9DA113162C /* [CP] Embed Pods Frameworks */,
+				1D2CFFB77D22AB375081DF8B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -439,12 +455,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A64844C223AB3840093158E /* SignInViewController.xib in Resources */,
 				4A648429223AA1C40093158E /* Assets.xcassets in Resources */,
 				4A648431223AA1C40093158E /* LaunchScreen.storyboard in Resources */,
 				4A648434223AA1C40093158E /* HomeViewController.xib in Resources */,
 				4A64842A223AA1C40093158E /* GoogleService-Info.plist in Resources */,
 				4A64843F223AA1C40093158E /* SettingsViewController.xib in Resources */,
 				4A648448223AA1C40093158E /* SearchViewController.xib in Resources */,
+				4A648452223AE5AF0093158E /* SearchResultsTableViewCell.xib in Resources */,
 				4A648438223AA1C40093158E /* RecommendationsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +484,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1D2CFFB77D22AB375081DF8B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Spotyfiend/Pods-Spotyfiend-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spotyfiend/Pods-Spotyfiend-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		49A7552A02523B9DA113162C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -475,16 +515,30 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Spotyfiend/Pods-Spotyfiend-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SpotifyKit/SpotifyKit.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SpotifyKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -573,12 +627,15 @@
 				4A648436223AA1C40093158E /* HomeCoordinator.swift in Sources */,
 				4A648433223AA1C40093158E /* HomeViewModel.swift in Sources */,
 				4A64843D223AA1C40093158E /* SettingsViewModel.swift in Sources */,
+				4A64844B223AB3840093158E /* SignInViewController.swift in Sources */,
 				4A648446223AA1C40093158E /* SearchCoordinator.swift in Sources */,
 				4A648435223AA1C40093158E /* HomeViewController.swift in Sources */,
 				4A64843C223AA1C40093158E /* SpotifyConstants.swift in Sources */,
 				4A648441223AA1C40093158E /* FlowCoordinator.swift in Sources */,
+				4A648454223AEAB30093158E /* ImageDownloadService.swift in Sources */,
 				4A648443223AA1C40093158E /* ViewModel.swift in Sources */,
 				4A648445223AA1C40093158E /* SearchViewController.swift in Sources */,
+				4A648451223AE5AF0093158E /* SearchResultsTableViewCell.swift in Sources */,
 				4A648439223AA1C40093158E /* Recommendation.swift in Sources */,
 				4A64843E223AA1C40093158E /* SettingsCoordinator.swift in Sources */,
 				4A64842D223AA1C40093158E /* SearchArtistOperation.swift in Sources */,

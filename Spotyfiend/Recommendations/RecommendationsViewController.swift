@@ -78,9 +78,5 @@ extension RecommendationsViewController: UITableViewDelegate {
         if UIApplication.shared.canOpenURL(url) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
-        else {
-            url = URL(string: viewModel.item(at: indexPath).shareUrl)!
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
-        }
     }
 }

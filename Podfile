@@ -8,6 +8,9 @@ target 'Spotyfiend' do
   # Pods for Spotyfiend
   pod 'SpotifyKit'
   pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
 
   target 'SpotyfiendTests' do
     inherit! :search_paths

@@ -7,16 +7,19 @@
 //
 
 import UIKit
+import SpotifyKit
 
 struct SearchCoordinatorDependencies: Dependencies, NavigationControllerDependency {
     let navigationController: UINavigationController
     let spotifyService: SpotifyService
+    let recommendationService: RecommendationService
 }
 
 class SearchCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDelegate {
     var navigationController: UINavigationController
     var childCoordinators: [FlowCoordinator] = []
     private let spotifyService: SpotifyService
+    private let recommendationService: RecommendationService
     private let searchViewModel: SearchViewModel
     
     required init?(dependencies: Dependencies?) {
@@ -24,6 +27,7 @@ class SearchCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDelegate {
         self.navigationController = dependencies.navigationController
         self.spotifyService = dependencies.spotifyService
         self.searchViewModel = SearchViewModel(searchResults: [])
+        self.recommendationService = dependencies.recommendationService
     }
     
     func start() {
@@ -39,5 +43,15 @@ class SearchCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDelegate {
             guard let self = self else { return }
             self.searchViewModel.update(searchResults: results)
         }
+    }
+    
+    func recommend(item: SpotifySearchItem, type: SpotifyItemType) {
+        let recommendation = Recommendation(
+            type: type.rawValue,
+            userId: "teset",
+            spotifyId: item.id,
+            uri: item.uri
+        )
+        recommendationService.addRecommendation(recommendation: recommendation)
     }
 }

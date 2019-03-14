@@ -27,11 +27,15 @@ class HomeCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDelegate {
     }
     
     func start() {
-        let recommendationsDependencies = RecommendationsCoordinatorDependencies(navigationController: UINavigationController())
+        let recommendationsDependencies = RecommendationsCoordinatorDependencies(navigationController: UINavigationController(), spotifyService: spotifyService)
         let recommendationsCoordinator = RecommendationsCoordinator(dependencies: recommendationsDependencies)
         recommendationsCoordinator?.start()
         
-        let searchDependencies = SearchCoordinatorDependencies(navigationController: UINavigationController(), spotifyService: spotifyService)
+        let searchDependencies = SearchCoordinatorDependencies(
+            navigationController: UINavigationController(),
+            spotifyService: spotifyService,
+            recommendationService: RecommendationService()
+        )
         let searchCoordinator = SearchCoordinator(dependencies: searchDependencies)
         searchCoordinator?.start()
     

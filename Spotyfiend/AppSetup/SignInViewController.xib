@@ -10,9 +10,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecommendationsViewController" customModule="Spotyfiend" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignInViewController" customModule="Spotyfiend" customModuleProvider="target">
             <connections>
-                <outlet property="tableView" destination="rMq-dC-f0s" id="Fo1-nC-TGB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,21 +20,20 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rMq-dC-f0s">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tD6-om-zgp" customClass="GIDSignInButton">
+                    <rect key="frame" x="20" y="577" width="335" height="50"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <connections>
-                        <outlet property="dataSource" destination="-1" id="As8-I7-WDx"/>
-                        <outlet property="delegate" destination="-1" id="zIe-8x-N8p"/>
-                    </connections>
-                </tableView>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="EdY-AY-2tj"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="sdC-WM-bjz"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="rMq-dC-f0s" secondAttribute="bottom" id="Evf-mT-qu6"/>
-                <constraint firstItem="rMq-dC-f0s" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cXY-nS-o17"/>
-                <constraint firstItem="rMq-dC-f0s" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="pLx-PR-Vf6"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rMq-dC-f0s" secondAttribute="trailing" id="unE-8g-qgY"/>
+                <constraint firstItem="tD6-om-zgp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="BF9-1W-Gcq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tD6-om-zgp" secondAttribute="trailing" constant="20" id="aaL-yh-Mrk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="tD6-om-zgp" secondAttribute="bottom" constant="40" id="oTw-SY-oE1"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>

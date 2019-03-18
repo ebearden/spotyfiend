@@ -119,7 +119,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Firestore
   - GoogleSignIn
-  - SpotifyKit
+  - SpotifyKit (from `https://github.com/ebearden/SpotifyKit.git`, commit `f66c134495cd1a4f67d5ccbbf7aaa64f67b9f796`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -141,7 +141,16 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - Protobuf
-    - SpotifyKit
+
+EXTERNAL SOURCES:
+  SpotifyKit:
+    :commit: f66c134495cd1a4f67d5ccbbf7aaa64f67b9f796
+    :git: https://github.com/ebearden/SpotifyKit.git
+
+CHECKOUT OPTIONS:
+  SpotifyKit:
+    :commit: f66c134495cd1a4f67d5ccbbf7aaa64f67b9f796
+    :git: https://github.com/ebearden/SpotifyKit.git
 
 SPEC CHECKSUMS:
   BoringSSL-GRPC: 2a230d9cd93e7ce39916044f645cebb31f37dde6
@@ -164,6 +173,6 @@ SPEC CHECKSUMS:
   Protobuf: 7a877b7f3e5964e3fce995e2eb323dbc6831bb5a
   SpotifyKit: 20abf7e1e170e35683ecbe6d93598e91d4e7b6ab
 
-PODFILE CHECKSUM: 38079e98834b9329309245c9237a977081c52a85
+PODFILE CHECKSUM: e7a146fcfcfa9066d602d427eea2091b023d3d4a
 
 COCOAPODS: 1.5.3

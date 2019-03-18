@@ -78,7 +78,7 @@ extension SpotifyService {
         searchQueue.addOperation(completionOperation)
     }
     
-    func getArtistDetail(artistId: String, completion: @escaping (SpotifySearchItem) -> Void) {
+    func getArtistDetail(artistId: String, completion: @escaping (SpotifyArtist) -> Void) {
         manager.get(SpotifyArtist.self, id: artistId) { (result) in
             DispatchQueue.main.async {
                 completion(result)

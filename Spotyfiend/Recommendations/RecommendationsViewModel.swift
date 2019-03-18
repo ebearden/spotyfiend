@@ -7,18 +7,24 @@
 //
 
 import UIKit
+import SpotifyKit
+import Firebase
 
 class RecommendationsViewModel: ViewModel {
-    var recommendations: [Recommendation]
+    private var recommendations: [Recommendation] = []
+    private var spotifyRecommendations: [SpotifySearchItem] = []
+    let spotifyService: SpotifyService
+    let user: CompoundUser
     
     var refresh: (() -> Void)?
     
-    init(recommendations: [Recommendation]) {
-        self.recommendations = recommendations
+    init(user: CompoundUser, spotifyService: SpotifyService) {
+        self.spotifyService = spotifyService
+        self.user = user
     }
     
     func update(recommendations: [Recommendation]) {
-        self.recommendations = recommendations
+        self.recommendations = recommendations.sorted(by: { $0.createdAt > $1.createdAt })
         refresh?()
     }
 }
@@ -34,10 +40,14 @@ extension RecommendationsViewModel {
     }
     
     func item(at indexPath: IndexPath) -> Recommendation {
-       return recommendations[indexPath.row]
+        return recommendations[indexPath.row]
     }
     
     func titleForHeader(in section: Int) -> String? {
        return nil
+    }
+    
+    func user(forRowAt indexPath: IndexPath) -> String {
+        return recommendations[indexPath.row].userId
     }
 }

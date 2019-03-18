@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import Firebase
 
 struct HomeCoordinatorDependencies: Dependencies, NavigationControllerDependency {
     var navigationController: UINavigationController
     var spotifyService: SpotifyService
+    var user: CompoundUser
 }
 
 class HomeCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDelegate {
@@ -19,22 +21,30 @@ class HomeCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDelegate {
     
     private var viewController: UIViewController!
     private let spotifyService: SpotifyService
+    private let user: CompoundUser
     
     required init?(dependencies: Dependencies?) {
         guard let dependencies = dependencies as? HomeCoordinatorDependencies else { return nil }
+        
         self.navigationController = dependencies.navigationController
         self.spotifyService = dependencies.spotifyService
+        self.user = dependencies.user
     }
     
     func start() {
-        let recommendationsDependencies = RecommendationsCoordinatorDependencies(navigationController: UINavigationController(), spotifyService: spotifyService)
+        let recommendationsDependencies = RecommendationsCoordinatorDependencies(
+            navigationController: UINavigationController(),
+            spotifyService: spotifyService,
+            user: user
+        )
         let recommendationsCoordinator = RecommendationsCoordinator(dependencies: recommendationsDependencies)
         recommendationsCoordinator?.start()
         
         let searchDependencies = SearchCoordinatorDependencies(
             navigationController: UINavigationController(),
             spotifyService: spotifyService,
-            recommendationService: RecommendationService()
+            recommendationService: RecommendationService(),
+            user: user
         )
         let searchCoordinator = SearchCoordinator(dependencies: searchDependencies)
         searchCoordinator?.start()

@@ -7,14 +7,13 @@
 //
 
 import UIKit
+import SpotifyKit
 
 struct RecommendationsViewControllerDependencies: Dependencies {
     let viewModel: RecommendationsViewModel
 }
 
-
 class RecommendationsViewController: UIViewController, FlowCoordinatorViewController {
-    
     @IBOutlet weak var tableView: UITableView!
     
     var parentCoordinator: (FlowCoordinator & FlowCoordinatorLifeCycleDelegate)?
@@ -43,10 +42,19 @@ class RecommendationsViewController: UIViewController, FlowCoordinatorViewContro
 extension RecommendationsViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Your Recommendations"
+        
         viewModel.refresh = { [weak self] in
             guard let self = self else { return }
             self.tableView.reloadData()
         }
+        
+        registerCells()
+    }
+    
+    func registerCells() {
+        tableView.register(UINib(nibName: RecommendationTableViewCell.reuseIdentifier, bundle: nil), forCellReuseIdentifier: RecommendationTableViewCell.reuseIdentifier)
     }
 }
 
@@ -60,8 +68,38 @@ extension RecommendationsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = viewModel.item(at: indexPath).uri
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: RecommendationTableViewCell.reuseIdentifier, for: indexPath) as? RecommendationTableViewCell else {
+            fatalError()
+        }
+        
+        let item = viewModel.item(at: indexPath)
+        
+        let userService = CompoundUserService()
+        userService.getUser(userId: item.userId) { (user) in
+            user?.getPhoto(completion: { (image) in
+                cell.userImageView.image = image
+            })
+        }
+        
+        viewModel.spotifyService.getDetail(recommendation: item) { (item) in
+            cell.titleLabel.text = item.name
+            
+            if let item = item as? SpotifyArtist, let uri = item.artUri {
+                ImageDownloadService.download(from: uri, completion: { (image) in
+                    cell.spotifyImageView.image = image
+                })
+            }
+            else if let item = item as? SpotifyAlbum {
+                ImageDownloadService.download(from: item.artUri, completion: { (image) in
+                    cell.spotifyImageView.image = image
+                })
+            }
+            else if let item = item as? SpotifyTrack, let uri = item.album?.artUri {
+                ImageDownloadService.download(from: uri, completion: { (image) in
+                    cell.spotifyImageView.image = image
+                })
+            }
+        }
         
         return cell
     }
@@ -73,10 +111,21 @@ extension RecommendationsViewController: UITableViewDataSource {
 
 extension RecommendationsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        var url = URL(string: viewModel.item(at: indexPath).uri)!
+        tableView.deselectRow(at: indexPath, animated: true)
         
+        let url = URL(string: viewModel.item(at: indexPath).uri)!
+
         if UIApplication.shared.canOpenURL(url) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        guard editingStyle == .delete, let parentCoordinator = parentCoordinator as? RecommendationsCoordinator else { return }
+        parentCoordinator.delete(recommendation: viewModel.item(at: indexPath))
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return viewModel.item(at: indexPath).userId == viewModel.user.userId
     }
 }

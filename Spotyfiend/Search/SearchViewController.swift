@@ -72,6 +72,18 @@ extension SearchViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: SearchResultsTableViewCell.reuseIdentifier, for: indexPath) as? SearchResultsTableViewCell else { fatalError() }
         guard let item = viewModel.item(at: indexPath) else { return cell }
+        
+        if let item = item as? SpotifyArtist,
+            let coordinator = parentCoordinator as? SearchCoordinator {
+            
+            coordinator.getArtistDetail(artist: item) { (artist) in
+                ImageDownloadService.download(from: artist.artUri ?? "", completion: { (image) in
+                    DispatchQueue.main.async {
+                        cell.spotifyImageView.image = image
+                    }
+                })
+            }
+        }
         cell.configure(item: item)
         cell.delegate = self
         

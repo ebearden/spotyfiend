@@ -20,6 +20,7 @@ class AppCoordinator: NSObject, FlowCoordinator {
 
     private let spotifyService: SpotifyService
     private var signInViewController: SignInViewController?
+    private var user: CompoundUser?
     
     required init?(dependencies: Dependencies? = nil) {
         guard let dependencies = dependencies as? AppCoordinatorDependencies else { return nil }
@@ -32,8 +33,17 @@ class AppCoordinator: NSObject, FlowCoordinator {
         navigationController.setNavigationBarHidden(true, animated: false)
     }
     
+    func resume() {
+        navigationController.setNavigationBarHidden(true, animated: false)
+    }
+    
     private func showHomeViewController() {
-        let dependencies = HomeCoordinatorDependencies(navigationController: navigationController, spotifyService: spotifyService)
+        guard let user = user else { return }
+        let dependencies = HomeCoordinatorDependencies(
+            navigationController: navigationController,
+            spotifyService: spotifyService,
+            user: user
+        )
         guard let coordinator = HomeCoordinator(dependencies: dependencies) else { return }
         
         coordinator.start()
@@ -48,13 +58,35 @@ class AppCoordinator: NSObject, FlowCoordinator {
 }
 
 extension AppCoordinator: SignInDelegate {
-    func signInSuccessful() {
+    func signInSuccessful(user: User) {
         signInViewController?.dismiss(animated: false, completion: nil)
-        if spotifyService.isAuthenticated {
-            showHomeViewController()
+        
+        let userService = CompoundUserService()
+       
+        userService.getUser(userId: user.uid) { (compoundUser) in
+            guard let compoundUser = compoundUser else {
+                userService.setUser(user: user, completion: { (compoundUser) in
+                    self.user = compoundUser
+                    if self.spotifyService.isAuthenticated {
+                        self.showHomeViewController()
+                    }
+                    else {
+                        self.spotifyService.authenticate()
+                    }
+                })
+                return
+            }
+            
+            self.user = compoundUser
+            if self.spotifyService.isAuthenticated {
+                self.showHomeViewController()
+            }
+            else {
+                self.spotifyService.authenticate()
+            }
+            
+            
         }
-        else {
-            spotifyService.authenticate()
-        }
+        
     }
 }

@@ -8,11 +8,13 @@
 
 import UIKit
 import SpotifyKit
+import Firebase
 
 struct SearchCoordinatorDependencies: Dependencies, NavigationControllerDependency {
     let navigationController: UINavigationController
     let spotifyService: SpotifyService
     let recommendationService: RecommendationService
+    let user: CompoundUser
 }
 
 class SearchCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDelegate {
@@ -21,6 +23,7 @@ class SearchCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDelegate {
     private let spotifyService: SpotifyService
     private let recommendationService: RecommendationService
     private let searchViewModel: SearchViewModel
+    private let user: CompoundUser
     
     required init?(dependencies: Dependencies?) {
         guard let dependencies = dependencies as? SearchCoordinatorDependencies else { return nil }
@@ -28,6 +31,7 @@ class SearchCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDelegate {
         self.spotifyService = dependencies.spotifyService
         self.searchViewModel = SearchViewModel(searchResults: [])
         self.recommendationService = dependencies.recommendationService
+        self.user = dependencies.user
     }
     
     func start() {
@@ -35,7 +39,6 @@ class SearchCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDelegate {
         let controller = SearchViewController(parentCoordinator: self, dependencies: dependencies)
         navigationController.tabBarItem = UITabBarItem(title: "Search", image: nil, selectedImage: nil)
         navigationController.show(controller, sender: nil)
-        
     }
     
     func search(_ searchTerm: String) {
@@ -45,10 +48,14 @@ class SearchCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDelegate {
         }
     }
     
+    func getArtistDetail(artist: SpotifyArtist, completion: @escaping (SpotifyArtist) -> Void) {
+        spotifyService.getArtistDetail(artistId: artist.id, completion: completion)
+    }
+    
     func recommend(item: SpotifySearchItem, type: SpotifyItemType) {
         let recommendation = Recommendation(
             type: type.rawValue,
-            userId: "teset",
+            userId: user.userId,
             spotifyId: item.id,
             uri: item.uri
         )

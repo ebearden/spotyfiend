@@ -11,7 +11,7 @@ import GoogleSignIn
 import Firebase
 
 protocol SignInDelegate: class {
-    func signInSuccessful()
+    func signInSuccessful(user: User)
 }
 
 class SignInViewController: UIViewController {
@@ -43,9 +43,8 @@ extension SignInViewController: GIDSignInDelegate {
         let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken, accessToken: authentication.accessToken)
         
         Auth.auth().signInAndRetrieveData(with: credential) { (authResult, error) in
-            guard error == nil else { return }
-            self.delegate?.signInSuccessful()
-//            print(authResult)
+            guard error == nil, let user = authResult?.user else { return }
+            self.delegate?.signInSuccessful(user: user)
         }
     }
     

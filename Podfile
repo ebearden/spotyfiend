@@ -6,7 +6,7 @@ target 'Spotyfiend' do
   use_frameworks!
 
   # Pods for Spotyfiend
-  pod 'SpotifyKit'
+  pod 'SpotifyKit', :git => 'https://github.com/ebearden/SpotifyKit.git', :commit => 'f66c134495cd1a4f67d5ccbbf7aaa64f67b9f796'
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
   pod 'Firebase/Auth'

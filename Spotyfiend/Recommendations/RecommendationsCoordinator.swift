@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import Firebase
 
 struct RecommendationsCoordinatorDependencies: Dependencies, NavigationControllerDependency {
     let navigationController: UINavigationController
     let spotifyService: SpotifyService
+    let user: CompoundUser
 }
 
 class RecommendationsCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDelegate {
@@ -18,15 +20,18 @@ class RecommendationsCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDeleg
     var childCoordinators: [FlowCoordinator] = []
     
     private let spotifyService: SpotifyService
+    private let user: CompoundUser
+    private var viewModel: RecommendationsViewModel!
     
     required init?(dependencies: Dependencies?) {
         guard let dependencies = dependencies as? RecommendationsCoordinatorDependencies else { return nil }
         self.navigationController = dependencies.navigationController
         self.spotifyService = dependencies.spotifyService
+        self.user = dependencies.user
     }
     
     func start() {
-        let viewModel = RecommendationsViewModel(recommendations: [])
+        viewModel = RecommendationsViewModel(user: user, spotifyService: spotifyService)
         let dependencies = RecommendationsViewControllerDependencies(viewModel: viewModel)
         let controller = RecommendationsViewController(parentCoordinator: self, dependencies: dependencies)
         navigationController.tabBarItem = UITabBarItem(title: "Recommendations", image: nil, selectedImage: nil)
@@ -34,12 +39,21 @@ class RecommendationsCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDeleg
         
         let recommendationService = RecommendationService()
         recommendationService.getRecommendations { (results) in
-            for rec in results {
-                self.spotifyService.getDetail(recommendation: rec, completion: { (item) in
-                    print(item)
-                })
-            }
-            viewModel.update(recommendations: results)
+            self.viewModel.update(recommendations: results)
+        }
+    }
+    
+    func update() {
+        let recommendationService = RecommendationService()
+        recommendationService.getRecommendations { (results) in
+            self.viewModel.update(recommendations: results)
+        }
+    }
+    
+    func delete(recommendation: Recommendation) {
+        let recommendationService = RecommendationService()
+        recommendationService.deleteRecommendation(recommendation: recommendation) {
+            self.update()
         }
     }
 }

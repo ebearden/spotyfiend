@@ -52,12 +52,13 @@ class SearchCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDelegate {
         spotifyService.getArtistDetail(artistId: artist.id, completion: completion)
     }
     
-    func recommend(item: SpotifySearchItem, type: SpotifyItemType) {
+    func recommend(item: SpotifySearchItem, type: SpotifyItemType, comment: String?) {
         let recommendation = Recommendation(
             type: type.rawValue,
             userId: user.userId,
             spotifyId: item.id,
-            uri: item.uri
+            uri: item.uri,
+            text: comment
         )
         recommendationService.addRecommendation(recommendation: recommendation)
     }

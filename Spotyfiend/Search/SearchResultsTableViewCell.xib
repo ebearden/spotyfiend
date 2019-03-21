@@ -32,10 +32,16 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PmW-Py-s6A">
-                        <rect key="frame" x="280" y="70.5" width="30" height="30"/>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                        <state key="normal" title="R"/>
+                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PmW-Py-s6A">
+                        <rect key="frame" x="290" y="80.5" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="FxQ-7o-dZ1"/>
+                            <constraint firstAttribute="height" constant="20" id="G72-kH-Kqf"/>
+                        </constraints>
+                        <state key="normal" image="PlusButton"/>
+                        <state key="selected">
+                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
                         <connections>
                             <action selector="recommendButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="OBc-Ko-A9C"/>
                         </connections>
@@ -71,4 +77,7 @@
             <point key="canvasLocation" x="137.59999999999999" y="141.22938530734635"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="PlusButton" width="100" height="100"/>
+    </resources>
 </document>

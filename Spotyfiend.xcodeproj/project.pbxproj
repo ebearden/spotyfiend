@@ -11,7 +11,11 @@
 		4A01905A223C39760066E0DF /* RecommendationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A019058223C39760066E0DF /* RecommendationTableViewCell.swift */; };
 		4A01905B223C39760066E0DF /* RecommendationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A019059223C39760066E0DF /* RecommendationTableViewCell.xib */; };
 		4A01905E223FF76F0066E0DF /* CompoundUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A01905D223FF76F0066E0DF /* CompoundUser.swift */; };
-		4A019060223FF7FA0066E0DF /* CompoundUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A01905F223FF7FA0066E0DF /* CompoundUserService.swift */; };
+		4A019060223FF7FA0066E0DF /* ServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A01905F223FF7FA0066E0DF /* ServiceClient.swift */; };
+		4A1604E22243EDBD00D89DAA /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1604E02243EDBD00D89DAA /* CommentTableViewCell.swift */; };
+		4A1604E32243EDBD00D89DAA /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A1604E12243EDBD00D89DAA /* CommentTableViewCell.xib */; };
+		4A1604E5224402BE00D89DAA /* RecommendationDetailTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1604E4224402BE00D89DAA /* RecommendationDetailTableHeaderView.swift */; };
+		4A1604E7224402FD00D89DAA /* RecommendationDetailTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A1604E6224402FD00D89DAA /* RecommendationDetailTableHeaderView.xib */; };
 		4A6483E5223AA0BA0093158E /* SpotyfiendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6483E4223AA0BA0093158E /* SpotyfiendTests.swift */; };
 		4A6483F0223AA0BA0093158E /* SpotyfiendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6483EF223AA0BA0093158E /* SpotyfiendUITests.swift */; };
 		4A648429223AA1C40093158E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A6483FE223AA1C30093158E /* Assets.xcassets */; };
@@ -50,6 +54,15 @@
 		4A648451223AE5AF0093158E /* SearchResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A64844F223AE5AF0093158E /* SearchResultsTableViewCell.swift */; };
 		4A648452223AE5AF0093158E /* SearchResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A648450223AE5AF0093158E /* SearchResultsTableViewCell.xib */; };
 		4A648454223AEAB30093158E /* ImageDownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648453223AEAB30093158E /* ImageDownloadService.swift */; };
+		4A8F2C2C22411FFE00A54348 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8F2C2B22411FFE00A54348 /* Group.swift */; };
+		4A8F2C3022412D5A00A54348 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8F2C2F22412D5A00A54348 /* Comment.swift */; };
+		4A8F2D362242917E00A54348 /* DocumentCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8F2D352242917E00A54348 /* DocumentCodable.swift */; };
+		4A8F2D392242C80200A54348 /* RecommendationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8F2D372242C80200A54348 /* RecommendationDetailViewController.swift */; };
+		4A8F2D3A2242C80200A54348 /* RecommendationDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A8F2D382242C80200A54348 /* RecommendationDetailViewController.xib */; };
+		4A8F2D3C2243C30300A54348 /* RecommendationDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8F2D3B2243C30300A54348 /* RecommendationDetailViewModel.swift */; };
+		4A8F2D3F2243CFFD00A54348 /* TextInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8F2D3E2243CFFD00A54348 /* TextInputAccessoryView.swift */; };
+		4A8F2D412243D05300A54348 /* NibFileOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8F2D402243D05300A54348 /* NibFileOwnerLoadable.swift */; };
+		4A8F2D432243D16D00A54348 /* TextInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A8F2D422243D16D00A54348 /* TextInputAccessoryView.xib */; };
 		E5E76EF9F5540D267AFA0A64 /* Pods_SpotyfiendTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D56B685C114C37FEF2D0D9 /* Pods_SpotyfiendTests.framework */; };
 		EFDFC6167A9DC991785FB5B0 /* Pods_Spotyfiend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AF47BA70873F33B86D46E7 /* Pods_Spotyfiend.framework */; };
 /* End PBXBuildFile section */
@@ -77,7 +90,11 @@
 		4A019058223C39760066E0DF /* RecommendationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationTableViewCell.swift; sourceTree = "<group>"; };
 		4A019059223C39760066E0DF /* RecommendationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendationTableViewCell.xib; sourceTree = "<group>"; };
 		4A01905D223FF76F0066E0DF /* CompoundUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompoundUser.swift; sourceTree = "<group>"; };
-		4A01905F223FF7FA0066E0DF /* CompoundUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompoundUserService.swift; sourceTree = "<group>"; };
+		4A01905F223FF7FA0066E0DF /* ServiceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceClient.swift; sourceTree = "<group>"; };
+		4A1604E02243EDBD00D89DAA /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		4A1604E12243EDBD00D89DAA /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		4A1604E4224402BE00D89DAA /* RecommendationDetailTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationDetailTableHeaderView.swift; sourceTree = "<group>"; };
+		4A1604E6224402FD00D89DAA /* RecommendationDetailTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendationDetailTableHeaderView.xib; sourceTree = "<group>"; };
 		4A6483CC223AA0B90093158E /* Spotyfiend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotyfiend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A6483E0223AA0BA0093158E /* SpotyfiendTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotyfiendTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A6483E4223AA0BA0093158E /* SpotyfiendTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotyfiendTests.swift; sourceTree = "<group>"; };
@@ -122,6 +139,15 @@
 		4A64844F223AE5AF0093158E /* SearchResultsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewCell.swift; sourceTree = "<group>"; };
 		4A648450223AE5AF0093158E /* SearchResultsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultsTableViewCell.xib; sourceTree = "<group>"; };
 		4A648453223AEAB30093158E /* ImageDownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadService.swift; sourceTree = "<group>"; };
+		4A8F2C2B22411FFE00A54348 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		4A8F2C2F22412D5A00A54348 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		4A8F2D352242917E00A54348 /* DocumentCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentCodable.swift; sourceTree = "<group>"; };
+		4A8F2D372242C80200A54348 /* RecommendationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationDetailViewController.swift; sourceTree = "<group>"; };
+		4A8F2D382242C80200A54348 /* RecommendationDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendationDetailViewController.xib; sourceTree = "<group>"; };
+		4A8F2D3B2243C30300A54348 /* RecommendationDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationDetailViewModel.swift; sourceTree = "<group>"; };
+		4A8F2D3E2243CFFD00A54348 /* TextInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputAccessoryView.swift; sourceTree = "<group>"; };
+		4A8F2D402243D05300A54348 /* NibFileOwnerLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibFileOwnerLoadable.swift; sourceTree = "<group>"; };
+		4A8F2D422243D16D00A54348 /* TextInputAccessoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextInputAccessoryView.xib; sourceTree = "<group>"; };
 		8AFBD7FBDFF7681691CD27DF /* Pods_SpotyfiendUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotyfiendUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96665281E9B941CC5D5831E0 /* Pods-SpotyfiendUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotyfiendUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpotyfiendUITests/Pods-SpotyfiendUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A28316800C80D1C06FB506DA /* Pods-SpotyfiendTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotyfiendTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpotyfiendTests/Pods-SpotyfiendTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -174,6 +200,9 @@
 			children = (
 				4A01905D223FF76F0066E0DF /* CompoundUser.swift */,
 				4A648415223AA1C30093158E /* Recommendation.swift */,
+				4A8F2C2B22411FFE00A54348 /* Group.swift */,
+				4A8F2C2F22412D5A00A54348 /* Comment.swift */,
+				4A8F2D352242917E00A54348 /* DocumentCodable.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -203,6 +232,7 @@
 		4A6483CE223AA0B90093158E /* Spotyfiend */ = {
 			isa = PBXGroup;
 			children = (
+				4A8F2D3D2243CFCD00A54348 /* Components */,
 				4A01905C223FF7500066E0DF /* Models */,
 				4A648408223AA1C30093158E /* AppSetup */,
 				4A648418223AA1C40093158E /* Config */,
@@ -251,7 +281,7 @@
 				4A648402223AA1C30093158E /* Spotify */,
 				4A648407223AA1C30093158E /* RecommendationService.swift */,
 				4A648453223AEAB30093158E /* ImageDownloadService.swift */,
-				4A01905F223FF7FA0066E0DF /* CompoundUserService.swift */,
+				4A01905F223FF7FA0066E0DF /* ServiceClient.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -306,6 +336,13 @@
 				4A648417223AA1C30093158E /* RecommendationsViewModel.swift */,
 				4A019058223C39760066E0DF /* RecommendationTableViewCell.swift */,
 				4A019059223C39760066E0DF /* RecommendationTableViewCell.xib */,
+				4A8F2D372242C80200A54348 /* RecommendationDetailViewController.swift */,
+				4A8F2D382242C80200A54348 /* RecommendationDetailViewController.xib */,
+				4A8F2D3B2243C30300A54348 /* RecommendationDetailViewModel.swift */,
+				4A1604E02243EDBD00D89DAA /* CommentTableViewCell.swift */,
+				4A1604E12243EDBD00D89DAA /* CommentTableViewCell.xib */,
+				4A1604E4224402BE00D89DAA /* RecommendationDetailTableHeaderView.swift */,
+				4A1604E6224402FD00D89DAA /* RecommendationDetailTableHeaderView.xib */,
 			);
 			path = Recommendations;
 			sourceTree = "<group>";
@@ -336,6 +373,7 @@
 				4A648421223AA1C40093158E /* Dependencies.swift */,
 				4A648422223AA1C40093158E /* ViewModel.swift */,
 				4A648423223AA1C40093158E /* FlowCoordinatorViewController.swift */,
+				4A8F2D402243D05300A54348 /* NibFileOwnerLoadable.swift */,
 			);
 			path = SharedProtocols;
 			sourceTree = "<group>";
@@ -351,6 +389,15 @@
 				4A648450223AE5AF0093158E /* SearchResultsTableViewCell.xib */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		4A8F2D3D2243CFCD00A54348 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4A8F2D3E2243CFFD00A54348 /* TextInputAccessoryView.swift */,
+				4A8F2D422243D16D00A54348 /* TextInputAccessoryView.xib */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		678C63051C827650941D9383 /* Pods */ = {
@@ -478,7 +525,11 @@
 				4A64844C223AB3840093158E /* SignInViewController.xib in Resources */,
 				4A648429223AA1C40093158E /* Assets.xcassets in Resources */,
 				4A01905B223C39760066E0DF /* RecommendationTableViewCell.xib in Resources */,
+				4A8F2D432243D16D00A54348 /* TextInputAccessoryView.xib in Resources */,
+				4A1604E32243EDBD00D89DAA /* CommentTableViewCell.xib in Resources */,
 				4A648431223AA1C40093158E /* LaunchScreen.storyboard in Resources */,
+				4A1604E7224402FD00D89DAA /* RecommendationDetailTableHeaderView.xib in Resources */,
+				4A8F2D3A2242C80200A54348 /* RecommendationDetailViewController.xib in Resources */,
 				4A648434223AA1C40093158E /* HomeViewController.xib in Resources */,
 				4A64842A223AA1C40093158E /* GoogleService-Info.plist in Resources */,
 				4A64843F223AA1C40093158E /* SettingsViewController.xib in Resources */,
@@ -641,13 +692,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A648444223AA1C40093158E /* FlowCoordinatorViewController.swift in Sources */,
+				4A8F2D412243D05300A54348 /* NibFileOwnerLoadable.swift in Sources */,
 				4A648442223AA1C40093158E /* Dependencies.swift in Sources */,
+				4A8F2D392242C80200A54348 /* RecommendationDetailViewController.swift in Sources */,
 				4A648432223AA1C40093158E /* AppDelegate.swift in Sources */,
 				4A648437223AA1C40093158E /* RecommendationsViewController.swift in Sources */,
 				4A64842F223AA1C40093158E /* RecommendationService.swift in Sources */,
 				4A648436223AA1C40093158E /* HomeCoordinator.swift in Sources */,
 				4A648433223AA1C40093158E /* HomeViewModel.swift in Sources */,
 				4A64843D223AA1C40093158E /* SettingsViewModel.swift in Sources */,
+				4A1604E5224402BE00D89DAA /* RecommendationDetailTableHeaderView.swift in Sources */,
 				4A64844B223AB3840093158E /* SignInViewController.swift in Sources */,
 				4A648446223AA1C40093158E /* SearchCoordinator.swift in Sources */,
 				4A648435223AA1C40093158E /* HomeViewController.swift in Sources */,
@@ -655,7 +709,7 @@
 				4A01905A223C39760066E0DF /* RecommendationTableViewCell.swift in Sources */,
 				4A648441223AA1C40093158E /* FlowCoordinator.swift in Sources */,
 				4A648454223AEAB30093158E /* ImageDownloadService.swift in Sources */,
-				4A019060223FF7FA0066E0DF /* CompoundUserService.swift in Sources */,
+				4A019060223FF7FA0066E0DF /* ServiceClient.swift in Sources */,
 				4A648443223AA1C40093158E /* ViewModel.swift in Sources */,
 				4A648445223AA1C40093158E /* SearchViewController.swift in Sources */,
 				4A648451223AE5AF0093158E /* SearchResultsTableViewCell.swift in Sources */,
@@ -665,9 +719,15 @@
 				4A64842D223AA1C40093158E /* SearchArtistOperation.swift in Sources */,
 				4A648430223AA1C40093158E /* AppCoordinator.swift in Sources */,
 				4A648447223AA1C40093158E /* SearchViewModel.swift in Sources */,
+				4A8F2D3C2243C30300A54348 /* RecommendationDetailViewModel.swift in Sources */,
+				4A8F2D362242917E00A54348 /* DocumentCodable.swift in Sources */,
 				4A648440223AA1C40093158E /* SettingsViewController.swift in Sources */,
 				4A64842C223AA1C40093158E /* SpotifyService.swift in Sources */,
+				4A8F2C3022412D5A00A54348 /* Comment.swift in Sources */,
+				4A8F2D3F2243CFFD00A54348 /* TextInputAccessoryView.swift in Sources */,
 				4A64843A223AA1C40093158E /* RecommendationsCoordinator.swift in Sources */,
+				4A8F2C2C22411FFE00A54348 /* Group.swift in Sources */,
+				4A1604E22243EDBD00D89DAA /* CommentTableViewCell.swift in Sources */,
 				4A64843B223AA1C40093158E /* RecommendationsViewModel.swift in Sources */,
 				4A64842E223AA1C40093158E /* AsynchronousOperation.swift in Sources */,
 			);

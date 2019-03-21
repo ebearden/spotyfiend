@@ -58,10 +58,6 @@ class SearchResultsTableViewCell: UITableViewCell {
             self.type = .artist
             artistTitle.text = item.name
             albumTitle.text = nil
-            
-            //            ImageDownloadService.download(from: ) { (image) in
-            //                cell.spotifyImageView.image = image
-            //            }
         }
     }
     

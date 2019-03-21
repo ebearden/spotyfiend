@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextInputAccessoryView" customModule="Spotyfiend" customModuleProvider="target">
+            <connections>
+                <outlet property="sendButton" destination="8Yk-PE-xbc" id="rC5-gK-Fdq"/>
+                <outlet property="textView" destination="Jeh-Dm-RG5" id="9am-kC-DOQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="361" height="74"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Jeh-Dm-RG5">
+                    <rect key="frame" x="10" y="10" width="295" height="54"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Yk-PE-xbc">
+                    <rect key="frame" x="315" y="34" width="36" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="Ncg-sy-eLC"/>
+                        <constraint firstAttribute="height" constant="30" id="WQE-VK-gk8"/>
+                    </constraints>
+                    <state key="normal" title="Send"/>
+                    <connections>
+                        <action selector="sendButtonPressed:" destination="-1" eventType="touchUpInside" id="AnO-gA-nJ6"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SKO-zF-hru">
+                    <rect key="frame" x="0.0" y="0.0" width="361" height="1"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="NWV-pc-2QE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8Yk-PE-xbc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="84N-UK-ghM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8Yk-PE-xbc" secondAttribute="trailing" constant="10" id="8LE-SJ-Lmw"/>
+                <constraint firstItem="SKO-zF-hru" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="92s-Ps-D6l"/>
+                <constraint firstItem="Jeh-Dm-RG5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="RdC-4d-cnm"/>
+                <constraint firstItem="8Yk-PE-xbc" firstAttribute="leading" secondItem="Jeh-Dm-RG5" secondAttribute="trailing" constant="10" id="Sk9-IM-QPo"/>
+                <constraint firstAttribute="bottom" secondItem="Jeh-Dm-RG5" secondAttribute="bottom" constant="10" id="VOY-IK-wBW"/>
+                <constraint firstAttribute="trailing" secondItem="SKO-zF-hru" secondAttribute="trailing" id="Vw7-Cs-tDh"/>
+                <constraint firstItem="8Yk-PE-xbc" firstAttribute="bottom" secondItem="Jeh-Dm-RG5" secondAttribute="bottom" id="coF-bb-C5T"/>
+                <constraint firstItem="SKO-zF-hru" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="w9h-hf-qy6"/>
+                <constraint firstItem="Jeh-Dm-RG5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="xkg-ib-Lhy"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="44" y="-218.59070464767618"/>
+        </view>
+    </objects>
+</document>

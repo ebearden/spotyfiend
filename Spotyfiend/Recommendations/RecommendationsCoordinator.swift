@@ -56,4 +56,22 @@ class RecommendationsCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDeleg
             self.update()
         }
     }
+    
+    func showDetail(recommendation: Recommendation) {
+        let viewModel = RecommendationDetailViewModel(recommendation: recommendation)
+        let dependencies = RecommendationDetailViewControllerDependencies(viewModel: viewModel)
+        let controller = RecommendationDetailViewController(parentCoordinator: self, dependencies: dependencies)
+        
+        navigationController.show(controller, sender: nil)
+        
+        let recommendationService = RecommendationService()
+        recommendationService.getComments(recommendation: recommendation) { (comments) in
+            viewModel.update(comments: comments)
+        }
+    }
+    
+    func addComment(comment: Comment) {
+        let recommendationService = RecommendationService()
+        recommendationService.addComment(comment: comment)
+    }
 }

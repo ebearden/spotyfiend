@@ -24,7 +24,7 @@ class RecommendationsViewModel: ViewModel {
     }
     
     func update(recommendations: [Recommendation]) {
-        self.recommendations = recommendations.sorted(by: { $0.createdAt > $1.createdAt })
+        self.recommendations = recommendations
         refresh?()
     }
 }
@@ -49,5 +49,35 @@ extension RecommendationsViewModel {
     
     func user(forRowAt indexPath: IndexPath) -> String {
         return recommendations[indexPath.row].userId
+    }
+    
+    func detailedItem(at indexPath: IndexPath, completion: @escaping (Recommendation) -> Void) {
+        var item = recommendations[indexPath.row]
+        
+        spotifyService.getDetail(recommendation: item) { (spotifyDetail) in
+            item.spotifyDetail = spotifyDetail
+            
+            if let detail = spotifyDetail as? SpotifyArtist, let uri = detail.artUri {
+                ImageDownloadService.download(from: uri, completion: { (image) in
+                    item.image = image
+                    self.recommendations[indexPath.row] = item
+                    completion(item)
+                })
+            }
+            else if let detail = spotifyDetail as? SpotifyAlbum {
+                ImageDownloadService.download(from: detail.artUri, completion: { (image) in
+                    item.image = image
+                    self.recommendations[indexPath.row] = item
+                    completion(item)
+                })
+            }
+            else if let detail = spotifyDetail as? SpotifyTrack, let uri = detail.album?.artUri {
+                ImageDownloadService.download(from: uri, completion: { (image) in
+                    item.image = image
+                    self.recommendations[indexPath.row] = item
+                    completion(item)
+                })
+            }
+        }
     }
 }

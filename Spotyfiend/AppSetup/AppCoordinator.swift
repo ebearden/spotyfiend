@@ -60,24 +60,28 @@ class AppCoordinator: NSObject, FlowCoordinator {
 extension AppCoordinator: SignInDelegate {
     func signInSuccessful(user: User) {
         signInViewController?.dismiss(animated: false, completion: nil)
-        
-        let userService = CompoundUserService()
+
        
-        userService.getUser(userId: user.uid) { (compoundUser) in
+        ServiceClient.getUser(userId: user.uid) { (compoundUser) in
             guard let compoundUser = compoundUser else {
-                userService.setUser(user: user, completion: { (compoundUser) in
+                ServiceClient.setUser(user: user, completion: { (compoundUser) in
                     self.user = compoundUser
+                    ServiceClient.currentUser = compoundUser
+                    
                     if self.spotifyService.isAuthenticated {
                         self.showHomeViewController()
                     }
                     else {
                         self.spotifyService.authenticate()
                     }
+                    
                 })
                 return
             }
             
             self.user = compoundUser
+            ServiceClient.currentUser = compoundUser
+            
             if self.spotifyService.isAuthenticated {
                 self.showHomeViewController()
             }

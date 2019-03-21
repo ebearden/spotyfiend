@@ -43,7 +43,9 @@ extension RecommendationsViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Your Recommendations"
+        title = "Recommendations"
+        
+        navigationController?.navigationBar.isTranslucent = false
         
         viewModel.refresh = { [weak self] in
             guard let self = self else { return }
@@ -73,31 +75,18 @@ extension RecommendationsViewController: UITableViewDataSource {
         }
         
         let item = viewModel.item(at: indexPath)
+        cell.commentTextView.text = item.text
         
-        let userService = CompoundUserService()
-        userService.getUser(userId: item.userId) { (user) in
+        ServiceClient.getUser(userId: item.userId) { (user) in
             user?.getPhoto(completion: { (image) in
                 cell.userImageView.image = image
             })
         }
         
-        viewModel.spotifyService.getDetail(recommendation: item) { (item) in
-            cell.titleLabel.text = item.name
-            
-            if let item = item as? SpotifyArtist, let uri = item.artUri {
-                ImageDownloadService.download(from: uri, completion: { (image) in
-                    cell.spotifyImageView.image = image
-                })
-            }
-            else if let item = item as? SpotifyAlbum {
-                ImageDownloadService.download(from: item.artUri, completion: { (image) in
-                    cell.spotifyImageView.image = image
-                })
-            }
-            else if let item = item as? SpotifyTrack, let uri = item.album?.artUri {
-                ImageDownloadService.download(from: uri, completion: { (image) in
-                    cell.spotifyImageView.image = image
-                })
+        viewModel.detailedItem(at: indexPath) { (detailed) in
+            DispatchQueue.main.async {
+                cell.spotifyImageView.image = detailed.image
+                cell.titleLabel.text = detailed.spotifyDetail?.name
             }
         }
         
@@ -113,11 +102,8 @@ extension RecommendationsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let url = URL(string: viewModel.item(at: indexPath).uri)!
-
-        if UIApplication.shared.canOpenURL(url) {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
-        }
+        guard let parentCoordinator = parentCoordinator as? RecommendationsCoordinator else { return }
+        parentCoordinator.showDetail(recommendation: viewModel.item(at: indexPath))
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {

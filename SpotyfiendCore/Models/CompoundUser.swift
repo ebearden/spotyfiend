@@ -8,18 +8,18 @@
 
 import UIKit
 
-struct CompoundUser: DocumentCodable {
-    let displayName: String
-    let userId: String
-    let photoUrl: String
+public struct CompoundUser: DocumentCodable {
+    public let displayName: String
+    public let userId: String
+    public let photoUrl: String
     
-    init(displayName: String, userId: String, photoUrl: String) {
+    public init(displayName: String, userId: String, photoUrl: String) {
         self.displayName = displayName
         self.userId = userId
         self.photoUrl = photoUrl
     }
     
-    func getPhoto(completion: @escaping (UIImage) -> Void) {
+    public func getPhoto(completion: @escaping (UIImage) -> Void) {
         ImageDownloadService.download(from: photoUrl, completion: completion)
     }
 }

@@ -9,10 +9,10 @@
 import Foundation
 import Firebase
 
-class RecommendationService {
-    let database = Firestore.firestore()
+public final class RecommendationService {
+    private static let database = Firestore.firestore()
     
-    func getRecommendations(completion: @escaping ([Recommendation]) -> Void) {
+    public static func getRecommendations(completion: @escaping ([Recommendation]) -> Void) {
         database.collection("recommendations").addSnapshotListener { (snapshot, error) in
             guard let snapshot = snapshot else { return }
             
@@ -26,7 +26,7 @@ class RecommendationService {
         }
     }
     
-    func addRecommendation(recommendation: Recommendation) {
+    public static func addRecommendation(recommendation: Recommendation) {
         guard let encoded = try? recommendation.encode() else { return }
         database.collection("recommendations").document(recommendation.identifier).setData(encoded)
         if let text = recommendation.text {
@@ -35,13 +35,13 @@ class RecommendationService {
         }
     }
     
-    func deleteRecommendation(recommendation: Recommendation, completion: @escaping () -> Void) {
+    public static func deleteRecommendation(recommendation: Recommendation, completion: @escaping () -> Void) {
         database.collection("recommendations").document(recommendation.identifier).delete { (error) in
             completion()
         }
     }
     
-    func getComments(recommendation: Recommendation, completion: @escaping ([Comment]) -> Void) {
+    public static func getComments(recommendation: Recommendation, completion: @escaping ([Comment]) -> Void) {
         database.collection("comments").whereField("recommendationId", isEqualTo: recommendation.identifier).addSnapshotListener { (snapshot, error) in
             guard let snapshot = snapshot else { return }
             DispatchQueue.main.async {
@@ -54,7 +54,7 @@ class RecommendationService {
         }
     }
     
-    func addComment(comment: Comment) {
+    public static func addComment(comment: Comment) {
         guard let encoded = try? comment.encode() else { return }
         database.collection("comments").document(comment.identifier).setData(encoded)
     }

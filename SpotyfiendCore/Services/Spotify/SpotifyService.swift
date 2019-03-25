@@ -9,15 +9,15 @@
 import Foundation
 import SpotifyKit
 
-final class SpotifyService {
-    var isAuthenticated: Bool {
+public final class SpotifyService {
+    public var isAuthenticated: Bool {
         return manager.hasToken
     }
     
     private let manager: SpotifyManager
     private let searchQueue: OperationQueue
     
-    init() {
+    public init() {
         self.manager = SpotifyManager(with: SpotifyManager.SpotifyDeveloperApplication(
             clientId: SpotifyConstants.clientId,
             clientSecret: SpotifyConstants.clientSecret,
@@ -29,19 +29,19 @@ final class SpotifyService {
 }
 
 // MARK: - Public Setup
-extension SpotifyService {
-    func authenticate() {
+public extension SpotifyService {
+    public func authenticate() {
         manager.authorize()
     }
     
-    func saveToken(from url: URL) {
+    public func saveToken(from url: URL) {
         manager.saveToken(from: url)
     }
 }
 
 // MARK: - Search
-extension SpotifyService {
-    func search(_ searchString: String, completion: @escaping ([SpotifySearchItem]) -> Void) {
+public extension SpotifyService {
+    public func search(_ searchString: String, completion: @escaping ([SpotifySearchItem]) -> Void) {
         searchQueue.cancelAllOperations()
         
         var searchResults = [SpotifySearchItem]()
@@ -78,7 +78,7 @@ extension SpotifyService {
         searchQueue.addOperation(completionOperation)
     }
     
-    func getArtistDetail(artistId: String, completion: @escaping (SpotifyArtist) -> Void) {
+    public func getArtistDetail(artistId: String, completion: @escaping (SpotifyArtist) -> Void) {
         manager.get(SpotifyArtist.self, id: artistId) { (result) in
             DispatchQueue.main.async {
                 completion(result)
@@ -86,7 +86,7 @@ extension SpotifyService {
         }
     }
     
-    func getDetail(recommendation: Recommendation, completion: @escaping (SpotifySearchItem) -> Void) {
+    public func getDetail(recommendation: Recommendation, completion: @escaping (SpotifySearchItem) -> Void) {
         if recommendation.type == "artist" {
             manager.get(SpotifyArtist.self, id: recommendation.spotifyId) { (item) in
                 DispatchQueue.main.async {

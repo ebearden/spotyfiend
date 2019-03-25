@@ -8,13 +8,13 @@
 
 import Foundation
 
-struct Group: DocumentCodable {
-    let identifier: String
-    let name: String?
-    let photoUrl: String?
-    let userIds: [String]
+public struct Group: DocumentCodable {
+    public let identifier: String
+    public let name: String?
+    public let photoUrl: String?
+    public let userIds: [String]
     
-    init(name: String?, photoUrl: String?, userIds: [String]) {
+    public init(name: String?, photoUrl: String?, userIds: [String]) {
         self.identifier = UUID().uuidString
         self.name = name
         self.photoUrl = photoUrl

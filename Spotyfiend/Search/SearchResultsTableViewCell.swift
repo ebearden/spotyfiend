@@ -8,6 +8,7 @@
 
 import UIKit
 import SpotifyKit
+import SpotyfiendCore
 
 protocol SearchResultsCellDelegate: class {
     func recommendButtonPressed(item: SpotifySearchItem, type: SpotifyItemType)

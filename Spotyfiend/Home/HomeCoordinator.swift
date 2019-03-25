@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SpotyfiendCore
 
 struct HomeCoordinatorDependencies: Dependencies, NavigationControllerDependency {
     var navigationController: UINavigationController
@@ -43,7 +44,6 @@ class HomeCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDelegate {
         let searchDependencies = SearchCoordinatorDependencies(
             navigationController: UINavigationController(),
             spotifyService: spotifyService,
-            recommendationService: RecommendationService(),
             user: user
         )
         let searchCoordinator = SearchCoordinator(dependencies: searchDependencies)

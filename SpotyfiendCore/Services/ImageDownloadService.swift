@@ -8,8 +8,8 @@
 
 import UIKit
 
-class ImageDownloadService {
-    static func download(from imageUrlString: String, completion: @escaping (UIImage) -> Void) {
+public final class ImageDownloadService {
+    public static func download(from imageUrlString: String, completion: @escaping (UIImage) -> Void) {
         guard let url = URL(string: imageUrlString) else { return }
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard let data = data, let image = UIImage(data: data) else { return }

@@ -8,19 +8,19 @@
 
 import Foundation
 
-protocol DocumentCodable: Codable {
+public protocol DocumentCodable: Codable {
     
 }
 
-extension DocumentCodable {
-    init(from dictionary: Any) throws {
+public extension DocumentCodable {
+    public init(from dictionary: Any) throws {
         let data = try JSONSerialization.data(withJSONObject: dictionary, options: .prettyPrinted)
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .formatted(DateFormatter.iso8601Full)
         self = try decoder.decode(Self.self, from: data)
     }
     
-    func encode() throws -> [String: Any] {
+    public func encode() throws -> [String: Any] {
         let encoder = JSONEncoder()
         encoder.dateEncodingStrategy = .formatted(DateFormatter.iso8601Full)
         let data = try encoder.encode(self)

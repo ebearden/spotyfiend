@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import GoogleSignIn
+import SpotyfiendCore
 
 struct AppCoordinatorDependencies: Dependencies {
     let spotifyService: SpotifyService

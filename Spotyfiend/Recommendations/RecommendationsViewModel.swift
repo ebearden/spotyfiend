@@ -9,6 +9,7 @@
 import UIKit
 import SpotifyKit
 import Firebase
+import SpotyfiendCore
 
 class RecommendationsViewModel: ViewModel {
     private var recommendations: [Recommendation] = []

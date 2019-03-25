@@ -9,11 +9,11 @@
 import UIKit
 import SpotifyKit
 import Firebase
+import SpotyfiendCore
 
 struct SearchCoordinatorDependencies: Dependencies, NavigationControllerDependency {
     let navigationController: UINavigationController
     let spotifyService: SpotifyService
-    let recommendationService: RecommendationService
     let user: CompoundUser
 }
 
@@ -21,7 +21,6 @@ class SearchCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDelegate {
     var navigationController: UINavigationController
     var childCoordinators: [FlowCoordinator] = []
     private let spotifyService: SpotifyService
-    private let recommendationService: RecommendationService
     private let searchViewModel: SearchViewModel
     private let user: CompoundUser
     
@@ -30,7 +29,6 @@ class SearchCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDelegate {
         self.navigationController = dependencies.navigationController
         self.spotifyService = dependencies.spotifyService
         self.searchViewModel = SearchViewModel(searchResults: [])
-        self.recommendationService = dependencies.recommendationService
         self.user = dependencies.user
     }
     
@@ -60,6 +58,6 @@ class SearchCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDelegate {
             uri: item.uri,
             text: comment
         )
-        recommendationService.addRecommendation(recommendation: recommendation)
+        RecommendationService.addRecommendation(recommendation: recommendation)
     }
 }

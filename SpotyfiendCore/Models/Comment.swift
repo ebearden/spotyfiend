@@ -8,14 +8,14 @@
 
 import Foundation
 
-struct Comment: DocumentCodable {
-    let identifier: String
-    let userId: String
-    let recommendationId: String
-    let text: String
-    let createdAt: Date
+public struct Comment: DocumentCodable {
+    public let identifier: String
+    public let userId: String
+    public let recommendationId: String
+    public let text: String
+    public let createdAt: Date
     
-    init(userId: String, recommendationId: String, text: String) {
+    public init(userId: String, recommendationId: String, text: String) {
         self.identifier = UUID().uuidString
         self.userId = userId
         self.recommendationId = recommendationId

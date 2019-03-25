@@ -9,11 +9,11 @@
 import Foundation
 import Firebase
 
-class ServiceClient {
+public final class ServiceClient {
     private static let database = Firestore.firestore()
-    static var currentUser: CompoundUser? = nil
+    public static var currentUser: CompoundUser? = nil
     
-    static func getUser(userId: String, completion: @escaping (CompoundUser?) -> Void) {
+    public static func getUser(userId: String, completion: @escaping (CompoundUser?) -> Void) {
         self.database.collection("users").document(userId).getDocument { (snapshot, error) in
             guard let snapshot = snapshot else {
                 completion(nil)
@@ -31,7 +31,7 @@ class ServiceClient {
         }
     }
     
-    static func setUser(user: User, completion: @escaping (CompoundUser?) -> Void) {
+    public static func setUser(user: User, completion: @escaping (CompoundUser?) -> Void) {
         let compoundUser = CompoundUser(displayName: user.displayName ?? "", userId: user.uid, photoUrl: user.photoURL?.absoluteString ?? "")
         
         guard let data = try? compoundUser.encode() else {
@@ -42,7 +42,7 @@ class ServiceClient {
         self.getUser(userId: user.uid, completion: completion)
     }
     
-    static func getCurrentUserGroups(completion: @escaping ([Group]) -> Void) {
+    public static func getCurrentUserGroups(completion: @escaping ([Group]) -> Void) {
         guard let currentUser = currentUser else { return }
         
         self.database.collection("groups").whereField("userIds", arrayContains: currentUser.userId).getDocuments { (snapshot, error) in
@@ -54,12 +54,12 @@ class ServiceClient {
         }
     }
     
-    static func addGroup(group: Group) {
+    public static func addGroup(group: Group) {
         guard let encoded = try? group.encode() else { return }
         database.collection("groups").document(group.identifier).setData(encoded)
     }
     
-    static func deleteGroup(group: Group, completion: @escaping () -> Void) {
+    public static func deleteGroup(group: Group, completion: @escaping () -> Void) {
         database.collection("groups").document(group.identifier).delete { (error) in
             completion()
         }

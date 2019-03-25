@@ -9,17 +9,16 @@
 import Foundation
 import SpotifyKit
 
-struct Recommendation: DocumentCodable, Equatable {
-    let identifier: String
-    let type: String
-    let userId: String
-    let spotifyId: String
-    let uri: String
-    let createdAt: Date
-    let text: String?
-    
-    var spotifyDetail: SpotifyItem?
-    var image: UIImage?
+public struct Recommendation: DocumentCodable, Equatable {
+    public let identifier: String
+    public let type: String
+    public let userId: String
+    public let spotifyId: String
+    public let uri: String
+    public let createdAt: Date
+    public let text: String?
+    public var spotifyDetail: SpotifyItem?
+    public var image: UIImage?
     
     private enum CodingKeys: String, CodingKey {
         case identifier
@@ -31,7 +30,7 @@ struct Recommendation: DocumentCodable, Equatable {
         case text
     }
     
-    init(type: String, userId: String, spotifyId: String, uri: String, text: String?) {
+    public init(type: String, userId: String, spotifyId: String, uri: String, text: String?) {
         self.identifier = UUID().uuidString
         self.type = type
         self.userId = userId
@@ -41,7 +40,7 @@ struct Recommendation: DocumentCodable, Equatable {
         self.text = text
     }
     
-    static func == (lhs: Recommendation, rhs: Recommendation) -> Bool {
+    public static func == (lhs: Recommendation, rhs: Recommendation) -> Bool {
         return lhs.spotifyId == rhs.spotifyId
     }
 }

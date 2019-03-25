@@ -8,6 +8,7 @@
 
 import UIKit
 import SpotifyKit
+import SpotyfiendCore
 
 struct RecommendationsViewControllerDependencies: Dependencies {
     let viewModel: RecommendationsViewModel

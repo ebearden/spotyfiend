@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SpotyfiendCore
 
 struct RecommendationsCoordinatorDependencies: Dependencies, NavigationControllerDependency {
     let navigationController: UINavigationController
@@ -37,22 +38,19 @@ class RecommendationsCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDeleg
         navigationController.tabBarItem = UITabBarItem(title: "Recommendations", image: nil, selectedImage: nil)
         navigationController.show(controller, sender: nil)
         
-        let recommendationService = RecommendationService()
-        recommendationService.getRecommendations { (results) in
+        RecommendationService.getRecommendations { (results) in
             self.viewModel.update(recommendations: results)
         }
     }
     
     func update() {
-        let recommendationService = RecommendationService()
-        recommendationService.getRecommendations { (results) in
+        RecommendationService.getRecommendations { (results) in
             self.viewModel.update(recommendations: results)
         }
     }
     
     func delete(recommendation: Recommendation) {
-        let recommendationService = RecommendationService()
-        recommendationService.deleteRecommendation(recommendation: recommendation) {
+        RecommendationService.deleteRecommendation(recommendation: recommendation) {
             self.update()
         }
     }
@@ -64,14 +62,12 @@ class RecommendationsCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDeleg
         
         navigationController.show(controller, sender: nil)
         
-        let recommendationService = RecommendationService()
-        recommendationService.getComments(recommendation: recommendation) { (comments) in
+        RecommendationService.getComments(recommendation: recommendation) { (comments) in
             viewModel.update(comments: comments)
         }
     }
     
     func addComment(comment: Comment) {
-        let recommendationService = RecommendationService()
-        recommendationService.addComment(comment: comment)
+        RecommendationService.addComment(comment: comment)
     }
 }

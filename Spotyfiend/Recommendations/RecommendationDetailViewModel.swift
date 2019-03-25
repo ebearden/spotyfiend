@@ -8,6 +8,7 @@
 
 import UIKit
 import SpotifyKit
+import SpotyfiendCore
 
 class RecommendationDetailViewModel: ViewModel {
     let recommendation: Recommendation

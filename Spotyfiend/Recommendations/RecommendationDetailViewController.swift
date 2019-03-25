@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SpotyfiendCore
 
 struct RecommendationDetailViewControllerDependencies: Dependencies {
     let viewModel: RecommendationDetailViewModel

@@ -8,6 +8,7 @@
 
 import UIKit
 import GoogleSignIn
+import SpotyfiendCore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

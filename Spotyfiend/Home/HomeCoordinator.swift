@@ -35,6 +35,7 @@ class HomeCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDelegate {
         let recommendationsDependencies = RecommendationsCoordinatorDependencies(
             navigationController: UINavigationController(),
             spotifyService: spotifyService,
+            recommendationService: RecommendationService(),
             user: user
         )
         let recommendationsCoordinator = RecommendationsCoordinator(dependencies: recommendationsDependencies)

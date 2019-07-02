@@ -20,6 +20,7 @@ struct SearchCoordinatorDependencies: Dependencies, NavigationControllerDependen
 class SearchCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDelegate {
     var navigationController: UINavigationController
     var childCoordinators: [FlowCoordinator] = []
+    
     private let spotifyService: SpotifyService
     private let recommendationService: RecommendationService
     private let searchViewModel: SearchViewModel

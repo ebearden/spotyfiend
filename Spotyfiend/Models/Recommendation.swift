@@ -13,6 +13,7 @@ struct Recommendation: DocumentCodable, Equatable {
     let identifier: String
     let type: String
     let userId: String
+    let groupId: String
     let spotifyId: String
     let uri: String
     let createdAt: Date
@@ -25,16 +26,18 @@ struct Recommendation: DocumentCodable, Equatable {
         case identifier
         case type
         case userId
+        case groupId
         case spotifyId
         case uri
         case createdAt
         case text
     }
     
-    init(type: String, userId: String, spotifyId: String, uri: String, text: String?) {
+    init(type: String, userId: String, spotifyId: String, groupId: String, uri: String, text: String?) {
         self.identifier = UUID().uuidString
         self.type = type
         self.userId = userId
+        self.groupId = groupId
         self.spotifyId = spotifyId
         self.uri = uri
         self.createdAt = Date()

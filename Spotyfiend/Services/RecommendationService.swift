@@ -17,11 +17,11 @@ class RecommendationService {
             guard let snapshot = snapshot else { return }
             
             DispatchQueue.main.async {
-                completion(
-                    snapshot.documents
-                        .compactMap({ try? Recommendation(from: $0.data()) })
-                        .sorted(by: { $0.createdAt > $1.createdAt })
-                )
+                let documents = snapshot.documents
+                    .compactMap({ try? Recommendation(from: $0.data()) })
+                    .sorted(by: { $0.createdAt > $1.createdAt })
+                
+                completion(documents)
             }
         }
     }

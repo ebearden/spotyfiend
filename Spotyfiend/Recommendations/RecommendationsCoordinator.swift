@@ -12,6 +12,7 @@ import Firebase
 struct RecommendationsCoordinatorDependencies: Dependencies, NavigationControllerDependency {
     let navigationController: UINavigationController
     let spotifyService: SpotifyService
+    let recommendationService: RecommendationService
     let user: CompoundUser
 }
 
@@ -20,6 +21,7 @@ class RecommendationsCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDeleg
     var childCoordinators: [FlowCoordinator] = []
     
     private let spotifyService: SpotifyService
+    private let recommendationService: RecommendationService
     private let user: CompoundUser
     private var viewModel: RecommendationsViewModel!
     
@@ -27,6 +29,7 @@ class RecommendationsCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDeleg
         guard let dependencies = dependencies as? RecommendationsCoordinatorDependencies else { return nil }
         self.navigationController = dependencies.navigationController
         self.spotifyService = dependencies.spotifyService
+        self.recommendationService = dependencies.recommendationService
         self.user = dependencies.user
     }
     
@@ -44,14 +47,12 @@ class RecommendationsCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDeleg
     }
     
     func update() {
-        let recommendationService = RecommendationService()
         recommendationService.getRecommendations { (results) in
             self.viewModel.update(recommendations: results)
         }
     }
     
     func delete(recommendation: Recommendation) {
-        let recommendationService = RecommendationService()
         recommendationService.deleteRecommendation(recommendation: recommendation) {
             self.update()
         }
@@ -64,14 +65,12 @@ class RecommendationsCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDeleg
         
         navigationController.show(controller, sender: nil)
         
-        let recommendationService = RecommendationService()
         recommendationService.getComments(recommendation: recommendation) { (comments) in
             viewModel.update(comments: comments)
         }
     }
     
     func addComment(comment: Comment) {
-        let recommendationService = RecommendationService()
         recommendationService.addComment(comment: comment)
     }
 }

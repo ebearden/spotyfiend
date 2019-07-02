@@ -54,9 +54,25 @@ class ServiceClient {
         }
     }
     
+    static func getAllGroups(completion: @escaping ([Group]) -> Void) {
+        self.database.collection("groups").getDocuments { (snapshot, error) in
+            guard let snapshot = snapshot else { return }
+            
+            DispatchQueue.main.async {
+                completion(snapshot.documents.compactMap({ try? Group(from: $0.data()) }))
+            }
+        }
+    }
+    
     static func addGroup(group: Group) {
         guard let encoded = try? group.encode() else { return }
         database.collection("groups").document(group.identifier).setData(encoded)
+    }
+    
+    static func addUser(user: CompoundUser, to group: Group) {
+        var ids = group.userIds
+        ids.append(user.userId)
+        database.collection("groups").document(group.identifier).updateData(["userIds": ids])
     }
     
     static func deleteGroup(group: Group, completion: @escaping () -> Void) {

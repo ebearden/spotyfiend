@@ -9,7 +9,7 @@
 import UIKit
 import SpotifyKit
 
-class RecommendationDetailViewModel: ViewModel {
+class RecommendationDetailViewModel: TableViewModel {
     let recommendation: Recommendation
     private var comments: [Comment]
     var refresh: (() -> Void)?

@@ -12,7 +12,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecommendationDetailViewController" customModule="Spotyfiend" customModuleProvider="target">
             <connections>
-                <outlet property="imageView" destination="gEj-N0-mKE" id="zDv-Xy-r60"/>
+                <outlet property="headerView" destination="nJC-J9-GJi" id="ZaR-1g-ZuF"/>
+                <outlet property="headerViewHeightConstraint" destination="qzN-8c-Kkb" id="GwP-lo-Eup"/>
                 <outlet property="tableView" destination="j1h-yk-7KI" id="yeQ-RA-659"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -30,21 +31,24 @@
                         <outlet property="delegate" destination="-1" id="FhF-s6-D6t"/>
                     </connections>
                 </tableView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gEj-N0-mKE">
+                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJC-J9-GJi" customClass="RecommendationDetailTableHeaderView" customModule="Spotyfiend" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="20" width="375" height="225"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="225" id="kV1-eb-PB3"/>
+                        <constraint firstAttribute="height" constant="225" id="qzN-8c-Kkb"/>
                     </constraints>
-                </imageView>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="gEj-N0-mKE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="1SX-or-N3i"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gEj-N0-mKE" secondAttribute="trailing" id="4Sq-KU-y2z"/>
-                <constraint firstItem="j1h-yk-7KI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="DmD-UP-TCW"/>
+                <constraint firstItem="nJC-J9-GJi" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="0ta-M5-oEG"/>
+                <constraint firstItem="nJC-J9-GJi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="FOv-R3-eQ5"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="j1h-yk-7KI" secondAttribute="bottom" id="NUB-bS-7tX"/>
-                <constraint firstItem="gEj-N0-mKE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="QCG-Np-I2T"/>
+                <constraint firstItem="j1h-yk-7KI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="OjH-7n-vqZ"/>
+                <constraint firstItem="nJC-J9-GJi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="fHm-jh-k9Z"/>
+                <constraint firstAttribute="trailing" secondItem="nJC-J9-GJi" secondAttribute="trailing" id="vRa-qS-CZm"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="j1h-yk-7KI" secondAttribute="trailing" id="viP-DU-g9K"/>
+                <constraint firstItem="nJC-J9-GJi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="wwD-pX-H5P"/>
                 <constraint firstItem="j1h-yk-7KI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ztU-aA-LCJ"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

@@ -97,6 +97,7 @@ extension SearchViewController: UITableViewDataSource {
 
 extension SearchViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
 //        if let uri = viewModel.item(at: indexPath)?.uri {
 //            UIApplication.shared.open(URL(string: uri)!, options: [:], completionHandler: nil)
 //        }
@@ -117,19 +118,6 @@ extension SearchViewController: UISearchBarDelegate {
 extension SearchViewController: SearchResultsCellDelegate {
     func recommendButtonPressed(item: SpotifySearchItem, type: SpotifyItemType) {
         guard let parentCoordinator = parentCoordinator as? SearchCoordinator else { return }
-        let alertController = UIAlertController(title: "Recommend", message: "Add a comment?", preferredStyle: .alert)
-        alertController.addTextField { (textField) in
-            textField.placeholder = "Add comment"
-        }
-        alertController.addAction(UIAlertAction(title: "Save", style: .default, handler: { (action) in
-            parentCoordinator.recommend(item: item, type: type, comment: alertController.textFields?[0].text)
-            alertController.dismiss(animated: true, completion: nil)
-        }))
-        
-        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action) in
-            alertController.dismiss(animated: true, completion: nil)
-        }))
-        
-        navigationController?.present(alertController, animated: true, completion: nil)
+        parentCoordinator.recommend(item: item, type: type)
     }
 }

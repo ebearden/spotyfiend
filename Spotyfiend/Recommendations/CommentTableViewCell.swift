@@ -11,6 +11,7 @@ import UIKit
 class CommentTableViewCell: UITableViewCell {
     @IBOutlet weak var displayNameLabel: UILabel!
     @IBOutlet weak var commentTextView: UITextView!
+    @IBOutlet weak var dateLabel: UILabel!
     
     static let reuseIdentifier = "CommentTableViewCell"
 }

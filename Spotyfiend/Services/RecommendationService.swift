@@ -48,7 +48,7 @@ class RecommendationService {
                 completion(
                     snapshot.documents
                         .compactMap({ try? Comment(from: $0.data()) })
-                        .sorted(by: { $0.createdAt > $1.createdAt })
+                        .sorted(by: { $0.createdAt < $1.createdAt })
                 )
             }
         }

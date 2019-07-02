@@ -14,7 +14,8 @@ struct RecommendationDetailViewControllerDependencies: Dependencies {
 
 class RecommendationDetailViewController: UIViewController, FlowCoordinatorViewController {
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var headerView: RecommendationDetailTableHeaderView!
+    @IBOutlet weak var headerViewHeightConstraint: NSLayoutConstraint!
     
     internal var parentCoordinator: (FlowCoordinator & FlowCoordinatorLifeCycleDelegate)?
     private var viewModel: RecommendationDetailViewModel
@@ -44,9 +45,14 @@ class RecommendationDetailViewController: UIViewController, FlowCoordinatorViewC
         let containerView = TextInputAccessoryView(frame: CGRect(origin: .zero, size: CGSize(width: self.view.frame.width, height: 50)))
         containerView.sendButtonAction = {
             guard let text = containerView.textView.text, let userId = ServiceClient.currentUser?.userId else { return }
-            let comment = Comment(userId: userId, recommendationId: self.viewModel.recommendation.identifier, text: text)
+            let comment = Comment(
+                userId: userId,
+                recommendationId: self.viewModel.recommendation.identifier,
+                text: text
+            )
             parentCoordinator.addComment(comment: comment)
         }
+        
         return containerView
     }()
     
@@ -64,7 +70,6 @@ extension RecommendationDetailViewController {
             }
         }
         
-        imageView.image = viewModel.recommendation.image
         tableView.contentInset = UIEdgeInsets(top: 225, left: 0, bottom: 0, right: 0)
         tableView.register(UINib(nibName: CommentTableViewCell.reuseIdentifier, bundle: nil), forCellReuseIdentifier: CommentTableViewCell.reuseIdentifier)
         
@@ -72,10 +77,20 @@ extension RecommendationDetailViewController {
         navigationItem.setRightBarButton(openButton, animated: false)
         
         setupKeyboardAvoidance()
+        headerView.imageView.image = viewModel.recommendation.image
+        headerView.titleLabel.text = viewModel.recommendation.spotifyDetail?.name
+        ServiceClient.getUser(userId: viewModel.recommendation.userId) { (user) in
+            guard let displayName = user?.displayName else {
+                self.headerView.subtitleLabel.text = nil
+                return
+            }
+            
+            self.headerView.subtitleLabel.text = "Recommended by: \(displayName)"
+        }
     }
     
     @objc func openInSpotify() {
-        let url = URL(string: viewModel.recommendation.uri)!
+        guard let url = URL(string: viewModel.recommendation.uri) else { return }
         
         if UIApplication.shared.canOpenURL(url) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
@@ -87,7 +102,7 @@ extension RecommendationDetailViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let y = 225 - (scrollView.contentOffset.y + 225)
         let height = min(max(y, 0), 400)
-        imageView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: height)
+        headerViewHeightConstraint.constant = height
     }
 }
 
@@ -104,11 +119,14 @@ extension RecommendationDetailViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CommentTableViewCell.reuseIdentifier, for: indexPath) as? CommentTableViewCell else {
             fatalError()
         }
+        
         let item = viewModel.item(at: indexPath)
         ServiceClient.getUser(userId: item.userId) { (user) in
             cell.displayNameLabel.text = user?.displayName
         }
-        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "EEE, MMM d, hh:mm a"
+        cell.dateLabel.text = formatter.string(from: item.createdAt)
         cell.commentTextView.text = item.text
         
         return cell
@@ -136,8 +154,14 @@ extension RecommendationDetailViewController {
         
         if notification.name == UIResponder.keyboardWillHideNotification {
             tableView.contentInset = UIEdgeInsets(top: 225, left: 0, bottom: 0, right: 0)
-        } else {
+        }
+        else if notification.name == UIResponder.keyboardWillChangeFrameNotification {
             tableView.contentInset = UIEdgeInsets(top: 225, left: 0, bottom: keyboardViewEndFrame.height, right: 0)
+            
+            let index = viewModel.numberOfRows(in: 0) - 1
+            guard index > 0 else { return }
+            let lastIndex = IndexPath(item: index, section: 0)
+            tableView.scrollToRow(at: lastIndex, at: .bottom, animated: true)
         }
     }
 }

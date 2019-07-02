@@ -60,7 +60,6 @@ class AppCoordinator: NSObject, FlowCoordinator {
 extension AppCoordinator: SignInDelegate {
     func signInSuccessful(user: User) {
         signInViewController?.dismiss(animated: false, completion: nil)
-
        
         ServiceClient.getUser(userId: user.uid) { (compoundUser) in
             guard let compoundUser = compoundUser else {
@@ -74,8 +73,8 @@ extension AppCoordinator: SignInDelegate {
                     else {
                         self.spotifyService.authenticate()
                     }
-                    
                 })
+                
                 return
             }
             
@@ -89,7 +88,9 @@ extension AppCoordinator: SignInDelegate {
                 self.spotifyService.authenticate()
             }
             
-            
+            ServiceClient.getCurrentUserGroups(completion: { (groups) in
+                print(groups)
+            })
         }
         
     }

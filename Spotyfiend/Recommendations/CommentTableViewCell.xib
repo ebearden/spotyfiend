@@ -20,31 +20,40 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4V-hb-Nt3">
-                        <rect key="frame" x="10" y="10" width="300" height="15"/>
+                        <rect key="frame" x="10" y="10" width="28" height="15"/>
                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Some text" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LR3-hO-Mu3">
-                        <rect key="frame" x="5" y="25" width="305" height="49.5"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <rect key="frame" x="5" y="21" width="275" height="57.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESF-QY-5do">
+                        <rect key="frame" x="310" y="25" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="LR3-hO-Mu3" secondAttribute="bottom" id="DdF-l2-gXV"/>
+                    <constraint firstItem="ESF-QY-5do" firstAttribute="bottom" secondItem="v4V-hb-Nt3" secondAttribute="bottom" id="6Pg-H5-OOO"/>
+                    <constraint firstAttribute="trailing" secondItem="ESF-QY-5do" secondAttribute="trailing" constant="10" id="DLR-Up-iBM"/>
+                    <constraint firstAttribute="bottom" secondItem="LR3-hO-Mu3" secondAttribute="bottom" constant="-4" id="DdF-l2-gXV"/>
                     <constraint firstItem="v4V-hb-Nt3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="EC6-zl-aGC"/>
-                    <constraint firstAttribute="trailing" secondItem="LR3-hO-Mu3" secondAttribute="trailing" constant="10" id="d4n-dk-5Se"/>
-                    <constraint firstItem="LR3-hO-Mu3" firstAttribute="top" secondItem="v4V-hb-Nt3" secondAttribute="bottom" id="dGY-sC-7P0"/>
-                    <constraint firstAttribute="trailing" secondItem="v4V-hb-Nt3" secondAttribute="trailing" constant="10" id="egg-wv-AC6"/>
+                    <constraint firstAttribute="trailing" secondItem="LR3-hO-Mu3" secondAttribute="trailing" constant="40" id="d4n-dk-5Se"/>
+                    <constraint firstItem="LR3-hO-Mu3" firstAttribute="top" secondItem="v4V-hb-Nt3" secondAttribute="bottom" constant="-4" id="dGY-sC-7P0"/>
                     <constraint firstItem="LR3-hO-Mu3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="jcS-p9-0nU"/>
                     <constraint firstItem="v4V-hb-Nt3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="tIa-sD-71p"/>
+                    <constraint firstItem="ESF-QY-5do" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="v4V-hb-Nt3" secondAttribute="trailing" constant="10" id="tSQ-3h-Jkn"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="commentTextView" destination="LR3-hO-Mu3" id="cHG-as-dEL"/>
+                <outlet property="dateLabel" destination="ESF-QY-5do" id="HKn-ZC-zvB"/>
                 <outlet property="displayNameLabel" destination="v4V-hb-Nt3" id="Ed6-Z8-ijt"/>
             </connections>
             <point key="canvasLocation" x="52.799999999999997" y="62.518740629685162"/>

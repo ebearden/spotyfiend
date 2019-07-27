@@ -39,12 +39,6 @@ class AddRecommendationViewController: UIViewController, FlowCoordinatorViewCont
 extension AddRecommendationViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        if let uri = viewModel.recommendation.artUri {
-//            ImageDownloadService.download(from: uri) { (image) in
-//                self.headerView.imageView.image = image
-//            }
-//        }
 
         headerView.titleLabel.text = viewModel.recommendation.name
         headerView.subtitleLabel.text = nil

@@ -10,6 +10,7 @@ import UIKit
 
 struct RecommendationDetailViewControllerDependencies: Dependencies {
     let viewModel: RecommendationDetailViewModel
+    let userService: UserService
 }
 
 class RecommendationDetailViewController: UIViewController, FlowCoordinatorViewController {
@@ -19,6 +20,7 @@ class RecommendationDetailViewController: UIViewController, FlowCoordinatorViewC
     
     internal var parentCoordinator: (FlowCoordinator & FlowCoordinatorLifeCycleDelegate)?
     private var viewModel: RecommendationDetailViewModel
+    private let userService: UserService
     
     required init(parentCoordinator: FlowCoordinator & FlowCoordinatorLifeCycleDelegate, dependencies: Dependencies?) {
         guard let dependencies = dependencies as? RecommendationDetailViewControllerDependencies else {
@@ -26,6 +28,7 @@ class RecommendationDetailViewController: UIViewController, FlowCoordinatorViewC
         }
         self.parentCoordinator = parentCoordinator
         self.viewModel = dependencies.viewModel
+        self.userService = dependencies.userService
         
         super.init(nibName: String(describing: RecommendationDetailViewController.self), bundle: nil)
     }
@@ -44,7 +47,7 @@ class RecommendationDetailViewController: UIViewController, FlowCoordinatorViewC
         guard let parentCoordinator = parentCoordinator as? RecommendationsCoordinator else { return nil }
         let containerView = TextInputAccessoryView(frame: CGRect(origin: .zero, size: CGSize(width: self.view.frame.width, height: 50)))
         containerView.sendButtonAction = {
-            guard let text = containerView.textView.text, let userId = ServiceClient.currentUser?.userId else { return }
+            guard let text = containerView.textView.text, let userId = Session.current.user?.userId else { return }
             let comment = Comment(
                 userId: userId,
                 recommendationId: self.viewModel.recommendation.identifier,
@@ -64,6 +67,7 @@ class RecommendationDetailViewController: UIViewController, FlowCoordinatorViewC
 extension RecommendationDetailViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         viewModel.refresh = {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
@@ -79,7 +83,7 @@ extension RecommendationDetailViewController {
         setupKeyboardAvoidance()
         headerView.imageView.image = viewModel.recommendation.image
         headerView.titleLabel.text = viewModel.recommendation.spotifyDetail?.name
-        ServiceClient.getUser(userId: viewModel.recommendation.userId) { (user) in
+        userService.getUser(userId: viewModel.recommendation.userId) { (user) in
             guard let displayName = user?.displayName else {
                 self.headerView.subtitleLabel.text = nil
                 return
@@ -87,6 +91,12 @@ extension RecommendationDetailViewController {
             
             self.headerView.subtitleLabel.text = "Recommended by: \(displayName)"
         }
+        
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.isTranslucent = true
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.view.backgroundColor = .clear
+        navigationController?.navigationBar.backgroundColor = .clear
     }
     
     @objc func openInSpotify() {
@@ -101,7 +111,7 @@ extension RecommendationDetailViewController {
 extension RecommendationDetailViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let y = 225 - (scrollView.contentOffset.y + 225)
-        let height = min(max(y, 0), 400)
+        let height = min(max(y, 150), 400)
         headerViewHeightConstraint.constant = height
     }
 }
@@ -121,7 +131,7 @@ extension RecommendationDetailViewController: UITableViewDataSource {
         }
         
         let item = viewModel.item(at: indexPath)
-        ServiceClient.getUser(userId: item.userId) { (user) in
+        userService.getUser(userId: item.userId) { (user) in
             cell.displayNameLabel.text = user?.displayName
         }
         let formatter = DateFormatter()

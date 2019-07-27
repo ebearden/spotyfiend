@@ -12,12 +12,15 @@ struct Group: DocumentCodable {
     let identifier: String
     let name: String?
     let photoUrl: String?
+    let ownerId: String
     let userIds: [String]
+    // group owner id (user id)
     
-    init(name: String?, photoUrl: String?, userIds: [String]) {
+    init(name: String?, photoUrl: String?, userIds: [String], ownerId: String) {
         self.identifier = UUID().uuidString
         self.name = name
         self.photoUrl = photoUrl
+        self.ownerId = ownerId
         self.userIds = userIds
     }
 }

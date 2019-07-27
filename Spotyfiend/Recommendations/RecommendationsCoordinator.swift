@@ -35,7 +35,7 @@ class RecommendationsCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDeleg
     
     func start() {
         viewModel = RecommendationsViewModel(user: user, spotifyService: spotifyService)
-        let dependencies = RecommendationsViewControllerDependencies(viewModel: viewModel)
+        let dependencies = RecommendationsViewControllerDependencies(viewModel: viewModel, userService: UserService())
         let controller = RecommendationsViewController(parentCoordinator: self, dependencies: dependencies)
         navigationController.tabBarItem = UITabBarItem(title: "Recommendations", image: nil, selectedImage: nil)
         navigationController.show(controller, sender: nil)
@@ -60,8 +60,9 @@ class RecommendationsCoordinator: FlowCoordinator, FlowCoordinatorLifeCycleDeleg
     
     func showDetail(recommendation: Recommendation) {
         let viewModel = RecommendationDetailViewModel(recommendation: recommendation)
-        let dependencies = RecommendationDetailViewControllerDependencies(viewModel: viewModel)
+        let dependencies = RecommendationDetailViewControllerDependencies(viewModel: viewModel, userService: UserService())
         let controller = RecommendationDetailViewController(parentCoordinator: self, dependencies: dependencies)
+        controller.hidesBottomBarWhenPushed = true
         
         navigationController.show(controller, sender: nil)
         

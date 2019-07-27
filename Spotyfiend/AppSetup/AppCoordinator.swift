@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import GoogleSignIn
+import Fabric
 
 struct AppCoordinatorDependencies: Dependencies {
     let spotifyService: SpotifyService
@@ -29,6 +30,7 @@ class AppCoordinator: NSObject, FlowCoordinator {
     
     func start() {
         FirebaseApp.configure()
+        Fabric.with([Crashlytics.self])
         showSignInViewController()
         navigationController.setNavigationBarHidden(true, animated: false)
     }

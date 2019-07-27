@@ -10,10 +10,15 @@ import Foundation
 import Firebase
 
 class RecommendationService {
-    let database = Firestore.firestore()
+    private let database = Firestore.firestore()
     
     func getRecommendations(completion: @escaping ([Recommendation]) -> Void) {
-        database.collection("recommendations").addSnapshotListener { (snapshot, error) in
+        let groupIds = Session.current.groups.map({ $0.identifier })
+        
+        database.collection(ServiceConstants.recommendations.rawValue)
+            .whereField(ServiceConstants.groupId.rawValue, isEqualTo: groupIds.first!)
+            .addSnapshotListener { (snapshot, error) in
+            
             guard let snapshot = snapshot else { return }
             
             DispatchQueue.main.async {
@@ -28,7 +33,10 @@ class RecommendationService {
     
     func addRecommendation(recommendation: Recommendation) {
         guard let encoded = try? recommendation.encode() else { return }
-        database.collection("recommendations").document(recommendation.identifier).setData(encoded)
+        database.collection(ServiceConstants.recommendations.rawValue)
+            .document(recommendation.identifier)
+            .setData(encoded)
+        
         if let text = recommendation.text {
             let comment = Comment(userId: recommendation.userId, recommendationId: recommendation.identifier, text: text)
             addComment(comment: comment)
@@ -36,13 +44,17 @@ class RecommendationService {
     }
     
     func deleteRecommendation(recommendation: Recommendation, completion: @escaping () -> Void) {
-        database.collection("recommendations").document(recommendation.identifier).delete { (error) in
+        database.collection(ServiceConstants.recommendations.rawValue)
+            .document(recommendation.identifier).delete { (error) in
             completion()
         }
     }
     
     func getComments(recommendation: Recommendation, completion: @escaping ([Comment]) -> Void) {
-        database.collection("comments").whereField("recommendationId", isEqualTo: recommendation.identifier).addSnapshotListener { (snapshot, error) in
+        database.collection(ServiceConstants.comments.rawValue)
+            .whereField(ServiceConstants.recommendationId.rawValue, isEqualTo: recommendation.identifier)
+            .addSnapshotListener { (snapshot, error) in
+            
             guard let snapshot = snapshot else { return }
             DispatchQueue.main.async {
                 completion(
@@ -56,6 +68,6 @@ class RecommendationService {
     
     func addComment(comment: Comment) {
         guard let encoded = try? comment.encode() else { return }
-        database.collection("comments").document(comment.identifier).setData(encoded)
+        database.collection(ServiceConstants.comments.rawValue).document(comment.identifier).setData(encoded)
     }
 }

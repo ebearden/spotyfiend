@@ -11,13 +11,15 @@ import SpotifyKit
 
 struct RecommendationsViewControllerDependencies: Dependencies {
     let viewModel: RecommendationsViewModel
+    let userService: UserService
 }
 
 class RecommendationsViewController: UIViewController, FlowCoordinatorViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var parentCoordinator: (FlowCoordinator & FlowCoordinatorLifeCycleDelegate)?
-    let viewModel: RecommendationsViewModel
+    private let viewModel: RecommendationsViewModel
+    private let userService: UserService
     
     required init(parentCoordinator: FlowCoordinator & FlowCoordinatorLifeCycleDelegate, dependencies: Dependencies?) {
         guard let dependencies = dependencies as? RecommendationsViewControllerDependencies else {
@@ -26,6 +28,7 @@ class RecommendationsViewController: UIViewController, FlowCoordinatorViewContro
         
         self.parentCoordinator = parentCoordinator
         self.viewModel = dependencies.viewModel
+        self.userService = dependencies.userService
         
         super.init(nibName: String(describing: RecommendationsViewController.self), bundle: nil)
     }
@@ -77,7 +80,7 @@ extension RecommendationsViewController: UITableViewDataSource {
         let item = viewModel.item(at: indexPath)
         cell.commentTextView.text = item.text
         
-        ServiceClient.getUser(userId: item.userId) { (user) in
+        userService.getUser(userId: item.userId) { (user) in
             user?.getPhoto(completion: { (image) in
                 cell.userImageView.image = image
             })

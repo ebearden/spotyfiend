@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0191080522CD94E400B538C1 /* GroupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0191080422CD94E400B538C1 /* GroupService.swift */; };
+		0191080722CD952500B538C1 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0191080622CD952500B538C1 /* UserService.swift */; };
+		0191080922CD959900B538C1 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0191080822CD959900B538C1 /* Session.swift */; };
+		01E6C8E122EC8B9A008B5BD8 /* ServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E6C8E022EC8B9A008B5BD8 /* ServiceConstants.swift */; };
 		14F05DEAA5A327FB1E9E5B72 /* Pods_SpotyfiendUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AFBD7FBDFF7681691CD27DF /* Pods_SpotyfiendUITests.framework */; };
 		4A01905A223C39760066E0DF /* RecommendationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A019058223C39760066E0DF /* RecommendationTableViewCell.swift */; };
 		4A01905B223C39760066E0DF /* RecommendationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A019059223C39760066E0DF /* RecommendationTableViewCell.xib */; };
@@ -88,6 +92,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0191080422CD94E400B538C1 /* GroupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupService.swift; sourceTree = "<group>"; };
+		0191080622CD952500B538C1 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		0191080822CD959900B538C1 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		01E6C8E022EC8B9A008B5BD8 /* ServiceConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConstants.swift; sourceTree = "<group>"; };
 		136DE68E5C59A564FEB2790A /* Pods-Spotyfiend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spotyfiend.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spotyfiend/Pods-Spotyfiend.release.xcconfig"; sourceTree = "<group>"; };
 		3C2D262A7ACC0C5DF01388E8 /* Pods-SpotyfiendUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotyfiendUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpotyfiendUITests/Pods-SpotyfiendUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4A019058223C39760066E0DF /* RecommendationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationTableViewCell.swift; sourceTree = "<group>"; };
@@ -288,6 +296,9 @@
 				4A648407223AA1C30093158E /* RecommendationService.swift */,
 				4A648453223AEAB30093158E /* ImageDownloadService.swift */,
 				4A01905F223FF7FA0066E0DF /* ServiceClient.swift */,
+				0191080422CD94E400B538C1 /* GroupService.swift */,
+				0191080622CD952500B538C1 /* UserService.swift */,
+				0191080822CD959900B538C1 /* Session.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -357,6 +368,7 @@
 			isa = PBXGroup;
 			children = (
 				4A648419223AA1C40093158E /* SpotifyConstants.swift */,
+				01E6C8E022EC8B9A008B5BD8 /* ServiceConstants.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -435,6 +447,7 @@
 				4A6483CA223AA0B90093158E /* Resources */,
 				49A7552A02523B9DA113162C /* [CP] Embed Pods Frameworks */,
 				1D2CFFB77D22AB375081DF8B /* [CP] Copy Pods Resources */,
+				01E6C8E222EC9C8C008B5BD8 /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -566,6 +579,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		01E6C8E222EC9C8C008B5BD8 /* Fabric */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = Fabric;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 1780c8f26a12eb200c72a20b0e21d548a683732f c58bc40855e832a372e58a6786a365dac4be094f52b45d87e95a4971da4ec8fe\n";
+		};
 		1D2CFFB77D22AB375081DF8B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -676,6 +708,7 @@
 				4A648444223AA1C40093158E /* FlowCoordinatorViewController.swift in Sources */,
 				4A8F2D412243D05300A54348 /* NibFileOwnerLoadable.swift in Sources */,
 				4A648442223AA1C40093158E /* Dependencies.swift in Sources */,
+				01E6C8E122EC8B9A008B5BD8 /* ServiceConstants.swift in Sources */,
 				4A8F2D392242C80200A54348 /* RecommendationDetailViewController.swift in Sources */,
 				4A648432223AA1C40093158E /* AppDelegate.swift in Sources */,
 				4A648437223AA1C40093158E /* RecommendationsViewController.swift in Sources */,
@@ -686,10 +719,12 @@
 				4A1604E5224402BE00D89DAA /* RecommendationDetailTableHeaderView.swift in Sources */,
 				4A64844B223AB3840093158E /* SignInViewController.swift in Sources */,
 				4A648446223AA1C40093158E /* SearchCoordinator.swift in Sources */,
+				0191080522CD94E400B538C1 /* GroupService.swift in Sources */,
 				4A648435223AA1C40093158E /* HomeViewController.swift in Sources */,
 				4A8F8679224A643D00607A28 /* AddRecommendationViewModel.swift in Sources */,
 				4A64843C223AA1C40093158E /* SpotifyConstants.swift in Sources */,
 				4A01905A223C39760066E0DF /* RecommendationTableViewCell.swift in Sources */,
+				0191080722CD952500B538C1 /* UserService.swift in Sources */,
 				4A648441223AA1C40093158E /* FlowCoordinator.swift in Sources */,
 				4A648454223AEAB30093158E /* ImageDownloadService.swift in Sources */,
 				4A019060223FF7FA0066E0DF /* ServiceClient.swift in Sources */,
@@ -711,6 +746,7 @@
 				4A64843A223AA1C40093158E /* RecommendationsCoordinator.swift in Sources */,
 				4A8F2C2C22411FFE00A54348 /* Group.swift in Sources */,
 				4A1604E22243EDBD00D89DAA /* CommentTableViewCell.swift in Sources */,
+				0191080922CD959900B538C1 /* Session.swift in Sources */,
 				4A8F8676224A5DE000607A28 /* AddRecommendationViewController.swift in Sources */,
 				4A64843B223AA1C40093158E /* RecommendationsViewModel.swift in Sources */,
 				4A64842E223AA1C40093158E /* AsynchronousOperation.swift in Sources */,

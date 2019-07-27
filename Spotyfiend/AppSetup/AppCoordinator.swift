@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import GoogleSignIn
+import Fabric
 
 struct AppCoordinatorDependencies: Dependencies {
     let spotifyService: SpotifyService
@@ -29,6 +30,7 @@ class AppCoordinator: NSObject, FlowCoordinator {
     
     func start() {
         FirebaseApp.configure()
+        Fabric.with([Crashlytics.self])
         showSignInViewController()
         navigationController.setNavigationBarHidden(true, animated: false)
     }
@@ -38,7 +40,7 @@ class AppCoordinator: NSObject, FlowCoordinator {
     }
     
     private func showHomeViewController() {
-        guard let user = user else { return }
+        guard let user = Session.current.user else { return }
         let dependencies = HomeCoordinatorDependencies(
             navigationController: navigationController,
             spotifyService: spotifyService,
@@ -60,38 +62,14 @@ class AppCoordinator: NSObject, FlowCoordinator {
 extension AppCoordinator: SignInDelegate {
     func signInSuccessful(user: User) {
         signInViewController?.dismiss(animated: false, completion: nil)
-       
-        ServiceClient.getUser(userId: user.uid) { (compoundUser) in
-            guard let compoundUser = compoundUser else {
-                ServiceClient.setUser(user: user, completion: { (compoundUser) in
-                    self.user = compoundUser
-                    ServiceClient.currentUser = compoundUser
-                    
-                    if self.spotifyService.isAuthenticated {
-                        self.showHomeViewController()
-                    }
-                    else {
-                        self.spotifyService.authenticate()
-                    }
-                })
-                
-                return
-            }
-            
-            self.user = compoundUser
-            ServiceClient.currentUser = compoundUser
-            
+
+        ServiceClient.shared.initSession(user: user) {
             if self.spotifyService.isAuthenticated {
                 self.showHomeViewController()
             }
             else {
                 self.spotifyService.authenticate()
             }
-            
-            ServiceClient.getCurrentUserGroups(completion: { (groups) in
-                print(groups)
-            })
         }
-        
     }
 }

@@ -12,6 +12,9 @@ target 'Spotyfiend' do
   pod 'Firebase/Firestore'
   pod 'Firebase/Auth'
   pod 'GoogleSignIn'
+  pod 'Fabric', '~> 1.10.2'
+  pod 'Crashlytics', '~> 3.13.4'
+
 
   target 'SpotyfiendTests' do
     inherit! :search_paths

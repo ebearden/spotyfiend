@@ -9,33 +9,47 @@ packages:
   SpotifyAPI:
     url: https://github.com/Peter-Schorn/SpotifyAPI.git
     from: 2.0.1
-  Firebase:
-    url: https://github.com/firebase/firebase-ios-sdk.git
-    from: 8.6.1
-  GoogleSignIn:
-    url: https://github.com/google/GoogleSignIn-iOS.git
-    from: 6.0.2
+  # Firebase:
+  #   url: https://github.com/firebase/firebase-ios-sdk.git
+  #   from: 8.6.1
+  # GoogleSignIn:
+  #   url: https://github.com/google/GoogleSignIn-iOS.git
+  #   from: 6.0.2
 configs: 
   Debug: debug
   Release: release
 targets:
-  Spotyfiend:
+  # Spotyfiend:
+  #   type: application
+  #   platform: iOS
+  #   deploymentTarget: "14.0"
+  #   sources: 
+  #     - Spotyfiend
+  #   dependencies: 
+  #     - package: SnapKit
+  #     - package: SpotifyAPI
+  #     - package: Firebase
+  #       product: Firestore
+  #     - package: Firebase
+  #       product: FirebaseAuth
+  #     - package: GoogleSignIn
+  #   scheme:
+  #     testTargets:
+  #       - SpotyfiendTests
+  SpotyfiendSwiftUI:
     type: application
     platform: iOS
     deploymentTarget: "14.0"
     sources: 
-      - Spotyfiend
+      - SpotyfiendSwiftUI
     dependencies: 
       - package: SnapKit
       - package: SpotifyAPI
-      - package: Firebase
-        product: Firestore
-      - package: Firebase
-        product: FirebaseAuth
-      - package: GoogleSignIn
-    scheme:
-      testTargets:
-        - SpotyfiendTests
+      # - package: Firebase
+      #   product: FirebaseFirestore
+      # - package: Firebase
+      #   product: FirebaseAuth
+      # - package: GoogleSignIn
     # configFiles:
     #   Debug: Config/Debug.xcconfig
     #   Release: Config/AppStore.xcconfig
@@ -58,8 +72,8 @@ targets:
     configFiles:
       # Debug: Config/UnitTests.xcconfig
 schemes:
-  Spotyfiend:
+  SpotyfiendSwiftUI:
     build:
       targets:
-        Spotyfiend: all
+        SpotyfiendSwiftUI: all
 

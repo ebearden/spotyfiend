@@ -1,0 +1,22 @@
+input_dir: Spotyfiend/Resources/
+output_dir: Spotyfiend/Generated/
+strings:
+  inputs: en.lproj
+  outputs:
+    - templateName: structured-swift5
+      output: Localizations.swift
+      params:
+        enumName: Localizations
+xcassets:
+  - inputs: Colors.xcassets
+    outputs:
+      - templateName: swift5
+        output: Colors.swift
+        params:
+          enumName: Colors
+  - inputs: Assets.xcassets
+    outputs:
+      - templateName: swift5
+        output: Assets-Constants.swift
+        params:
+          enumName: Assets

@@ -1,0 +1,65 @@
+name: Spotyfiend
+options:
+  bundleIdPrefix: com.setecastronomy
+  preGenCommand: swiftgen
+packages:
+  SnapKit:
+    url: https://github.com/SnapKit/SnapKit.git
+    from: 5.0.1
+  SpotifyAPI:
+    url: https://github.com/Peter-Schorn/SpotifyAPI.git
+    from: 2.0.1
+  Firebase:
+    url: https://github.com/firebase/firebase-ios-sdk.git
+    from: 8.6.1
+  GoogleSignIn:
+    url: https://github.com/google/GoogleSignIn-iOS.git
+    from: 6.0.2
+configs: 
+  Debug: debug
+  Release: release
+targets:
+  Spotyfiend:
+    type: application
+    platform: iOS
+    deploymentTarget: "14.0"
+    sources: 
+      - Spotyfiend
+    dependencies: 
+      - package: SnapKit
+      - package: SpotifyAPI
+      - package: Firebase
+        product: Firestore
+      - package: Firebase
+        product: FirebaseAuth
+      - package: GoogleSignIn
+    scheme:
+      testTargets:
+        - SpotyfiendTests
+    # configFiles:
+    #   Debug: Config/Debug.xcconfig
+    #   Release: Config/AppStore.xcconfig
+    settings:
+      base:
+        DEVELOPMENT_TEAM: UBBFM4Q7C8
+        # CODE_SIGN_ENTITLEMENTS: Tango/Tango.entitlements
+    preBuildScripts:
+      - path: scripts/swiftgen.sh
+        name: SwiftGen
+    postCompileScripts:
+      - path: Scripts/swiftlint.sh
+        name: Swiftlint
+  SpotyfiendTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - SpotyfiendTests
+    scheme: {}
+    configFiles:
+      # Debug: Config/UnitTests.xcconfig
+schemes:
+  Spotyfiend:
+    build:
+      targets:
+        Spotyfiend: all
+

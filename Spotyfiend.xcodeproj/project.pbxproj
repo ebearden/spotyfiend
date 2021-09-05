@@ -7,579 +7,490 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0191080522CD94E400B538C1 /* GroupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0191080422CD94E400B538C1 /* GroupService.swift */; };
-		0191080722CD952500B538C1 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0191080622CD952500B538C1 /* UserService.swift */; };
-		0191080922CD959900B538C1 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0191080822CD959900B538C1 /* Session.swift */; };
-		01E6C8E122EC8B9A008B5BD8 /* ServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E6C8E022EC8B9A008B5BD8 /* ServiceConstants.swift */; };
-		14F05DEAA5A327FB1E9E5B72 /* Pods_SpotyfiendUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AFBD7FBDFF7681691CD27DF /* Pods_SpotyfiendUITests.framework */; };
-		4A01905A223C39760066E0DF /* RecommendationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A019058223C39760066E0DF /* RecommendationTableViewCell.swift */; };
-		4A01905B223C39760066E0DF /* RecommendationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A019059223C39760066E0DF /* RecommendationTableViewCell.xib */; };
-		4A01905E223FF76F0066E0DF /* CompoundUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A01905D223FF76F0066E0DF /* CompoundUser.swift */; };
-		4A019060223FF7FA0066E0DF /* ServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A01905F223FF7FA0066E0DF /* ServiceClient.swift */; };
-		4A1604E22243EDBD00D89DAA /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1604E02243EDBD00D89DAA /* CommentTableViewCell.swift */; };
-		4A1604E32243EDBD00D89DAA /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A1604E12243EDBD00D89DAA /* CommentTableViewCell.xib */; };
-		4A1604E5224402BE00D89DAA /* RecommendationDetailTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1604E4224402BE00D89DAA /* RecommendationDetailTableHeaderView.swift */; };
-		4A1604E7224402FD00D89DAA /* RecommendationDetailTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A1604E6224402FD00D89DAA /* RecommendationDetailTableHeaderView.xib */; };
-		4A6483E5223AA0BA0093158E /* SpotyfiendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6483E4223AA0BA0093158E /* SpotyfiendTests.swift */; };
-		4A6483F0223AA0BA0093158E /* SpotyfiendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6483EF223AA0BA0093158E /* SpotyfiendUITests.swift */; };
-		4A648429223AA1C40093158E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A6483FE223AA1C30093158E /* Assets.xcassets */; };
-		4A64842A223AA1C40093158E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A6483FF223AA1C30093158E /* GoogleService-Info.plist */; };
-		4A64842C223AA1C40093158E /* SpotifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648403223AA1C30093158E /* SpotifyService.swift */; };
-		4A64842D223AA1C40093158E /* SearchArtistOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648405223AA1C30093158E /* SearchArtistOperation.swift */; };
-		4A64842E223AA1C40093158E /* AsynchronousOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648406223AA1C30093158E /* AsynchronousOperation.swift */; };
-		4A64842F223AA1C40093158E /* RecommendationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648407223AA1C30093158E /* RecommendationService.swift */; };
-		4A648430223AA1C40093158E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648409223AA1C30093158E /* AppCoordinator.swift */; };
-		4A648431223AA1C40093158E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A64840A223AA1C30093158E /* LaunchScreen.storyboard */; };
-		4A648432223AA1C40093158E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A64840C223AA1C30093158E /* AppDelegate.swift */; };
-		4A648433223AA1C40093158E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A64840E223AA1C30093158E /* HomeViewModel.swift */; };
-		4A648434223AA1C40093158E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A64840F223AA1C30093158E /* HomeViewController.xib */; };
-		4A648435223AA1C40093158E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648410223AA1C30093158E /* HomeViewController.swift */; };
-		4A648436223AA1C40093158E /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648411223AA1C30093158E /* HomeCoordinator.swift */; };
-		4A648437223AA1C40093158E /* RecommendationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648413223AA1C30093158E /* RecommendationsViewController.swift */; };
-		4A648438223AA1C40093158E /* RecommendationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A648414223AA1C30093158E /* RecommendationsViewController.xib */; };
-		4A648439223AA1C40093158E /* Recommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648415223AA1C30093158E /* Recommendation.swift */; };
-		4A64843A223AA1C40093158E /* RecommendationsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648416223AA1C30093158E /* RecommendationsCoordinator.swift */; };
-		4A64843B223AA1C40093158E /* RecommendationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648417223AA1C30093158E /* RecommendationsViewModel.swift */; };
-		4A64843C223AA1C40093158E /* SpotifyConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648419223AA1C40093158E /* SpotifyConstants.swift */; };
-		4A64843D223AA1C40093158E /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A64841B223AA1C40093158E /* SettingsViewModel.swift */; };
-		4A64843E223AA1C40093158E /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A64841C223AA1C40093158E /* SettingsCoordinator.swift */; };
-		4A64843F223AA1C40093158E /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A64841D223AA1C40093158E /* SettingsViewController.xib */; };
-		4A648440223AA1C40093158E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A64841E223AA1C40093158E /* SettingsViewController.swift */; };
-		4A648441223AA1C40093158E /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648420223AA1C40093158E /* FlowCoordinator.swift */; };
-		4A648442223AA1C40093158E /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648421223AA1C40093158E /* Dependencies.swift */; };
-		4A648443223AA1C40093158E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648422223AA1C40093158E /* ViewModel.swift */; };
-		4A648444223AA1C40093158E /* FlowCoordinatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648423223AA1C40093158E /* FlowCoordinatorViewController.swift */; };
-		4A648445223AA1C40093158E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648425223AA1C40093158E /* SearchViewController.swift */; };
-		4A648446223AA1C40093158E /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648426223AA1C40093158E /* SearchCoordinator.swift */; };
-		4A648447223AA1C40093158E /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648427223AA1C40093158E /* SearchViewModel.swift */; };
-		4A648448223AA1C40093158E /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A648428223AA1C40093158E /* SearchViewController.xib */; };
-		4A64844B223AB3840093158E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648449223AB3840093158E /* SignInViewController.swift */; };
-		4A64844C223AB3840093158E /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A64844A223AB3840093158E /* SignInViewController.xib */; };
-		4A648451223AE5AF0093158E /* SearchResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A64844F223AE5AF0093158E /* SearchResultsTableViewCell.swift */; };
-		4A648452223AE5AF0093158E /* SearchResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A648450223AE5AF0093158E /* SearchResultsTableViewCell.xib */; };
-		4A648454223AEAB30093158E /* ImageDownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648453223AEAB30093158E /* ImageDownloadService.swift */; };
-		4A8F2C2C22411FFE00A54348 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8F2C2B22411FFE00A54348 /* Group.swift */; };
-		4A8F2C3022412D5A00A54348 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8F2C2F22412D5A00A54348 /* Comment.swift */; };
-		4A8F2D362242917E00A54348 /* DocumentCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8F2D352242917E00A54348 /* DocumentCodable.swift */; };
-		4A8F2D392242C80200A54348 /* RecommendationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8F2D372242C80200A54348 /* RecommendationDetailViewController.swift */; };
-		4A8F2D3A2242C80200A54348 /* RecommendationDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A8F2D382242C80200A54348 /* RecommendationDetailViewController.xib */; };
-		4A8F2D3C2243C30300A54348 /* RecommendationDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8F2D3B2243C30300A54348 /* RecommendationDetailViewModel.swift */; };
-		4A8F2D3F2243CFFD00A54348 /* TextInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8F2D3E2243CFFD00A54348 /* TextInputAccessoryView.swift */; };
-		4A8F2D412243D05300A54348 /* NibFileOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8F2D402243D05300A54348 /* NibFileOwnerLoadable.swift */; };
-		4A8F2D432243D16D00A54348 /* TextInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A8F2D422243D16D00A54348 /* TextInputAccessoryView.xib */; };
-		4A8F8676224A5DE000607A28 /* AddRecommendationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8F8674224A5DE000607A28 /* AddRecommendationViewController.swift */; };
-		4A8F8677224A5DE000607A28 /* AddRecommendationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A8F8675224A5DE000607A28 /* AddRecommendationViewController.xib */; };
-		4A8F8679224A643D00607A28 /* AddRecommendationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8F8678224A643D00607A28 /* AddRecommendationViewModel.swift */; };
-		E5E76EF9F5540D267AFA0A64 /* Pods_SpotyfiendTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D56B685C114C37FEF2D0D9 /* Pods_SpotyfiendTests.framework */; };
-		EFDFC6167A9DC991785FB5B0 /* Pods_Spotyfiend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AF47BA70873F33B86D46E7 /* Pods_Spotyfiend.framework */; };
+		0107A2A93860247925B2E916 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2C9D08261867F7440CD7EF99 /* FirebaseAuth */; };
+		012A1B244BD9E935D23EE245 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF835D19F583F4DA4FE8D274 /* CommentTableViewCell.xib */; };
+		03406E20E84FB51D730E7EAB /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46569584299F19822B5DA5C /* AppCoordinator.swift */; };
+		04B65DC97F8B67AAD5AC2F4C /* RecommendationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AF12CD76C21A90636C6787 /* RecommendationsViewController.swift */; };
+		0513F19C249B1C41B7B40EDC /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8CB3F991682D8BA1A051FA /* Group.swift */; };
+		06A5755FAC326FABE90DD1F4 /* AddRecommendationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87BD78AB0E642883680A3BF0 /* AddRecommendationViewController.xib */; };
+		0BE97C3FCE5B9CC19DC09AB0 /* SpotyfiendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE17F01C763F5F8D4C518D7 /* SpotyfiendTests.swift */; };
+		0C2B20C45DD3CEF03358C278 /* CompoundUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4286948FB5784EF3B06C1A3D /* CompoundUser.swift */; };
+		0EBEE9CD4DD14AA00FDBE1E4 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5439F72AC77DDA6ECEACC254 /* SettingsCoordinator.swift */; };
+		0F443F65564527BAA6E3B4A8 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B513EAC3DCE6991494D1B28 /* CommentTableViewCell.swift */; };
+		1C62AC280AA70695C7920605 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDF979C416E4D10DDA40F50 /* SearchViewController.swift */; };
+		202D13B5009BA7915F773801 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D69D565DE8FAAE748AC99CA /* HomeCoordinator.swift */; };
+		29B91F99486E037DC32C9CA1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1D787E7C03E6546C5F0610 /* SettingsViewController.swift */; };
+		2BAEC31E75656BC87B1AC72D /* AddRecommendationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C5E1A9267254A21DFD4706 /* AddRecommendationViewController.swift */; };
+		324110F3B188E810F0D2DC38 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A7F152AFC06BD1D87D04EAA /* GoogleService-Info.plist */; };
+		33CCD850755A66B08AF66167 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B57198103841A14C295E17 /* HomeViewModel.swift */; };
+		360B2C56E48094449AADA28C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FB98323941CBC3F9134EC1 /* ViewModel.swift */; };
+		3A83C65893228564572E1F93 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B761D0A5DFC1021D9AA88D2 /* SearchCoordinator.swift */; };
+		3AEE614F94FE1D361D76AA0A /* RecommendationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94100F24DCF473575487F52B /* RecommendationTableViewCell.swift */; };
+		3E9BFEBFDA24A8E44D6ECB9A /* SearchResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 056EEBBC8F6E8198406B9839 /* SearchResultsTableViewCell.xib */; };
+		44150278E6E289FE2B06FCFF /* SearchResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA927BB02A7F25F7D8370A2 /* SearchResultsTableViewCell.swift */; };
+		45C0F1BC627F7BACEA1AD3FF /* Common.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9BAFBDEB7984777173865F17 /* Common.strings */; };
+		47807BE01108E4E94B660BB5 /* RecommendationDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10D8CAC7E0ACD9C88D51986 /* RecommendationDetailViewModel.swift */; };
+		47BC77E998F0C59237AEB28E /* SpotifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DA347F23EF142E700EC561 /* SpotifyService.swift */; };
+		4916DB4512A492C9A27C052F /* SpotifyAPI in Frameworks */ = {isa = PBXBuildFile; productRef = BE514EE820FF774B0CCB79F3 /* SpotifyAPI */; };
+		495DB48BBE2762371C48DFF2 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB3D08B356A961CECE9345 /* UserService.swift */; };
+		4A0A3F4C1C3D68E304B3443B /* RecommendationDetailTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 333C337B2BB058B9032B89F9 /* RecommendationDetailTableHeaderView.xib */; };
+		4E0B7374900297B49A675A72 /* RecommendationDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26728EC5CEB46BBBD137E3A2 /* RecommendationDetailViewController.xib */; };
+		50DDD4B33EC6D91F90033A8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA252213DDF87A91846F8838 /* LaunchScreen.storyboard */; };
+		54B3F5A1FB7CA0A9D6A2FCBE /* Recommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9989C081866FDD59067FDD95 /* Recommendation.swift */; };
+		5DA21C680C1AFC208DE069CB /* Localizations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25054B9DCBF88F95504BE04C /* Localizations.swift */; };
+		643177A6EDA422F286ABD8AF /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13236C96B00C9695CC04B352 /* HomeViewController.xib */; };
+		692994091700251B7997F3C1 /* TextInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08DBCF88D0423498025BF397 /* TextInputAccessoryView.xib */; };
+		6C245214F63C3E4BBB14F80C /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF7FF54FF58AF31892387DF /* SearchViewModel.swift */; };
+		6E8D3CB407984E2D3FD7834E /* SpotifyConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A82D3F49DEA9CC5AEAC8C53 /* SpotifyConstants.swift */; };
+		70100DA8A929EF09CF98532E /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FB559DC567F2FEED33BC2F9 /* SettingsViewController.xib */; };
+		7D441E552B893C35308F1B1F /* DocumentCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B939E0C3E3E66C4067CA15 /* DocumentCodable.swift */; };
+		7EAF85757990089D0C7DE173 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EDE5DD167AF39C8D8DEA04 /* SettingsViewModel.swift */; };
+		7F23492C69D53753A2C6BFA8 /* FlowCoordinatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0D647A08324C1A84D68037 /* FlowCoordinatorViewController.swift */; };
+		7FBF708EE52CE983F6901586 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED9574F33107CC3074EE936 /* Session.swift */; };
+		860A1DB30F79540D77397EEC /* RecommendationsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F378CDC55425EB9AD157FE01 /* RecommendationsCoordinator.swift */; };
+		873764AE9D38AC1670945E7B /* NibFileOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AAA3EE191AA714D7CFFD9C /* NibFileOwnerLoadable.swift */; };
+		891632B2DA7C3D1D44E15AD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A405154B26968CEB8DCC475 /* AppDelegate.swift */; };
+		8B6E120EDC42F3A79DF8EC55 /* RecommendationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A95A0501C7DD5068470CC90 /* RecommendationsViewController.xib */; };
+		8CBB6A3C7036EAFE12D33ADE /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D66E1362D49E01B08048698 /* SignInViewController.swift */; };
+		8F62D8296A69A633BD1CC057 /* RecommendationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0007AA964D6098CE33EEB7C /* RecommendationDetailViewController.swift */; };
+		9B4C72C78C445601D494F980 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D8F062413B235F449868D2A9 /* SnapKit */; };
+		9DFE18E56BB0B0E130E80660 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 943A27F7450F87A4D1335889 /* GoogleSignIn */; };
+		A4AFD15D7084F33E05BDE057 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C40779B12BA176A412B39646 /* Assets.xcassets */; };
+		AA7FABCAB509E0157397138B /* AsynchronousOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2EF27064BC2FE9B228A43D /* AsynchronousOperation.swift */; };
+		AB5C59A538D5F6B4273D91B6 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A19422CC5051A8753684B0 /* Dependencies.swift */; };
+		AE0B986F1B7F634D72C024FF /* SearchArtistOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92D16036014275E647A5E7E /* SearchArtistOperation.swift */; };
+		B2724EAB1AA8F600228A44B7 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 226202873FA71DBA6FDA58D1 /* SignInViewController.xib */; };
+		B3966A3EEFFE70F1203112B2 /* TextInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A3666138D3D30F2565B4BE /* TextInputAccessoryView.swift */; };
+		BB41DD4FD79EA586C2B60B64 /* ServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935FA16CC9E311FE5059BA40 /* ServiceConstants.swift */; };
+		BD1E403C9A02A219DC61FE39 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AA67599111ABCB8ED28230 /* Colors.swift */; };
+		C3DC02E17D49F822A9205382 /* ImageDownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE01E008288F68BAFE73DFC /* ImageDownloadService.swift */; };
+		C71D60F623C8158B16767329 /* RecommendationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D98D25E858D4B7FCD25F7D /* RecommendationTableViewCell.xib */; };
+		D35151AA443475B5E2715284 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F5E9BDC9403F5175FA2A5B /* HomeViewController.swift */; };
+		D666C1413E09ECB771BA23BB /* AddRecommendationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBD35F5FA4AFCDF99F721F4 /* AddRecommendationViewModel.swift */; };
+		DA2B6DD1988B805DF54ECE4A /* Firestore in Frameworks */ = {isa = PBXBuildFile; productRef = 05952D4B41929F98655B596C /* Firestore */; };
+		DD78523BF8DFE70A31412E00 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2838A129FCF7942C7679AFA8 /* SearchViewController.xib */; };
+		DE6C0076F63F6FDF0BF27F70 /* Assets-Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F027C64EF255D5D5517AD1E1 /* Assets-Constants.swift */; };
+		DFD8C4042BBEA636B6187032 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB6A2A55E0EB355F6785449 /* Colors.xcassets */; };
+		E0CF47C8D19AD2623DD75A25 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66865964213AFEDB11650747 /* Comment.swift */; };
+		E1DB52060559C8EF883A4483 /* ServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461E22820AFBC1A1F5F46C57 /* ServiceClient.swift */; };
+		E3CB8F210A7A3F55021BE6C9 /* GroupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F533C880E762AF7086AAB /* GroupService.swift */; };
+		E812C2C0D89CC00700A1FA99 /* RecommendationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B70A7C5A6A48BA7CA79AE2E /* RecommendationsViewModel.swift */; };
+		E87C18204ABF23467986F34D /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B944793F6A418704007AD1D5 /* FlowCoordinator.swift */; };
+		F3F1B8702D534CF617D706BE /* RecommendationDetailTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1D39C24DC2375B5052347C /* RecommendationDetailTableHeaderView.swift */; };
+		F8A2F22D5F7C039B67842A36 /* RecommendationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5949F19F7F77BCB639065C45 /* RecommendationService.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		4A6483E1223AA0BA0093158E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4A6483C4223AA0B90093158E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4A6483CB223AA0B90093158E;
-			remoteInfo = Spotyfiend;
-		};
-		4A6483EC223AA0BA0093158E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4A6483C4223AA0B90093158E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4A6483CB223AA0B90093158E;
-			remoteInfo = Spotyfiend;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		0191080422CD94E400B538C1 /* GroupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupService.swift; sourceTree = "<group>"; };
-		0191080622CD952500B538C1 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
-		0191080822CD959900B538C1 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
-		01E6C8E022EC8B9A008B5BD8 /* ServiceConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConstants.swift; sourceTree = "<group>"; };
-		136DE68E5C59A564FEB2790A /* Pods-Spotyfiend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spotyfiend.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spotyfiend/Pods-Spotyfiend.release.xcconfig"; sourceTree = "<group>"; };
-		3C2D262A7ACC0C5DF01388E8 /* Pods-SpotyfiendUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotyfiendUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpotyfiendUITests/Pods-SpotyfiendUITests.release.xcconfig"; sourceTree = "<group>"; };
-		4A019058223C39760066E0DF /* RecommendationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationTableViewCell.swift; sourceTree = "<group>"; };
-		4A019059223C39760066E0DF /* RecommendationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendationTableViewCell.xib; sourceTree = "<group>"; };
-		4A01905D223FF76F0066E0DF /* CompoundUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompoundUser.swift; sourceTree = "<group>"; };
-		4A01905F223FF7FA0066E0DF /* ServiceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceClient.swift; sourceTree = "<group>"; };
-		4A1604E02243EDBD00D89DAA /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
-		4A1604E12243EDBD00D89DAA /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
-		4A1604E4224402BE00D89DAA /* RecommendationDetailTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationDetailTableHeaderView.swift; sourceTree = "<group>"; };
-		4A1604E6224402FD00D89DAA /* RecommendationDetailTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendationDetailTableHeaderView.xib; sourceTree = "<group>"; };
-		4A6483CC223AA0B90093158E /* Spotyfiend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotyfiend.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A6483E0223AA0BA0093158E /* SpotyfiendTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotyfiendTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A6483E4223AA0BA0093158E /* SpotyfiendTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotyfiendTests.swift; sourceTree = "<group>"; };
-		4A6483E6223AA0BA0093158E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A6483EB223AA0BA0093158E /* SpotyfiendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotyfiendUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A6483EF223AA0BA0093158E /* SpotyfiendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotyfiendUITests.swift; sourceTree = "<group>"; };
-		4A6483F1223AA0BA0093158E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A6483FE223AA1C30093158E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4A6483FF223AA1C30093158E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		4A648400223AA1C30093158E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A648403223AA1C30093158E /* SpotifyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyService.swift; sourceTree = "<group>"; };
-		4A648405223AA1C30093158E /* SearchArtistOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchArtistOperation.swift; sourceTree = "<group>"; };
-		4A648406223AA1C30093158E /* AsynchronousOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsynchronousOperation.swift; sourceTree = "<group>"; };
-		4A648407223AA1C30093158E /* RecommendationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendationService.swift; sourceTree = "<group>"; };
-		4A648409223AA1C30093158E /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		4A64840B223AA1C30093158E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4A64840C223AA1C30093158E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A64840E223AA1C30093158E /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		4A64840F223AA1C30093158E /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		4A648410223AA1C30093158E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		4A648411223AA1C30093158E /* HomeCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
-		4A648413223AA1C30093158E /* RecommendationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendationsViewController.swift; sourceTree = "<group>"; };
-		4A648414223AA1C30093158E /* RecommendationsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendationsViewController.xib; sourceTree = "<group>"; };
-		4A648415223AA1C30093158E /* Recommendation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recommendation.swift; sourceTree = "<group>"; };
-		4A648416223AA1C30093158E /* RecommendationsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendationsCoordinator.swift; sourceTree = "<group>"; };
-		4A648417223AA1C30093158E /* RecommendationsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendationsViewModel.swift; sourceTree = "<group>"; };
-		4A648419223AA1C40093158E /* SpotifyConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyConstants.swift; sourceTree = "<group>"; };
-		4A64841B223AA1C40093158E /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
-		4A64841C223AA1C40093158E /* SettingsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
-		4A64841D223AA1C40093158E /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
-		4A64841E223AA1C40093158E /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		4A648420223AA1C40093158E /* FlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
-		4A648421223AA1C40093158E /* Dependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
-		4A648422223AA1C40093158E /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		4A648423223AA1C40093158E /* FlowCoordinatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowCoordinatorViewController.swift; sourceTree = "<group>"; };
-		4A648425223AA1C40093158E /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		4A648426223AA1C40093158E /* SearchCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
-		4A648427223AA1C40093158E /* SearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
-		4A648428223AA1C40093158E /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
-		4A648449223AB3840093158E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		4A64844A223AB3840093158E /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
-		4A64844F223AE5AF0093158E /* SearchResultsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewCell.swift; sourceTree = "<group>"; };
-		4A648450223AE5AF0093158E /* SearchResultsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultsTableViewCell.xib; sourceTree = "<group>"; };
-		4A648453223AEAB30093158E /* ImageDownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadService.swift; sourceTree = "<group>"; };
-		4A8F2C2B22411FFE00A54348 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
-		4A8F2C2F22412D5A00A54348 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
-		4A8F2D352242917E00A54348 /* DocumentCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentCodable.swift; sourceTree = "<group>"; };
-		4A8F2D372242C80200A54348 /* RecommendationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationDetailViewController.swift; sourceTree = "<group>"; };
-		4A8F2D382242C80200A54348 /* RecommendationDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendationDetailViewController.xib; sourceTree = "<group>"; };
-		4A8F2D3B2243C30300A54348 /* RecommendationDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationDetailViewModel.swift; sourceTree = "<group>"; };
-		4A8F2D3E2243CFFD00A54348 /* TextInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputAccessoryView.swift; sourceTree = "<group>"; };
-		4A8F2D402243D05300A54348 /* NibFileOwnerLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibFileOwnerLoadable.swift; sourceTree = "<group>"; };
-		4A8F2D422243D16D00A54348 /* TextInputAccessoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextInputAccessoryView.xib; sourceTree = "<group>"; };
-		4A8F8674224A5DE000607A28 /* AddRecommendationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecommendationViewController.swift; sourceTree = "<group>"; };
-		4A8F8675224A5DE000607A28 /* AddRecommendationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddRecommendationViewController.xib; sourceTree = "<group>"; };
-		4A8F8678224A643D00607A28 /* AddRecommendationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecommendationViewModel.swift; sourceTree = "<group>"; };
-		8AFBD7FBDFF7681691CD27DF /* Pods_SpotyfiendUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotyfiendUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		96665281E9B941CC5D5831E0 /* Pods-SpotyfiendUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotyfiendUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpotyfiendUITests/Pods-SpotyfiendUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		A28316800C80D1C06FB506DA /* Pods-SpotyfiendTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotyfiendTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpotyfiendTests/Pods-SpotyfiendTests.release.xcconfig"; sourceTree = "<group>"; };
-		B7045E8D25C011980D846A0B /* Pods-Spotyfiend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spotyfiend.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Spotyfiend/Pods-Spotyfiend.debug.xcconfig"; sourceTree = "<group>"; };
-		B8D56B685C114C37FEF2D0D9 /* Pods_SpotyfiendTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotyfiendTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9AF47BA70873F33B86D46E7 /* Pods_Spotyfiend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spotyfiend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6DDA39F657356CA585A8237 /* Pods-SpotyfiendTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotyfiendTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpotyfiendTests/Pods-SpotyfiendTests.debug.xcconfig"; sourceTree = "<group>"; };
+		056EEBBC8F6E8198406B9839 /* SearchResultsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultsTableViewCell.xib; sourceTree = "<group>"; };
+		05F5E9BDC9403F5175FA2A5B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		08DBCF88D0423498025BF397 /* TextInputAccessoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextInputAccessoryView.xib; sourceTree = "<group>"; };
+		09D98D25E858D4B7FCD25F7D /* RecommendationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendationTableViewCell.xib; sourceTree = "<group>"; };
+		0A0D647A08324C1A84D68037 /* FlowCoordinatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinatorViewController.swift; sourceTree = "<group>"; };
+		0A95A0501C7DD5068470CC90 /* RecommendationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendationsViewController.xib; sourceTree = "<group>"; };
+		0D2EF27064BC2FE9B228A43D /* AsynchronousOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousOperation.swift; sourceTree = "<group>"; };
+		0D69D565DE8FAAE748AC99CA /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		10AA67599111ABCB8ED28230 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		13236C96B00C9695CC04B352 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		15A19422CC5051A8753684B0 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		1DE56A08A814D9AE8EBDA3C6 /* Spotyfiend.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Spotyfiend.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		226202873FA71DBA6FDA58D1 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		22B939E0C3E3E66C4067CA15 /* DocumentCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentCodable.swift; sourceTree = "<group>"; };
+		25054B9DCBF88F95504BE04C /* Localizations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizations.swift; sourceTree = "<group>"; };
+		26728EC5CEB46BBBD137E3A2 /* RecommendationDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendationDetailViewController.xib; sourceTree = "<group>"; };
+		2838A129FCF7942C7679AFA8 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		333C337B2BB058B9032B89F9 /* RecommendationDetailTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendationDetailTableHeaderView.xib; sourceTree = "<group>"; };
+		36B57198103841A14C295E17 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		39A3666138D3D30F2565B4BE /* TextInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputAccessoryView.swift; sourceTree = "<group>"; };
+		3C6F533C880E762AF7086AAB /* GroupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupService.swift; sourceTree = "<group>"; };
+		3D66E1362D49E01B08048698 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		3FB559DC567F2FEED33BC2F9 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		4286948FB5784EF3B06C1A3D /* CompoundUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompoundUser.swift; sourceTree = "<group>"; };
+		461E22820AFBC1A1F5F46C57 /* ServiceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceClient.swift; sourceTree = "<group>"; };
+		4A7F152AFC06BD1D87D04EAA /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4B513EAC3DCE6991494D1B28 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		4B70A7C5A6A48BA7CA79AE2E /* RecommendationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsViewModel.swift; sourceTree = "<group>"; };
+		4CBD35F5FA4AFCDF99F721F4 /* AddRecommendationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecommendationViewModel.swift; sourceTree = "<group>"; };
+		4ED9574F33107CC3074EE936 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		5439F72AC77DDA6ECEACC254 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
+		5949F19F7F77BCB639065C45 /* RecommendationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationService.swift; sourceTree = "<group>"; };
+		5AA7402D6CC3559F1F22E4C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5B1D39C24DC2375B5052347C /* RecommendationDetailTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationDetailTableHeaderView.swift; sourceTree = "<group>"; };
+		61C5E1A9267254A21DFD4706 /* AddRecommendationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecommendationViewController.swift; sourceTree = "<group>"; };
+		65EDE5DD167AF39C8D8DEA04 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		66865964213AFEDB11650747 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		6A405154B26968CEB8DCC475 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6F7A77A717E2B6AB764DFB0F /* SpotyfiendTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SpotyfiendTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FE01E008288F68BAFE73DFC /* ImageDownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadService.swift; sourceTree = "<group>"; };
+		7A82D3F49DEA9CC5AEAC8C53 /* SpotifyConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyConstants.swift; sourceTree = "<group>"; };
+		7B761D0A5DFC1021D9AA88D2 /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
+		7FA927BB02A7F25F7D8370A2 /* SearchResultsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewCell.swift; sourceTree = "<group>"; };
+		87BD78AB0E642883680A3BF0 /* AddRecommendationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddRecommendationViewController.xib; sourceTree = "<group>"; };
+		8D8CB3F991682D8BA1A051FA /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		92AAA3EE191AA714D7CFFD9C /* NibFileOwnerLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibFileOwnerLoadable.swift; sourceTree = "<group>"; };
+		935FA16CC9E311FE5059BA40 /* ServiceConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConstants.swift; sourceTree = "<group>"; };
+		94100F24DCF473575487F52B /* RecommendationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationTableViewCell.swift; sourceTree = "<group>"; };
+		9989C081866FDD59067FDD95 /* Recommendation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recommendation.swift; sourceTree = "<group>"; };
+		9ACD217B92EB4F71407F180D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Common.strings; sourceTree = "<group>"; };
+		A09F8825EE8AC55BC27533A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B46569584299F19822B5DA5C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		B944793F6A418704007AD1D5 /* FlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
+		BF1D787E7C03E6546C5F0610 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		C40779B12BA176A412B39646 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5AF12CD76C21A90636C6787 /* RecommendationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsViewController.swift; sourceTree = "<group>"; };
+		C92D16036014275E647A5E7E /* SearchArtistOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchArtistOperation.swift; sourceTree = "<group>"; };
+		CBAB3D08B356A961CECE9345 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		CCDF979C416E4D10DDA40F50 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		CEB6A2A55E0EB355F6785449 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		CFE17F01C763F5F8D4C518D7 /* SpotyfiendTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotyfiendTests.swift; sourceTree = "<group>"; };
+		DA2BA5A6851F2661DE9FEE1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E0007AA964D6098CE33EEB7C /* RecommendationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationDetailViewController.swift; sourceTree = "<group>"; };
+		E10D8CAC7E0ACD9C88D51986 /* RecommendationDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationDetailViewModel.swift; sourceTree = "<group>"; };
+		E5DA347F23EF142E700EC561 /* SpotifyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyService.swift; sourceTree = "<group>"; };
+		EF835D19F583F4DA4FE8D274 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		F027C64EF255D5D5517AD1E1 /* Assets-Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assets-Constants.swift"; sourceTree = "<group>"; };
+		F1FB98323941CBC3F9134EC1 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		F378CDC55425EB9AD157FE01 /* RecommendationsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsCoordinator.swift; sourceTree = "<group>"; };
+		FFF7FF54FF58AF31892387DF /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4A6483C9223AA0B90093158E /* Frameworks */ = {
+		41641324C0DF44992C25EC0F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFDFC6167A9DC991785FB5B0 /* Pods_Spotyfiend.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4A6483DD223AA0BA0093158E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E5E76EF9F5540D267AFA0A64 /* Pods_SpotyfiendTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4A6483E8223AA0BA0093158E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				14F05DEAA5A327FB1E9E5B72 /* Pods_SpotyfiendUITests.framework in Frameworks */,
+				9B4C72C78C445601D494F980 /* SnapKit in Frameworks */,
+				4916DB4512A492C9A27C052F /* SpotifyAPI in Frameworks */,
+				DA2B6DD1988B805DF54ECE4A /* Firestore in Frameworks */,
+				0107A2A93860247925B2E916 /* FirebaseAuth in Frameworks */,
+				9DFE18E56BB0B0E130E80660 /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		05B1CCFF7672E67690993B79 /* Frameworks */ = {
+		13CA46EE7F4FCC0DEF31AFE3 /* Spotyfiend */ = {
 			isa = PBXGroup;
 			children = (
-				C9AF47BA70873F33B86D46E7 /* Pods_Spotyfiend.framework */,
-				B8D56B685C114C37FEF2D0D9 /* Pods_SpotyfiendTests.framework */,
-				8AFBD7FBDFF7681691CD27DF /* Pods_SpotyfiendUITests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4A01905C223FF7500066E0DF /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				4A01905D223FF76F0066E0DF /* CompoundUser.swift */,
-				4A648415223AA1C30093158E /* Recommendation.swift */,
-				4A8F2C2B22411FFE00A54348 /* Group.swift */,
-				4A8F2C2F22412D5A00A54348 /* Comment.swift */,
-				4A8F2D352242917E00A54348 /* DocumentCodable.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		4A6483C3223AA0B90093158E = {
-			isa = PBXGroup;
-			children = (
-				4A6483CE223AA0B90093158E /* Spotyfiend */,
-				4A6483E3223AA0BA0093158E /* SpotyfiendTests */,
-				4A6483EE223AA0BA0093158E /* SpotyfiendUITests */,
-				4A6483CD223AA0B90093158E /* Products */,
-				678C63051C827650941D9383 /* Pods */,
-				05B1CCFF7672E67690993B79 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		4A6483CD223AA0B90093158E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4A6483CC223AA0B90093158E /* Spotyfiend.app */,
-				4A6483E0223AA0BA0093158E /* SpotyfiendTests.xctest */,
-				4A6483EB223AA0BA0093158E /* SpotyfiendUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		4A6483CE223AA0B90093158E /* Spotyfiend */ = {
-			isa = PBXGroup;
-			children = (
-				4A8F2D3D2243CFCD00A54348 /* Components */,
-				4A01905C223FF7500066E0DF /* Models */,
-				4A648408223AA1C30093158E /* AppSetup */,
-				4A648418223AA1C40093158E /* Config */,
-				4A64840D223AA1C30093158E /* Home */,
-				4A648412223AA1C30093158E /* Recommendations */,
-				4A6483FD223AA1C30093158E /* Resources */,
-				4A648424223AA1C40093158E /* Search */,
-				4A648401223AA1C30093158E /* Services */,
-				4A64841A223AA1C40093158E /* Settings */,
-				4A64841F223AA1C40093158E /* SharedProtocols */,
+				3A4160B8B9EAE1057BD7D422 /* AppSetup */,
+				DC9B2C1873B8D5C897296767 /* Components */,
+				4202CC56AB8E6B199D8AA5A5 /* Config */,
+				8AB6BCB73DC7C98472D8D91C /* Generated */,
+				2253A8AC78E3100D43E52A43 /* Home */,
+				6EAD5E2CF952AD5B37E35519 /* Models */,
+				2405EF18B22069458166B40A /* Recommendations */,
+				5A778FB2CDEB698E504E509E /* Resources */,
+				E49B884FD2BDA0AD5B0806A7 /* Search */,
+				354CBB409D16BA4DB3FED56F /* Services */,
+				7CF541C61CB9E32A6C984D30 /* Settings */,
+				4E8A73EF550313C9F7FEF59C /* SharedProtocols */,
 			);
 			path = Spotyfiend;
 			sourceTree = "<group>";
 		};
-		4A6483E3223AA0BA0093158E /* SpotyfiendTests */ = {
+		2253A8AC78E3100D43E52A43 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				4A6483E4223AA0BA0093158E /* SpotyfiendTests.swift */,
-				4A6483E6223AA0BA0093158E /* Info.plist */,
-			);
-			path = SpotyfiendTests;
-			sourceTree = "<group>";
-		};
-		4A6483EE223AA0BA0093158E /* SpotyfiendUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4A6483EF223AA0BA0093158E /* SpotyfiendUITests.swift */,
-				4A6483F1223AA0BA0093158E /* Info.plist */,
-			);
-			path = SpotyfiendUITests;
-			sourceTree = "<group>";
-		};
-		4A6483FD223AA1C30093158E /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				4A6483FE223AA1C30093158E /* Assets.xcassets */,
-				4A6483FF223AA1C30093158E /* GoogleService-Info.plist */,
-				4A648400223AA1C30093158E /* Info.plist */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		4A648401223AA1C30093158E /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				4A648402223AA1C30093158E /* Spotify */,
-				4A648407223AA1C30093158E /* RecommendationService.swift */,
-				4A648453223AEAB30093158E /* ImageDownloadService.swift */,
-				4A01905F223FF7FA0066E0DF /* ServiceClient.swift */,
-				0191080422CD94E400B538C1 /* GroupService.swift */,
-				0191080622CD952500B538C1 /* UserService.swift */,
-				0191080822CD959900B538C1 /* Session.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		4A648402223AA1C30093158E /* Spotify */ = {
-			isa = PBXGroup;
-			children = (
-				4A648403223AA1C30093158E /* SpotifyService.swift */,
-				4A648404223AA1C30093158E /* Operations */,
-			);
-			path = Spotify;
-			sourceTree = "<group>";
-		};
-		4A648404223AA1C30093158E /* Operations */ = {
-			isa = PBXGroup;
-			children = (
-				4A648405223AA1C30093158E /* SearchArtistOperation.swift */,
-				4A648406223AA1C30093158E /* AsynchronousOperation.swift */,
-			);
-			path = Operations;
-			sourceTree = "<group>";
-		};
-		4A648408223AA1C30093158E /* AppSetup */ = {
-			isa = PBXGroup;
-			children = (
-				4A648409223AA1C30093158E /* AppCoordinator.swift */,
-				4A64840A223AA1C30093158E /* LaunchScreen.storyboard */,
-				4A64840C223AA1C30093158E /* AppDelegate.swift */,
-				4A648449223AB3840093158E /* SignInViewController.swift */,
-				4A64844A223AB3840093158E /* SignInViewController.xib */,
-			);
-			path = AppSetup;
-			sourceTree = "<group>";
-		};
-		4A64840D223AA1C30093158E /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				4A64840E223AA1C30093158E /* HomeViewModel.swift */,
-				4A64840F223AA1C30093158E /* HomeViewController.xib */,
-				4A648410223AA1C30093158E /* HomeViewController.swift */,
-				4A648411223AA1C30093158E /* HomeCoordinator.swift */,
+				0D69D565DE8FAAE748AC99CA /* HomeCoordinator.swift */,
+				05F5E9BDC9403F5175FA2A5B /* HomeViewController.swift */,
+				13236C96B00C9695CC04B352 /* HomeViewController.xib */,
+				36B57198103841A14C295E17 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
 		};
-		4A648412223AA1C30093158E /* Recommendations */ = {
+		2405EF18B22069458166B40A /* Recommendations */ = {
 			isa = PBXGroup;
 			children = (
-				4A648413223AA1C30093158E /* RecommendationsViewController.swift */,
-				4A648414223AA1C30093158E /* RecommendationsViewController.xib */,
-				4A648416223AA1C30093158E /* RecommendationsCoordinator.swift */,
-				4A648417223AA1C30093158E /* RecommendationsViewModel.swift */,
-				4A019058223C39760066E0DF /* RecommendationTableViewCell.swift */,
-				4A019059223C39760066E0DF /* RecommendationTableViewCell.xib */,
-				4A8F2D372242C80200A54348 /* RecommendationDetailViewController.swift */,
-				4A8F2D382242C80200A54348 /* RecommendationDetailViewController.xib */,
-				4A8F2D3B2243C30300A54348 /* RecommendationDetailViewModel.swift */,
-				4A1604E02243EDBD00D89DAA /* CommentTableViewCell.swift */,
-				4A1604E12243EDBD00D89DAA /* CommentTableViewCell.xib */,
-				4A1604E4224402BE00D89DAA /* RecommendationDetailTableHeaderView.swift */,
-				4A1604E6224402FD00D89DAA /* RecommendationDetailTableHeaderView.xib */,
+				4B513EAC3DCE6991494D1B28 /* CommentTableViewCell.swift */,
+				EF835D19F583F4DA4FE8D274 /* CommentTableViewCell.xib */,
+				5B1D39C24DC2375B5052347C /* RecommendationDetailTableHeaderView.swift */,
+				333C337B2BB058B9032B89F9 /* RecommendationDetailTableHeaderView.xib */,
+				E0007AA964D6098CE33EEB7C /* RecommendationDetailViewController.swift */,
+				26728EC5CEB46BBBD137E3A2 /* RecommendationDetailViewController.xib */,
+				E10D8CAC7E0ACD9C88D51986 /* RecommendationDetailViewModel.swift */,
+				F378CDC55425EB9AD157FE01 /* RecommendationsCoordinator.swift */,
+				C5AF12CD76C21A90636C6787 /* RecommendationsViewController.swift */,
+				0A95A0501C7DD5068470CC90 /* RecommendationsViewController.xib */,
+				4B70A7C5A6A48BA7CA79AE2E /* RecommendationsViewModel.swift */,
+				94100F24DCF473575487F52B /* RecommendationTableViewCell.swift */,
+				09D98D25E858D4B7FCD25F7D /* RecommendationTableViewCell.xib */,
 			);
 			path = Recommendations;
 			sourceTree = "<group>";
 		};
-		4A648418223AA1C40093158E /* Config */ = {
+		354CBB409D16BA4DB3FED56F /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				4A648419223AA1C40093158E /* SpotifyConstants.swift */,
-				01E6C8E022EC8B9A008B5BD8 /* ServiceConstants.swift */,
+				3C6F533C880E762AF7086AAB /* GroupService.swift */,
+				6FE01E008288F68BAFE73DFC /* ImageDownloadService.swift */,
+				5949F19F7F77BCB639065C45 /* RecommendationService.swift */,
+				461E22820AFBC1A1F5F46C57 /* ServiceClient.swift */,
+				4ED9574F33107CC3074EE936 /* Session.swift */,
+				CBAB3D08B356A961CECE9345 /* UserService.swift */,
+				50C696FE12FF94E3AE5DDB23 /* Spotify */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3605D576E8B63D6ADDD265A0 /* SpotyfiendTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA2BA5A6851F2661DE9FEE1D /* Info.plist */,
+				CFE17F01C763F5F8D4C518D7 /* SpotyfiendTests.swift */,
+			);
+			path = SpotyfiendTests;
+			sourceTree = "<group>";
+		};
+		39D758F3CBC37A779F62E82D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DE56A08A814D9AE8EBDA3C6 /* Spotyfiend.app */,
+				6F7A77A717E2B6AB764DFB0F /* SpotyfiendTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A4160B8B9EAE1057BD7D422 /* AppSetup */ = {
+			isa = PBXGroup;
+			children = (
+				B46569584299F19822B5DA5C /* AppCoordinator.swift */,
+				6A405154B26968CEB8DCC475 /* AppDelegate.swift */,
+				DA252213DDF87A91846F8838 /* LaunchScreen.storyboard */,
+				3D66E1362D49E01B08048698 /* SignInViewController.swift */,
+				226202873FA71DBA6FDA58D1 /* SignInViewController.xib */,
+			);
+			path = AppSetup;
+			sourceTree = "<group>";
+		};
+		4202CC56AB8E6B199D8AA5A5 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				935FA16CC9E311FE5059BA40 /* ServiceConstants.swift */,
+				7A82D3F49DEA9CC5AEAC8C53 /* SpotifyConstants.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
 		};
-		4A64841A223AA1C40093158E /* Settings */ = {
+		4E8A73EF550313C9F7FEF59C /* SharedProtocols */ = {
 			isa = PBXGroup;
 			children = (
-				4A64841B223AA1C40093158E /* SettingsViewModel.swift */,
-				4A64841C223AA1C40093158E /* SettingsCoordinator.swift */,
-				4A64841D223AA1C40093158E /* SettingsViewController.xib */,
-				4A64841E223AA1C40093158E /* SettingsViewController.swift */,
-			);
-			path = Settings;
-			sourceTree = "<group>";
-		};
-		4A64841F223AA1C40093158E /* SharedProtocols */ = {
-			isa = PBXGroup;
-			children = (
-				4A648420223AA1C40093158E /* FlowCoordinator.swift */,
-				4A648421223AA1C40093158E /* Dependencies.swift */,
-				4A648422223AA1C40093158E /* ViewModel.swift */,
-				4A648423223AA1C40093158E /* FlowCoordinatorViewController.swift */,
-				4A8F2D402243D05300A54348 /* NibFileOwnerLoadable.swift */,
+				15A19422CC5051A8753684B0 /* Dependencies.swift */,
+				B944793F6A418704007AD1D5 /* FlowCoordinator.swift */,
+				0A0D647A08324C1A84D68037 /* FlowCoordinatorViewController.swift */,
+				92AAA3EE191AA714D7CFFD9C /* NibFileOwnerLoadable.swift */,
+				F1FB98323941CBC3F9134EC1 /* ViewModel.swift */,
 			);
 			path = SharedProtocols;
 			sourceTree = "<group>";
 		};
-		4A648424223AA1C40093158E /* Search */ = {
+		50C696FE12FF94E3AE5DDB23 /* Spotify */ = {
 			isa = PBXGroup;
 			children = (
-				4A648425223AA1C40093158E /* SearchViewController.swift */,
-				4A648426223AA1C40093158E /* SearchCoordinator.swift */,
-				4A648427223AA1C40093158E /* SearchViewModel.swift */,
-				4A648428223AA1C40093158E /* SearchViewController.xib */,
-				4A64844F223AE5AF0093158E /* SearchResultsTableViewCell.swift */,
-				4A648450223AE5AF0093158E /* SearchResultsTableViewCell.xib */,
-				4A8F8674224A5DE000607A28 /* AddRecommendationViewController.swift */,
-				4A8F8675224A5DE000607A28 /* AddRecommendationViewController.xib */,
-				4A8F8678224A643D00607A28 /* AddRecommendationViewModel.swift */,
+				E5DA347F23EF142E700EC561 /* SpotifyService.swift */,
+				F6A3EEFB0ECD4E666F2A7485 /* Operations */,
 			);
-			path = Search;
+			path = Spotify;
 			sourceTree = "<group>";
 		};
-		4A8F2D3D2243CFCD00A54348 /* Components */ = {
+		5A778FB2CDEB698E504E509E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4A8F2D3E2243CFFD00A54348 /* TextInputAccessoryView.swift */,
-				4A8F2D422243D16D00A54348 /* TextInputAccessoryView.xib */,
+				C40779B12BA176A412B39646 /* Assets.xcassets */,
+				CEB6A2A55E0EB355F6785449 /* Colors.xcassets */,
+				9BAFBDEB7984777173865F17 /* Common.strings */,
+				4A7F152AFC06BD1D87D04EAA /* GoogleService-Info.plist */,
+				5AA7402D6CC3559F1F22E4C8 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6EAD5E2CF952AD5B37E35519 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				66865964213AFEDB11650747 /* Comment.swift */,
+				4286948FB5784EF3B06C1A3D /* CompoundUser.swift */,
+				22B939E0C3E3E66C4067CA15 /* DocumentCodable.swift */,
+				8D8CB3F991682D8BA1A051FA /* Group.swift */,
+				9989C081866FDD59067FDD95 /* Recommendation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7CF541C61CB9E32A6C984D30 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				5439F72AC77DDA6ECEACC254 /* SettingsCoordinator.swift */,
+				BF1D787E7C03E6546C5F0610 /* SettingsViewController.swift */,
+				3FB559DC567F2FEED33BC2F9 /* SettingsViewController.xib */,
+				65EDE5DD167AF39C8D8DEA04 /* SettingsViewModel.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		8AB6BCB73DC7C98472D8D91C /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				F027C64EF255D5D5517AD1E1 /* Assets-Constants.swift */,
+				10AA67599111ABCB8ED28230 /* Colors.swift */,
+				25054B9DCBF88F95504BE04C /* Localizations.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		B799A6CE748D2D8F7216563F = {
+			isa = PBXGroup;
+			children = (
+				13CA46EE7F4FCC0DEF31AFE3 /* Spotyfiend */,
+				3605D576E8B63D6ADDD265A0 /* SpotyfiendTests */,
+				39D758F3CBC37A779F62E82D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC9B2C1873B8D5C897296767 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				39A3666138D3D30F2565B4BE /* TextInputAccessoryView.swift */,
+				08DBCF88D0423498025BF397 /* TextInputAccessoryView.xib */,
 			);
 			path = Components;
 			sourceTree = "<group>";
 		};
-		678C63051C827650941D9383 /* Pods */ = {
+		E49B884FD2BDA0AD5B0806A7 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				B7045E8D25C011980D846A0B /* Pods-Spotyfiend.debug.xcconfig */,
-				136DE68E5C59A564FEB2790A /* Pods-Spotyfiend.release.xcconfig */,
-				F6DDA39F657356CA585A8237 /* Pods-SpotyfiendTests.debug.xcconfig */,
-				A28316800C80D1C06FB506DA /* Pods-SpotyfiendTests.release.xcconfig */,
-				96665281E9B941CC5D5831E0 /* Pods-SpotyfiendUITests.debug.xcconfig */,
-				3C2D262A7ACC0C5DF01388E8 /* Pods-SpotyfiendUITests.release.xcconfig */,
+				61C5E1A9267254A21DFD4706 /* AddRecommendationViewController.swift */,
+				87BD78AB0E642883680A3BF0 /* AddRecommendationViewController.xib */,
+				4CBD35F5FA4AFCDF99F721F4 /* AddRecommendationViewModel.swift */,
+				7B761D0A5DFC1021D9AA88D2 /* SearchCoordinator.swift */,
+				7FA927BB02A7F25F7D8370A2 /* SearchResultsTableViewCell.swift */,
+				056EEBBC8F6E8198406B9839 /* SearchResultsTableViewCell.xib */,
+				CCDF979C416E4D10DDA40F50 /* SearchViewController.swift */,
+				2838A129FCF7942C7679AFA8 /* SearchViewController.xib */,
+				FFF7FF54FF58AF31892387DF /* SearchViewModel.swift */,
 			);
-			name = Pods;
+			path = Search;
+			sourceTree = "<group>";
+		};
+		F6A3EEFB0ECD4E666F2A7485 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				0D2EF27064BC2FE9B228A43D /* AsynchronousOperation.swift */,
+				C92D16036014275E647A5E7E /* SearchArtistOperation.swift */,
+			);
+			path = Operations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4A6483CB223AA0B90093158E /* Spotyfiend */ = {
+		07364DE53EC0A39E28A40585 /* Spotyfiend */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4A6483F4223AA0BA0093158E /* Build configuration list for PBXNativeTarget "Spotyfiend" */;
+			buildConfigurationList = 0CFE6107EFC7F2F9051280C6 /* Build configuration list for PBXNativeTarget "Spotyfiend" */;
 			buildPhases = (
-				924D9D526BA322B6000BACBF /* [CP] Check Pods Manifest.lock */,
-				4A6483C8223AA0B90093158E /* Sources */,
-				4A6483C9223AA0B90093158E /* Frameworks */,
-				4A6483CA223AA0B90093158E /* Resources */,
-				49A7552A02523B9DA113162C /* [CP] Embed Pods Frameworks */,
-				1D2CFFB77D22AB375081DF8B /* [CP] Copy Pods Resources */,
-				01E6C8E222EC9C8C008B5BD8 /* Fabric */,
+				1F9EABD5F9484A0FE5DF47D9 /* SwiftGen */,
+				6EECD02E1DB6759E62709FDC /* Sources */,
+				36C5D4FD4E9AFE5EE22A487D /* Swiftlint */,
+				03CA90405C7593B5BC097F8E /* Resources */,
+				41641324C0DF44992C25EC0F /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Spotyfiend;
+			packageProductDependencies = (
+				D8F062413B235F449868D2A9 /* SnapKit */,
+				BE514EE820FF774B0CCB79F3 /* SpotifyAPI */,
+				05952D4B41929F98655B596C /* Firestore */,
+				2C9D08261867F7440CD7EF99 /* FirebaseAuth */,
+				943A27F7450F87A4D1335889 /* GoogleSignIn */,
+			);
 			productName = Spotyfiend;
-			productReference = 4A6483CC223AA0B90093158E /* Spotyfiend.app */;
+			productReference = 1DE56A08A814D9AE8EBDA3C6 /* Spotyfiend.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4A6483DF223AA0BA0093158E /* SpotyfiendTests */ = {
+		1FC1451210BCBCF9FAEEA9D2 /* SpotyfiendTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4A6483F7223AA0BA0093158E /* Build configuration list for PBXNativeTarget "SpotyfiendTests" */;
+			buildConfigurationList = F36557A26A30CE5DC54E5378 /* Build configuration list for PBXNativeTarget "SpotyfiendTests" */;
 			buildPhases = (
-				4A6E7C1D554ABCAB8FF2647C /* [CP] Check Pods Manifest.lock */,
-				4A6483DC223AA0BA0093158E /* Sources */,
-				4A6483DD223AA0BA0093158E /* Frameworks */,
-				4A6483DE223AA0BA0093158E /* Resources */,
+				A163C6CB9EF8ABE86C40E406 /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4A6483E2223AA0BA0093158E /* PBXTargetDependency */,
 			);
 			name = SpotyfiendTests;
 			productName = SpotyfiendTests;
-			productReference = 4A6483E0223AA0BA0093158E /* SpotyfiendTests.xctest */;
+			productReference = 6F7A77A717E2B6AB764DFB0F /* SpotyfiendTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		4A6483EA223AA0BA0093158E /* SpotyfiendUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4A6483FA223AA0BA0093158E /* Build configuration list for PBXNativeTarget "SpotyfiendUITests" */;
-			buildPhases = (
-				E487BA3A82EB5B862F62CCCB /* [CP] Check Pods Manifest.lock */,
-				4A6483E7223AA0BA0093158E /* Sources */,
-				4A6483E8223AA0BA0093158E /* Frameworks */,
-				4A6483E9223AA0BA0093158E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4A6483ED223AA0BA0093158E /* PBXTargetDependency */,
-			);
-			name = SpotyfiendUITests;
-			productName = SpotyfiendUITests;
-			productReference = 4A6483EB223AA0BA0093158E /* SpotyfiendUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4A6483C4223AA0B90093158E /* Project object */ = {
+		D5CDE3D7EB3C20A5177DCEFD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "Setec Astronomy";
+				LastUpgradeCheck = 1200;
 				TargetAttributes = {
-					4A6483CB223AA0B90093158E = {
-						CreatedOnToolsVersion = 10.1;
-					};
-					4A6483DF223AA0BA0093158E = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 4A6483CB223AA0B90093158E;
-					};
-					4A6483EA223AA0BA0093158E = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 4A6483CB223AA0B90093158E;
+					07364DE53EC0A39E28A40585 = {
+						DevelopmentTeam = UBBFM4Q7C8;
 					};
 				};
 			};
-			buildConfigurationList = 4A6483C7223AA0B90093158E /* Build configuration list for PBXProject "Spotyfiend" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = E117D870E3D208E8DA0BE7DA /* Build configuration list for PBXProject "Spotyfiend" */;
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
-			mainGroup = 4A6483C3223AA0B90093158E;
-			productRefGroup = 4A6483CD223AA0B90093158E /* Products */;
+			mainGroup = B799A6CE748D2D8F7216563F;
+			packageReferences = (
+				062086467B30963B12D515EC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				11129FEE4DF4F52E3550BE0A /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				D4A0D57E490FBF0112D16787 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				3780307D653165CADD784228 /* XCRemoteSwiftPackageReference "SpotifyAPI" */,
+			);
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4A6483CB223AA0B90093158E /* Spotyfiend */,
-				4A6483DF223AA0BA0093158E /* SpotyfiendTests */,
-				4A6483EA223AA0BA0093158E /* SpotyfiendUITests */,
+				07364DE53EC0A39E28A40585 /* Spotyfiend */,
+				1FC1451210BCBCF9FAEEA9D2 /* SpotyfiendTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4A6483CA223AA0B90093158E /* Resources */ = {
+		03CA90405C7593B5BC097F8E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A64844C223AB3840093158E /* SignInViewController.xib in Resources */,
-				4A8F8677224A5DE000607A28 /* AddRecommendationViewController.xib in Resources */,
-				4A648429223AA1C40093158E /* Assets.xcassets in Resources */,
-				4A01905B223C39760066E0DF /* RecommendationTableViewCell.xib in Resources */,
-				4A8F2D432243D16D00A54348 /* TextInputAccessoryView.xib in Resources */,
-				4A1604E32243EDBD00D89DAA /* CommentTableViewCell.xib in Resources */,
-				4A648431223AA1C40093158E /* LaunchScreen.storyboard in Resources */,
-				4A1604E7224402FD00D89DAA /* RecommendationDetailTableHeaderView.xib in Resources */,
-				4A8F2D3A2242C80200A54348 /* RecommendationDetailViewController.xib in Resources */,
-				4A648434223AA1C40093158E /* HomeViewController.xib in Resources */,
-				4A64842A223AA1C40093158E /* GoogleService-Info.plist in Resources */,
-				4A64843F223AA1C40093158E /* SettingsViewController.xib in Resources */,
-				4A648448223AA1C40093158E /* SearchViewController.xib in Resources */,
-				4A648452223AE5AF0093158E /* SearchResultsTableViewCell.xib in Resources */,
-				4A648438223AA1C40093158E /* RecommendationsViewController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4A6483DE223AA0BA0093158E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4A6483E9223AA0BA0093158E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				06A5755FAC326FABE90DD1F4 /* AddRecommendationViewController.xib in Resources */,
+				A4AFD15D7084F33E05BDE057 /* Assets.xcassets in Resources */,
+				DFD8C4042BBEA636B6187032 /* Colors.xcassets in Resources */,
+				012A1B244BD9E935D23EE245 /* CommentTableViewCell.xib in Resources */,
+				45C0F1BC627F7BACEA1AD3FF /* Common.strings in Resources */,
+				324110F3B188E810F0D2DC38 /* GoogleService-Info.plist in Resources */,
+				643177A6EDA422F286ABD8AF /* HomeViewController.xib in Resources */,
+				50DDD4B33EC6D91F90033A8B /* LaunchScreen.storyboard in Resources */,
+				4A0A3F4C1C3D68E304B3443B /* RecommendationDetailTableHeaderView.xib in Resources */,
+				4E0B7374900297B49A675A72 /* RecommendationDetailViewController.xib in Resources */,
+				C71D60F623C8158B16767329 /* RecommendationTableViewCell.xib in Resources */,
+				8B6E120EDC42F3A79DF8EC55 /* RecommendationsViewController.xib in Resources */,
+				3E9BFEBFDA24A8E44D6ECB9A /* SearchResultsTableViewCell.xib in Resources */,
+				DD78523BF8DFE70A31412E00 /* SearchViewController.xib in Resources */,
+				70100DA8A929EF09CF98532E /* SettingsViewController.xib in Resources */,
+				B2724EAB1AA8F600228A44B7 /* SignInViewController.xib in Resources */,
+				692994091700251B7997F3C1 /* TextInputAccessoryView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		01E6C8E222EC9C8C008B5BD8 /* Fabric */ = {
+		1F9EABD5F9484A0FE5DF47D9 /* SwiftGen */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -587,52 +498,17 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
 			);
-			name = Fabric;
+			name = SwiftGen;
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" 1780c8f26a12eb200c72a20b0e21d548a683732f c58bc40855e832a372e58a6786a365dac4be094f52b45d87e95a4971da4ec8fe\n";
+			shellScript = "if which swiftgen >/dev/null; then\n  swiftgen\nelse\n  echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
 		};
-		1D2CFFB77D22AB375081DF8B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Spotyfiend/Pods-Spotyfiend-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Spotyfiend/Pods-Spotyfiend-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Spotyfiend/Pods-Spotyfiend-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		49A7552A02523B9DA113162C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Spotyfiend/Pods-Spotyfiend-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Spotyfiend/Pods-Spotyfiend-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Spotyfiend/Pods-Spotyfiend-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4A6E7C1D554ABCAB8FF2647C /* [CP] Check Pods Manifest.lock */ = {
+		36C5D4FD4E9AFE5EE22A487D /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -640,155 +516,97 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = Swiftlint;
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SpotyfiendTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		924D9D526BA322B6000BACBF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Spotyfiend-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E487BA3A82EB5B862F62CCCB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SpotyfiendUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "#!/bin/bash\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4A6483C8223AA0B90093158E /* Sources */ = {
+		6EECD02E1DB6759E62709FDC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A648444223AA1C40093158E /* FlowCoordinatorViewController.swift in Sources */,
-				4A8F2D412243D05300A54348 /* NibFileOwnerLoadable.swift in Sources */,
-				4A648442223AA1C40093158E /* Dependencies.swift in Sources */,
-				01E6C8E122EC8B9A008B5BD8 /* ServiceConstants.swift in Sources */,
-				4A8F2D392242C80200A54348 /* RecommendationDetailViewController.swift in Sources */,
-				4A648432223AA1C40093158E /* AppDelegate.swift in Sources */,
-				4A648437223AA1C40093158E /* RecommendationsViewController.swift in Sources */,
-				4A64842F223AA1C40093158E /* RecommendationService.swift in Sources */,
-				4A648436223AA1C40093158E /* HomeCoordinator.swift in Sources */,
-				4A648433223AA1C40093158E /* HomeViewModel.swift in Sources */,
-				4A64843D223AA1C40093158E /* SettingsViewModel.swift in Sources */,
-				4A1604E5224402BE00D89DAA /* RecommendationDetailTableHeaderView.swift in Sources */,
-				4A64844B223AB3840093158E /* SignInViewController.swift in Sources */,
-				4A648446223AA1C40093158E /* SearchCoordinator.swift in Sources */,
-				0191080522CD94E400B538C1 /* GroupService.swift in Sources */,
-				4A648435223AA1C40093158E /* HomeViewController.swift in Sources */,
-				4A8F8679224A643D00607A28 /* AddRecommendationViewModel.swift in Sources */,
-				4A64843C223AA1C40093158E /* SpotifyConstants.swift in Sources */,
-				4A01905A223C39760066E0DF /* RecommendationTableViewCell.swift in Sources */,
-				0191080722CD952500B538C1 /* UserService.swift in Sources */,
-				4A648441223AA1C40093158E /* FlowCoordinator.swift in Sources */,
-				4A648454223AEAB30093158E /* ImageDownloadService.swift in Sources */,
-				4A019060223FF7FA0066E0DF /* ServiceClient.swift in Sources */,
-				4A648443223AA1C40093158E /* ViewModel.swift in Sources */,
-				4A648445223AA1C40093158E /* SearchViewController.swift in Sources */,
-				4A648451223AE5AF0093158E /* SearchResultsTableViewCell.swift in Sources */,
-				4A648439223AA1C40093158E /* Recommendation.swift in Sources */,
-				4A64843E223AA1C40093158E /* SettingsCoordinator.swift in Sources */,
-				4A01905E223FF76F0066E0DF /* CompoundUser.swift in Sources */,
-				4A64842D223AA1C40093158E /* SearchArtistOperation.swift in Sources */,
-				4A648430223AA1C40093158E /* AppCoordinator.swift in Sources */,
-				4A648447223AA1C40093158E /* SearchViewModel.swift in Sources */,
-				4A8F2D3C2243C30300A54348 /* RecommendationDetailViewModel.swift in Sources */,
-				4A8F2D362242917E00A54348 /* DocumentCodable.swift in Sources */,
-				4A648440223AA1C40093158E /* SettingsViewController.swift in Sources */,
-				4A64842C223AA1C40093158E /* SpotifyService.swift in Sources */,
-				4A8F2C3022412D5A00A54348 /* Comment.swift in Sources */,
-				4A8F2D3F2243CFFD00A54348 /* TextInputAccessoryView.swift in Sources */,
-				4A64843A223AA1C40093158E /* RecommendationsCoordinator.swift in Sources */,
-				4A8F2C2C22411FFE00A54348 /* Group.swift in Sources */,
-				4A1604E22243EDBD00D89DAA /* CommentTableViewCell.swift in Sources */,
-				0191080922CD959900B538C1 /* Session.swift in Sources */,
-				4A8F8676224A5DE000607A28 /* AddRecommendationViewController.swift in Sources */,
-				4A64843B223AA1C40093158E /* RecommendationsViewModel.swift in Sources */,
-				4A64842E223AA1C40093158E /* AsynchronousOperation.swift in Sources */,
+				2BAEC31E75656BC87B1AC72D /* AddRecommendationViewController.swift in Sources */,
+				D666C1413E09ECB771BA23BB /* AddRecommendationViewModel.swift in Sources */,
+				03406E20E84FB51D730E7EAB /* AppCoordinator.swift in Sources */,
+				891632B2DA7C3D1D44E15AD6 /* AppDelegate.swift in Sources */,
+				DE6C0076F63F6FDF0BF27F70 /* Assets-Constants.swift in Sources */,
+				AA7FABCAB509E0157397138B /* AsynchronousOperation.swift in Sources */,
+				BD1E403C9A02A219DC61FE39 /* Colors.swift in Sources */,
+				E0CF47C8D19AD2623DD75A25 /* Comment.swift in Sources */,
+				0F443F65564527BAA6E3B4A8 /* CommentTableViewCell.swift in Sources */,
+				0C2B20C45DD3CEF03358C278 /* CompoundUser.swift in Sources */,
+				AB5C59A538D5F6B4273D91B6 /* Dependencies.swift in Sources */,
+				7D441E552B893C35308F1B1F /* DocumentCodable.swift in Sources */,
+				E87C18204ABF23467986F34D /* FlowCoordinator.swift in Sources */,
+				7F23492C69D53753A2C6BFA8 /* FlowCoordinatorViewController.swift in Sources */,
+				0513F19C249B1C41B7B40EDC /* Group.swift in Sources */,
+				E3CB8F210A7A3F55021BE6C9 /* GroupService.swift in Sources */,
+				202D13B5009BA7915F773801 /* HomeCoordinator.swift in Sources */,
+				D35151AA443475B5E2715284 /* HomeViewController.swift in Sources */,
+				33CCD850755A66B08AF66167 /* HomeViewModel.swift in Sources */,
+				C3DC02E17D49F822A9205382 /* ImageDownloadService.swift in Sources */,
+				5DA21C680C1AFC208DE069CB /* Localizations.swift in Sources */,
+				873764AE9D38AC1670945E7B /* NibFileOwnerLoadable.swift in Sources */,
+				54B3F5A1FB7CA0A9D6A2FCBE /* Recommendation.swift in Sources */,
+				F3F1B8702D534CF617D706BE /* RecommendationDetailTableHeaderView.swift in Sources */,
+				8F62D8296A69A633BD1CC057 /* RecommendationDetailViewController.swift in Sources */,
+				47807BE01108E4E94B660BB5 /* RecommendationDetailViewModel.swift in Sources */,
+				F8A2F22D5F7C039B67842A36 /* RecommendationService.swift in Sources */,
+				3AEE614F94FE1D361D76AA0A /* RecommendationTableViewCell.swift in Sources */,
+				860A1DB30F79540D77397EEC /* RecommendationsCoordinator.swift in Sources */,
+				04B65DC97F8B67AAD5AC2F4C /* RecommendationsViewController.swift in Sources */,
+				E812C2C0D89CC00700A1FA99 /* RecommendationsViewModel.swift in Sources */,
+				AE0B986F1B7F634D72C024FF /* SearchArtistOperation.swift in Sources */,
+				3A83C65893228564572E1F93 /* SearchCoordinator.swift in Sources */,
+				44150278E6E289FE2B06FCFF /* SearchResultsTableViewCell.swift in Sources */,
+				1C62AC280AA70695C7920605 /* SearchViewController.swift in Sources */,
+				6C245214F63C3E4BBB14F80C /* SearchViewModel.swift in Sources */,
+				E1DB52060559C8EF883A4483 /* ServiceClient.swift in Sources */,
+				BB41DD4FD79EA586C2B60B64 /* ServiceConstants.swift in Sources */,
+				7FBF708EE52CE983F6901586 /* Session.swift in Sources */,
+				0EBEE9CD4DD14AA00FDBE1E4 /* SettingsCoordinator.swift in Sources */,
+				29B91F99486E037DC32C9CA1 /* SettingsViewController.swift in Sources */,
+				7EAF85757990089D0C7DE173 /* SettingsViewModel.swift in Sources */,
+				8CBB6A3C7036EAFE12D33ADE /* SignInViewController.swift in Sources */,
+				6E8D3CB407984E2D3FD7834E /* SpotifyConstants.swift in Sources */,
+				47BC77E998F0C59237AEB28E /* SpotifyService.swift in Sources */,
+				B3966A3EEFFE70F1203112B2 /* TextInputAccessoryView.swift in Sources */,
+				495DB48BBE2762371C48DFF2 /* UserService.swift in Sources */,
+				360B2C56E48094449AADA28C /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4A6483DC223AA0BA0093158E /* Sources */ = {
+		A163C6CB9EF8ABE86C40E406 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A6483E5223AA0BA0093158E /* SpotyfiendTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4A6483E7223AA0BA0093158E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4A6483F0223AA0BA0093158E /* SpotyfiendUITests.swift in Sources */,
+				0BE97C3FCE5B9CC19DC09AB0 /* SpotyfiendTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		4A6483E2223AA0BA0093158E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4A6483CB223AA0B90093158E /* Spotyfiend */;
-			targetProxy = 4A6483E1223AA0BA0093158E /* PBXContainerItemProxy */;
-		};
-		4A6483ED223AA0BA0093158E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4A6483CB223AA0B90093158E /* Spotyfiend */;
-			targetProxy = 4A6483EC223AA0BA0093158E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		4A64840A223AA1C30093158E /* LaunchScreen.storyboard */ = {
+		9BAFBDEB7984777173865F17 /* Common.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4A64840B223AA1C30093158E /* Base */,
+				9ACD217B92EB4F71407F180D /* en */,
+			);
+			name = Common.strings;
+			sourceTree = "<group>";
+		};
+		DA252213DDF87A91846F8838 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A09F8825EE8AC55BC27533A0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -796,7 +614,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		4A6483F2223AA0BA0093158E /* Debug */ = {
+		0015A208DE9A54B0263C9372 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -822,74 +640,13 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		4A6483F3223AA0BA0093158E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -902,180 +659,240 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
-		4A6483F5223AA0BA0093158E /* Debug */ = {
+		5FE8D27C7938DA0035450812 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7045E8D25C011980D846A0B /* Pods-Spotyfiend.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UBBFM4Q7C8;
-				INFOPLIST_FILE = "$(SRCROOT)/Spotyfiend/Resources/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.setec.astronony.Spotyfiend;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		4A6483F6223AA0BA0093158E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 136DE68E5C59A564FEB2790A /* Pods-Spotyfiend.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UBBFM4Q7C8;
-				INFOPLIST_FILE = "$(SRCROOT)/Spotyfiend/Resources/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.setec.astronony.Spotyfiend;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		4A6483F8223AA0BA0093158E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6DDA39F657356CA585A8237 /* Pods-SpotyfiendTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UBBFM4Q7C8;
 				INFOPLIST_FILE = SpotyfiendTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.setec.astronony.SpotyfiendTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.setecastronomy.SpotyfiendTests;
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spotyfiend.app/Spotyfiend";
+			};
+			name = Release;
+		};
+		68FBACF12143BF04A29B2749 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		4A6483F9223AA0BA0093158E /* Release */ = {
+		6E113D7FD21B71F33CDD7537 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A28316800C80D1C06FB506DA /* Pods-SpotyfiendTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = UBBFM4Q7C8;
+				INFOPLIST_FILE = Spotyfiend/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.setecastronomy.Spotyfiend;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D316C1ED4B105E9A2AA656A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = UBBFM4Q7C8;
+				INFOPLIST_FILE = Spotyfiend/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.setecastronomy.Spotyfiend;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EC0215E233B11F91E18BB983 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SpotyfiendTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.setec.astronony.SpotyfiendTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.setecastronomy.SpotyfiendTests;
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spotyfiend.app/Spotyfiend";
-			};
-			name = Release;
-		};
-		4A6483FB223AA0BA0093158E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96665281E9B941CC5D5831E0 /* Pods-SpotyfiendUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UBBFM4Q7C8;
-				INFOPLIST_FILE = SpotyfiendUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.setec.astronony.SpotyfiendUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Spotyfiend;
 			};
 			name = Debug;
-		};
-		4A6483FC223AA0BA0093158E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C2D262A7ACC0C5DF01388E8 /* Pods-SpotyfiendUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UBBFM4Q7C8;
-				INFOPLIST_FILE = SpotyfiendUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.setec.astronony.SpotyfiendUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Spotyfiend;
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4A6483C7223AA0B90093158E /* Build configuration list for PBXProject "Spotyfiend" */ = {
+		0CFE6107EFC7F2F9051280C6 /* Build configuration list for PBXNativeTarget "Spotyfiend" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4A6483F2223AA0BA0093158E /* Debug */,
-				4A6483F3223AA0BA0093158E /* Release */,
+				6E113D7FD21B71F33CDD7537 /* Debug */,
+				D316C1ED4B105E9A2AA656A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		4A6483F4223AA0BA0093158E /* Build configuration list for PBXNativeTarget "Spotyfiend" */ = {
+		E117D870E3D208E8DA0BE7DA /* Build configuration list for PBXProject "Spotyfiend" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4A6483F5223AA0BA0093158E /* Debug */,
-				4A6483F6223AA0BA0093158E /* Release */,
+				68FBACF12143BF04A29B2749 /* Debug */,
+				0015A208DE9A54B0263C9372 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		4A6483F7223AA0BA0093158E /* Build configuration list for PBXNativeTarget "SpotyfiendTests" */ = {
+		F36557A26A30CE5DC54E5378 /* Build configuration list for PBXNativeTarget "SpotyfiendTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4A6483F8223AA0BA0093158E /* Debug */,
-				4A6483F9223AA0BA0093158E /* Release */,
+				EC0215E233B11F91E18BB983 /* Debug */,
+				5FE8D27C7938DA0035450812 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4A6483FA223AA0BA0093158E /* Build configuration list for PBXNativeTarget "SpotyfiendUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4A6483FB223AA0BA0093158E /* Debug */,
-				4A6483FC223AA0BA0093158E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		062086467B30963B12D515EC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.6.1;
+			};
+		};
+		11129FEE4DF4F52E3550BE0A /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.2;
+			};
+		};
+		3780307D653165CADD784228 /* XCRemoteSwiftPackageReference "SpotifyAPI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Peter-Schorn/SpotifyAPI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.1;
+			};
+		};
+		D4A0D57E490FBF0112D16787 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		05952D4B41929F98655B596C /* Firestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 062086467B30963B12D515EC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = Firestore;
+		};
+		2C9D08261867F7440CD7EF99 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 062086467B30963B12D515EC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		943A27F7450F87A4D1335889 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11129FEE4DF4F52E3550BE0A /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		BE514EE820FF774B0CCB79F3 /* SpotifyAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3780307D653165CADD784228 /* XCRemoteSwiftPackageReference "SpotifyAPI" */;
+			productName = SpotifyAPI;
+		};
+		D8F062413B235F449868D2A9 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4A0D57E490FBF0112D16787 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 4A6483C4223AA0B90093158E /* Project object */;
+	rootObject = D5CDE3D7EB3C20A5177DCEFD /* Project object */;
 }

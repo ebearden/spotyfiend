@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1030"
+   LastUpgradeVersion = "1200"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4A6483CB223AA0B90093158E"
+               BlueprintIdentifier = "07364DE53EC0A39E28A40585"
                BuildableName = "Spotyfiend.app"
                BlueprintName = "Spotyfiend"
                ReferencedContainer = "container:Spotyfiend.xcodeproj">
@@ -26,25 +26,16 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      onlyGenerateCoverageForSpecifiedTargets = "NO"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4A6483DF223AA0BA0093158E"
+               BlueprintIdentifier = "1FC1451210BCBCF9FAEEA9D2"
                BuildableName = "SpotyfiendTests.xctest"
                BlueprintName = "SpotyfiendTests"
-               ReferencedContainer = "container:Spotyfiend.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4A6483EA223AA0BA0093158E"
-               BuildableName = "SpotyfiendUITests.xctest"
-               BlueprintName = "SpotyfiendUITests"
                ReferencedContainer = "container:Spotyfiend.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -52,14 +43,14 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4A6483CB223AA0B90093158E"
+            BlueprintIdentifier = "07364DE53EC0A39E28A40585"
             BuildableName = "Spotyfiend.app"
             BlueprintName = "Spotyfiend"
             ReferencedContainer = "container:Spotyfiend.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
+      <CommandLineArguments>
+      </CommandLineArguments>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -75,14 +66,14 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4A6483CB223AA0B90093158E"
+            BlueprintIdentifier = "07364DE53EC0A39E28A40585"
             BuildableName = "Spotyfiend.app"
             BlueprintName = "Spotyfiend"
             ReferencedContainer = "container:Spotyfiend.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <AdditionalOptions>
-      </AdditionalOptions>
+      <CommandLineArguments>
+      </CommandLineArguments>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -94,12 +85,14 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4A6483CB223AA0B90093158E"
+            BlueprintIdentifier = "07364DE53EC0A39E28A40585"
             BuildableName = "Spotyfiend.app"
             BlueprintName = "Spotyfiend"
             ReferencedContainer = "container:Spotyfiend.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+      </CommandLineArguments>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
